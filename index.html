@@ -35,37 +35,44 @@
   <body>
     <main id="main">
       <!-- Navbar started  -->
-      <nav
-        class="flex list-none justify-center items-center gap-20 font-['nunito'] font-[600] text-[#393E50] text-[14px] uppercase"
-      >
-        <li><a href="">Home</a></li>
-        <li><a href="">Gallery</a></li>
-        <li>
-          <img src="./assets//images//header/Logo.svg" alt="" srcset="" />
-        </li>
-        <li><a href="">Destination</a></li>
-        <li><a href="">About</a></li>
+      <nav class="container">
+        <ul
+          class="lg:flex hidden list-none justify-center items-center lg:gap-20 gap-2 font-['nunito'] font-[600] text-[#393E50] text-[14px] uppercase"
+        >
+          <li><a href="">Home</a></li>
+          <li><a href="">Gallery</a></li>
+          <li>
+            <img
+              class="mb-2"
+              src="./assets//images//header/Logo.svg"
+              alt=""
+              srcset=""
+            />
+          </li>
+          <li><a href="">Destination</a></li>
+          <li><a href="">About</a></li>
+        </ul>
       </nav>
       <!-- Navbar ended  -->
 
       <!-- Hero section started  -->
-      <!-- <section id="hero_section">
+      <section id="hero_section">
         <div
-          class="container mx-auto grid justify-items-center items-center grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2"
+          class="container grid justify-items-center items-center grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2"
         >
           <div>
             <p
-              class="font-squarepeg font-[400] text-[42px] text-[#FFC921]"
+              class="font-squarepeg font-[400] lg:text-[42px] text-[32px] lg:text-left text-center text-[#FFC921] leading-[48px]"
             >
               Explore the world
             </p>
             <p
-              class="font-nunito font-[800] text-[48px] text-[#D00338E5] leading-[56px] mb-[40px] text-center "
+              class="font-nunito font-[800] lg:text-[48px] text-[24px] text-[#D00338] lg:leading-[56px] leading-[36px] lg:text-left text-center lg:mb-[40px] mb-[40px] "
             >
               We Take Care of all your Dream Tours
             </p>
             <p
-              class="font-nunitoSans font-[400] text-[24px] text-[#393E50] leading-[38px]"
+              class="font-nunitoSans font-[400] text-[24px] text-[#393E50] lg:leading-[38px] leading-[36px] lg:pr-40 pr-16 lg:text-left text-center lg:mb-0 mb-[40px] lg:pl-0 pl-5"
             >
               Let’s start your journey with us, your dream will come true...
             </p>
@@ -78,7 +85,7 @@
             />
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- Hero section ended  -->
     </main>
   </body>

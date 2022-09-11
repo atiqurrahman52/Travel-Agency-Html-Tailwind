@@ -35,9 +35,9 @@
   <body>
     <main id="main">
       <!-- Navbar started  -->
-      <nav class="container">
+      <nav class="">
         <ul
-          class="lg:flex hidden list-none justify-center items-center lg:gap-20 gap-2 font-['nunito'] font-[600] text-[#393E50] text-[14px] uppercase"
+          class="lg:flex hidden list-none justify-center items-center lg:gap-20 gap-2 font-['nunito'] font-[600] text-[#ce03391a] text-[14px] uppercase"
         >
           <li><a href="">Home</a></li>
           <li><a href="">Gallery</a></li>
@@ -284,10 +284,10 @@
       <!-- Event Banner started -->
       <section id="eventBanner">
         <div
-          class="container grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1"
+          class="container grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 max-h-[324px] lg:max-h-[324px]"
         >
           <img
-            class="w-full h-[324px]"
+            class="w-full h-full"
             src="./assets/images/event banner/Event Bannar.png"
             alt=""
             srcset=""
@@ -296,48 +296,113 @@
       </section>
       <!-- Event Banner ended -->
 
-      <!-- Gift card started -->
+      <!-- Gift card section started -->
       <section id="giftCard">
         <div
-          class="container justify-center grid grid-cols-1 xl:grid-cols-12 lg:grid-cols-12 md:grid-cols-12 sm:grid-cols-6 gap-4 mt-20"
+          class="container"
         >
-          <div class="col-span-4">
-            <h1
-              class="font-nunito font-[800] lg:text-[45px] text-[24px] lg:text-left text-center text-[#393E50] lg:leading-[56px] leading-[40px] mb-[24px]"
-            >
-              Gift an Experience with Tourelish
-            </h1>
-            <p
-              class="font-nunito font-[600] text-[#747474] text-[16px] lg:text-left text-center lg:pl-0 pl-5 leading-[20px] lg:mb-[24px] mb-[1px]"
-            >
-              Surpirse gift card for your loved one. Surpirse gift card for your
-              loved one. Surpirse gift card for your loved one. Surpirse gift
-              card for your loved one.
-            </p>
-            <button
-              class="lg:visible invisible font-nunito font-[600] text-[14px] text-[#FFFFFF] bg-[#D00338E5] px-[61px] py-[14px] rounded-[5px]"
-            >
-              Learn more
-            </button>
-          </div>
-          <div class="col-span-8">
-            <img
-              class="w-full lg:h-[370px] h-[124px]"
-              src="./assets/images/gift card/Gift Card.png"
-              alt=""
-              srcset=""
-            />
-            <div class="mt-9 mb-28 flex justify-center items-center">
+          <div class="grid grid-cols-12  gap-4 mt-20">
+            <div class="col-span-12 lg:col-span-4">
+              <p
+                class="font-nunito font-[800] lg:text-[45px] text-[24px] lg:text-left text-center text-[#393E50] lg:leading-[56px] leading-[40px] mb-[24px]"
+              >
+                Gift an Experience with Tourelish
+              </p>
+              <p
+                class="font-nunito font-[600] text-[#747474] text-[16px] lg:text-left text-center leading-[20px] lg:mb-[24px] mb-[1px]"
+              >
+                Surpirse gift card for your loved one. Surpirse gift card for your
+                loved one. Surpirse gift card for your loved one. Surpirse gift
+                card for your loved one.
+              </p>
               <button
-                class="lg:invisible visible font-nunito font-[600] text-[14px] text-[#FFFFFF] bg-[#D00338E5] px-[61px] py-[14px] rounded-[5px]"
+                class="lg:block hidden font-nunito font-[600] text-[14px] text-[#FFFFFF] bg-[#D00338E5] px-[61px] py-[14px] rounded-[5px]"
               >
                 Learn more
               </button>
             </div>
+            <div class="col-span-12 lg:col-span-8">
+              <img
+                class="w-full lg:h-[370px] h-[124px]"
+                src="./assets/images/gift card/Gift Card.png"
+                alt=""
+                srcset=""
+              />
+              <div class="mt-9 mb-28 flex justify-center items-center">
+                <button
+                  class="lg:hidden block font-nunito font-[600] text-[14px] text-[#FFFFFF] bg-[#D00338E5] px-[61px] py-[14px] rounded-[5px]"
+                >
+                  Learn more
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <!-- Gift card ended -->
+      <!-- Gift card section ended -->
+
+      <!-- Partners section started -->
+      <section id="partners">
+        <div class="container">
+          <div class="text-center lg:mb-[70px] mb-[40px]">
+            <p class="font-nunito font-[800] lg:text-[48] text-[#393E50] lg:leading-[56px] lg:mb-[20px] mb-[24px]">Our Partners</p>
+            <p class="font-nunito font-[600] text-[#747474] text-[16px]  leading-[20px]">We team up with the best to give you an unmatchable experience</p>
+          </div>
+          <div class="grid items-center grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-8 gap-9 mb-16">
+            <div class="">
+              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/airbnb.png" alt="" srcset="">
+            </div>
+            <div class="">
+              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/decathlon.png" alt="" srcset="">
+            </div>
+            <div class="">
+              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/expedia.png" alt="" srcset="">
+            </div>
+            <div class="">
+              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/gopro.png" alt="" srcset="">
+            </div>
+            <div class="">
+              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/homeaway.png" alt="" srcset="">
+            </div>
+            <div class="">
+              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/isuzu.png" alt="" srcset="">
+            </div>
+            <div class="">
+              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/jordan.png" alt="" srcset="">
+            </div>
+            <div class="">
+              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/mahindra.png" alt="" srcset="">
+            </div>
+            <div class="">
+              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/makemytrip.png" alt="" srcset="">
+            </div>
+            <div class="">
+              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/trip advisor.png" alt="" srcset="">
+            </div>
+            <div class="">
+              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/tvs.png" alt="" srcset="">
+            </div>
+            <div class="">
+              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/uber.png" alt="" srcset="">
+            </div>
+            <div class="">
+              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/viator.png" alt="" srcset="">
+            </div>
+            <div class="">
+              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/visit sweden.png" alt="" srcset="">
+            </div>
+            <div class="">
+              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/wildcraft.png" alt="" srcset="">
+            </div>
+            <div class="">
+              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/zoom car.png" alt="" srcset="">
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+       <!-- Partners section ended -->
     </main>
   </body>
 </html>

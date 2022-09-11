@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./assets//css/common.css" />
+    <!-- font poppins  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- font Quentin -->
     <link href="http://fonts.cdnfonts.com/css/quentin" rel="stylesheet" />
     <!-- font nunito  -->
@@ -35,9 +42,9 @@
   <body>
     <main id="main">
       <!-- Navbar started  -->
-      <nav class="">
+      <nav class="sticky top-0 z-50">
         <ul
-          class="lg:flex hidden list-none justify-center items-center lg:gap-20 gap-2 font-['nunito'] font-[600] text-[#ce03391a] text-[14px] uppercase"
+          class="lg:flex hidden list-none justify-center items-center lg:gap-20 gap-2 font-['nunito'] font-[600] bg-[#ce03391a] text-[14px] uppercase"
         >
           <li><a href="">Home</a></li>
           <li><a href="">Gallery</a></li>
@@ -298,22 +305,20 @@
 
       <!-- Gift card section started -->
       <section id="giftCard">
-        <div
-          class="container"
-        >
-          <div class="grid grid-cols-12  gap-4 mt-20">
+        <div class="container">
+          <div class="grid grid-cols-12 gap-4 mt-20">
             <div class="col-span-12 lg:col-span-4">
               <p
-                class="font-nunito font-[800] lg:text-[45px] text-[24px] lg:text-left text-center text-[#393E50] lg:leading-[56px] leading-[40px] mb-[24px]"
+                class="font-nunito font-[800] lg:text-[45px] text-[28px] lg:text-left text-center text-[#393E50] lg:leading-[56px] leading-[40px] mb-[24px]"
               >
                 Gift an Experience with Tourelish
               </p>
               <p
                 class="font-nunito font-[600] text-[#747474] text-[16px] lg:text-left text-center leading-[20px] lg:mb-[24px] mb-[1px]"
               >
-                Surpirse gift card for your loved one. Surpirse gift card for your
-                loved one. Surpirse gift card for your loved one. Surpirse gift
-                card for your loved one.
+                Surpirse gift card for your loved one. Surpirse gift card for
+                your loved one. Surpirse gift card for your loved one. Surpirse
+                gift card for your loved one.
               </p>
               <button
                 class="lg:block hidden font-nunito font-[600] text-[14px] text-[#FFFFFF] bg-[#D00338E5] px-[61px] py-[14px] rounded-[5px]"
@@ -343,66 +348,278 @@
 
       <!-- Partners section started -->
       <section id="partners">
-        <div class="container">
+        <div class="container lg:mb-[100px] mb-[60px]">
           <div class="text-center lg:mb-[70px] mb-[40px]">
-            <p class="font-nunito font-[800] lg:text-[48] text-[#393E50] lg:leading-[56px] lg:mb-[20px] mb-[24px]">Our Partners</p>
-            <p class="font-nunito font-[600] text-[#747474] text-[16px]  leading-[20px]">We team up with the best to give you an unmatchable experience</p>
+            <p
+              class="font-nunito font-[800] lg:text-[48] text-[#393E50] lg:leading-[56px] lg:mb-[20px] mb-[24px]"
+            >
+              Our Partners
+            </p>
+            <p
+              class="font-nunito font-[600] text-[#747474] text-[16px] leading-[20px]"
+            >
+              We team up with the best to give you an unmatchable experience
+            </p>
           </div>
-          <div class="grid items-center grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-8 gap-9 mb-16">
+          <div
+            class="grid items-center grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-8 gap-9 mb-16"
+          >
             <div class="">
-              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/airbnb.png" alt="" srcset="">
+              <img
+                class="grayscale-[100%] hover:grayscale-[0%]"
+                src="./assets/images/partners/airbnb.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="">
-              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/decathlon.png" alt="" srcset="">
+              <img
+                class="grayscale-[100%] hover:grayscale-[0%]"
+                src="./assets/images/partners/decathlon.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="">
-              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/expedia.png" alt="" srcset="">
+              <img
+                class="grayscale-[100%] hover:grayscale-[0%]"
+                src="./assets/images/partners/expedia.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="">
-              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/gopro.png" alt="" srcset="">
+              <img
+                class="grayscale-[100%] hover:grayscale-[0%]"
+                src="./assets/images/partners/gopro.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="">
-              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/homeaway.png" alt="" srcset="">
+              <img
+                class="grayscale-[100%] hover:grayscale-[0%]"
+                src="./assets/images/partners/homeaway.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="">
-              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/isuzu.png" alt="" srcset="">
+              <img
+                class="grayscale-[100%] hover:grayscale-[0%]"
+                src="./assets/images/partners/isuzu.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="">
-              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/jordan.png" alt="" srcset="">
+              <img
+                class="grayscale-[100%] hover:grayscale-[0%]"
+                src="./assets/images/partners/jordan.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="">
-              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/mahindra.png" alt="" srcset="">
+              <img
+                class="grayscale-[100%] hover:grayscale-[0%]"
+                src="./assets/images/partners/mahindra.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="">
-              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/makemytrip.png" alt="" srcset="">
+              <img
+                class="grayscale-[100%] hover:grayscale-[0%]"
+                src="./assets/images/partners/makemytrip.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="">
-              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/trip advisor.png" alt="" srcset="">
+              <img
+                class="grayscale-[100%] hover:grayscale-[0%]"
+                src="./assets/images/partners/trip advisor.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="">
-              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/tvs.png" alt="" srcset="">
+              <img
+                class="grayscale-[100%] hover:grayscale-[0%]"
+                src="./assets/images/partners/tvs.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="">
-              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/uber.png" alt="" srcset="">
+              <img
+                class="grayscale-[100%] hover:grayscale-[0%]"
+                src="./assets/images/partners/uber.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="">
-              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/viator.png" alt="" srcset="">
+              <img
+                class="grayscale-[100%] hover:grayscale-[0%]"
+                src="./assets/images/partners/viator.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="">
-              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/visit sweden.png" alt="" srcset="">
+              <img
+                class="grayscale-[100%] hover:grayscale-[0%]"
+                src="./assets/images/partners/visit sweden.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="">
-              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/wildcraft.png" alt="" srcset="">
+              <img
+                class="grayscale-[100%] hover:grayscale-[0%]"
+                src="./assets/images/partners/wildcraft.png"
+                alt=""
+                srcset=""
+              />
             </div>
             <div class="">
-              <img class="grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/zoom car.png" alt="" srcset="">
+              <img
+                class="grayscale-[100%] hover:grayscale-[0%]"
+                src="./assets/images/partners/zoom car.png"
+                alt=""
+                srcset=""
+              />
             </div>
           </div>
-
         </div>
-
       </section>
-       <!-- Partners section ended -->
+      <!-- Partners section ended -->
+
+      <!-- Footer section started -->
+      <section id="footer">
+        <div class="container mb-48">
+          <div>
+            <p
+              class="text-center text-[#D00338E5] lg:text-[64px] text-[42px] font-quentin lg:leading-[86px] leading-[48px] lg:mb-[64px] mb-[40px]"
+            >
+              Make memories with us
+            </p>
+          </div>
+
+          <div class="grid grid-cols-12 gap-5">
+            <div class="col-span-12 lg:col-span-4">
+              <div>
+                <img
+                  class="lg:mx-0 w-max mx-auto"
+                  src="./assets/images/footer/Logo.png"
+                  alt=""
+                  srcset=""
+                />
+                <p
+                  class="text-[#747474] text-[16px] font-nunito font-[400] leading-[20px] lg:pr-6  lg:text-left text-center"
+                >
+                  In publishing and graphic design, Lorem ipsum is a placeholder
+                  text commonly used to demonstrate the visual form of a
+                  document or a typeface without relying on meaningful content.
+                </p>
+              </div>
+              <div class="flex gap-3 mt-5 lg:mx-0 w-max mx-auto ">
+                <img src="./assets/images/footer/VISA.png" alt="" srcset="" />
+                <img
+                  src="./assets/images/footer/Mastercard.png"
+                  alt=""
+                  srcset=""
+                />
+                <img src="./assets/images/footer/amex.png" alt="" srcset="" />
+                <img src="./assets/images/footer/Paypal.png" alt="" srcset="" />
+              </div>
+            </div>
+
+            <div class="lg:col-span-3 col-span-6 lg:mb-[40px] mb-[24px] ">
+              <div>
+                <p
+                  class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] mb-[34px]"
+                >
+                  Inspiration For Tourcode
+                </p>
+              </div>
+              <div class=" flex flex-col gap-[14px] text-[16px] text-[#747474] font-[400] font-poppins  leading-[22px]">
+                <a href="#"> Ladhak </a>
+                <a href="#"> Dubai </a>
+                <a href="#"> Edinburgh </a>
+                <a href="#"> Kilimanjaro </a>
+                <a href="#"> Beijing </a>
+                <a href="#"> Miyajima </a>
+                <a href="#"> Sydney </a>
+                
+              </div>
+            </div>
+
+            <div class="lg:col-span-2 col-span-6">
+              <div>
+                <p
+                  class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] lg:text-left text-right mb-[34px]"
+                >
+                  Quick Links
+                </p>
+              </div>
+              <div class=" flex flex-col gap-[14px] lg:text-left text-right  text-[16px] text-[#747474] font-[400] font-poppins  leading-[22px]">
+              <a href="#"> Home </a>
+              <a href="#"> About Us </a>
+              <a href="#"> Destinations </a>
+              <a href="#"> GALLERY </a>
+              <a href="#"> Terms & Conditions </a>
+              <a href="#"> License </a>
+              </div>
+            </div>
+
+            <div class="lg:col-span-3 col-span-12">
+              <div>
+                <p
+                  class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] lg:mb-[34px] mb-[20px]"
+                >
+                  Get in touch
+                </p>
+              </div>
+
+              <div class="lg:text-[16px] text-[14px]  text-[#747474] font-[400]  font-poppins  leading-[22px]" >
+                <p >
+                  Email: <a href="mailto:info@trouelish.com">info@trouelish.com</a>
+                </p>
+                <p>
+                  Phone: <a href="callto:+12345678900">+1 234 567 89 00</a>
+                </p>
+                <p>
+                  Location: 120/A Street Address, Los Angel,<br> USA, 1612
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <hr>
+
+          <div class="flex justify-between">
+            <p>© 2022 Tourelish. All Rights Reserved</p>
+
+              
+              <div class="flex ">
+              <a href=""> <img src="./assets/images/footer/linkedin.png" alt="" srcset=""> </a>
+              <a href=""> <img src="./assets/images/footer/Facebook.png" alt="" srcset=""> </a>
+              <a href=""> <img src="./assets/images/footer/Instagram.png" alt="" srcset=""> </a>
+              <a href=""> <img src="./assets/images/footer/Youtube.png" alt="" srcset=""> </a>
+
+             </div>
+
+          </div>
+        </div>
+       
+      
+      
+      </section>
+      <hr>
+      <!-- Footer section ended -->
     </main>
   </body>
 </html>

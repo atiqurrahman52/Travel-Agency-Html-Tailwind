@@ -27,6 +27,8 @@ module.exports = {
         nunito:["Nunito", "sans-serif"],
         squarepeg:["Square Peg", "cursive"],
         nunitoSans:["Nunito Sans", "sans-serif"],
+        poppins:["Poppins", "sans-serif"],
+       
         
       },
     },

@@ -5,7 +5,7 @@ $(document).ready(function() {
         autoplaySpeed: 1500,
         slidesToShow: 7,
         slidesToScroll: 1,
-        autoplay:false,
+        autoplay:true,
         arrows:false,
         pauseOnHover: false,
         rows: 2,
@@ -27,7 +27,7 @@ $(document).ready(function() {
             }
           },
           {
-            breakpoint: 420,
+            breakpoint: 425,
             settings: {
               slidesToShow: 4,
               

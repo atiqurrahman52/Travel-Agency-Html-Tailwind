@@ -1,14 +1,11 @@
+
+
 .nav{
-    /* height: 72vh; */
-    /* width: 1000vw; */
     width: 100%;
     background: rgba(208, 3, 56, 0.1);
 }
 .curb{
     height: 82vh;
-    /* width: 100vw; */
-    /* background-image: linear-gradient(0deg, #08AEEA, 0%,#2AF598 100%); */
-    /* background-image: linear-gradient(0deg, #08AEEA, 0%,#2AF598 100%); */
     clip-path: ellipse(100% 55% at 48% 44%);
     background: #ce03391a;
     padding-bottom: 700px;

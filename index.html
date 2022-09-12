@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./assets//css/common.css" />
+
+      <!-- jquery cdn  -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+    <!--  slick carousel   -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+          integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <link rel="stylesheet" href="./main.css">
+
+
     <!-- font poppins  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -351,148 +362,44 @@
         <div class="container lg:mb-[100px] mb-[60px]">
           <div class="text-center lg:mb-[70px] mb-[40px]">
             <p
-              class="font-nunito font-[800] lg:text-[48] text-[#393E50] lg:leading-[56px] lg:mb-[20px] mb-[24px]"
+              class="font-nunito font-[800] text-center lg:text-[48px] text-[24px] text-[#393E50] lg:leading-[56px] leading-[40px] lg:mb-[20px] mb-[24px]"
             >
               Our Partners
             </p>
             <p
-              class="font-nunito font-[600] text-[#747474] text-[16px] leading-[20px]"
+              class="font-nunito text-center font-[600] text-[#747474] text-[16px] leading-[20px] mb-[70px]"
             >
               We team up with the best to give you an unmatchable experience
             </p>
           </div>
-          <div
-            class="grid items-center grid-cols-4 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-8 gap-9 mb-16"
-          >
-            <div class="">
-              <img
-                class="grayscale-[100%] hover:grayscale-[0%]"
-                src="./assets/images/partners/airbnb.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="">
-              <img
-                class="grayscale-[100%] hover:grayscale-[0%]"
-                src="./assets/images/partners/decathlon.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="">
-              <img
-                class="grayscale-[100%] hover:grayscale-[0%]"
-                src="./assets/images/partners/expedia.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="">
-              <img
-                class="grayscale-[100%] hover:grayscale-[0%]"
-                src="./assets/images/partners/gopro.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="">
-              <img
-                class="grayscale-[100%] hover:grayscale-[0%]"
-                src="./assets/images/partners/homeaway.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="">
-              <img
-                class="grayscale-[100%] hover:grayscale-[0%]"
-                src="./assets/images/partners/isuzu.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="">
-              <img
-                class="grayscale-[100%] hover:grayscale-[0%]"
-                src="./assets/images/partners/jordan.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="">
-              <img
-                class="grayscale-[100%] hover:grayscale-[0%]"
-                src="./assets/images/partners/mahindra.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="">
-              <img
-                class="grayscale-[100%] hover:grayscale-[0%]"
-                src="./assets/images/partners/makemytrip.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="">
-              <img
-                class="grayscale-[100%] hover:grayscale-[0%]"
-                src="./assets/images/partners/trip advisor.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="">
-              <img
-                class="grayscale-[100%] hover:grayscale-[0%]"
-                src="./assets/images/partners/tvs.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="">
-              <img
-                class="grayscale-[100%] hover:grayscale-[0%]"
-                src="./assets/images/partners/uber.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="">
-              <img
-                class="grayscale-[100%] hover:grayscale-[0%]"
-                src="./assets/images/partners/viator.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="">
-              <img
-                class="grayscale-[100%] hover:grayscale-[0%]"
-                src="./assets/images/partners/visit sweden.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="">
-              <img
-                class="grayscale-[100%] hover:grayscale-[0%]"
-                src="./assets/images/partners/wildcraft.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="">
-              <img
-                class="grayscale-[100%] hover:grayscale-[0%]"
-                src="./assets/images/partners/zoom car.png"
-                alt=""
-                srcset=""
-              />
-            </div>
-          </div>
+
+          <div class="customer-logos slider mb-5">
+
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/airbnb.png" alt="">
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/decathlon.png" alt="">
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/expedia.png" alt="">
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/gopro.png" alt="">
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/homeaway.png" alt="">
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/isuzu.png" alt="">
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/jordan.png" alt="">
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/mahindra.png" alt="">
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/makemytrip.png" alt="">
+            
+        </div>
+          <div class="customer-logos slider">
+
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/trip advisor.png" alt="">
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/tvs.png" alt="">
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/uber.png" alt="">
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/viator.png" alt="">
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/visit sweden.png" alt="">
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/wildcraft.png" alt="">
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/tvs.png" alt="">
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/mahindra.png" alt="">
+           <img class="slide grayscale-[100%] hover:grayscale-[0%]" src="./assets/images/partners/tvs.png" alt="">
+            
+        </div>
+         
         </div>
       </section>
       <!-- Partners section ended -->
@@ -578,14 +485,15 @@
             <div class="lg:col-span-3 col-span-12">
               <div>
                 <p
-                  class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] lg:mb-[34px] mb-[20px]"
+                  class="font-nunito font-[800]  text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] lg:mb-[34px] mb-[20px]"
                 >
                   Get in touch
                 </p>
               </div>
 
-              <div class="lg:text-[16px] text-[14px]  text-[#747474] font-[400]  font-poppins  leading-[22px]" >
-                <p >
+              <div class="lg:text-[16px] text-[14px]  text-[#747474] font-[400]  font-poppins gap-[14px] gap-x-16 leading-[32px] mb-[40px]" >
+                <!-- <div class=" flex flex-col gap-[14px] lg:text-left text-right  text-[16px] text-[#747474] font-[400] font-poppins  leading-[22px]"> -->
+                <p>
                   Email: <a href="mailto:info@trouelish.com">info@trouelish.com</a>
                 </p>
                 <p>
@@ -600,11 +508,11 @@
           </div>
           <hr>
 
-          <div class="flex justify-between">
-            <p>© 2022 Tourelish. All Rights Reserved</p>
+          <div class="flex  justify-between mt-[30px]">
+            <p class="text-[#747474] font-nunito font-[600]  text-[14px] leading-[16px] ">© 2022 Tourelish. All Rights Reserved</p>
 
               
-              <div class="flex ">
+              <div class="flex gap-3 ">
               <a href=""> <img src="./assets/images/footer/linkedin.png" alt="" srcset=""> </a>
               <a href=""> <img src="./assets/images/footer/Facebook.png" alt="" srcset=""> </a>
               <a href=""> <img src="./assets/images/footer/Instagram.png" alt="" srcset=""> </a>
@@ -613,13 +521,13 @@
              </div>
 
           </div>
+
         </div>
-       
-      
-      
       </section>
       <hr>
       <!-- Footer section ended -->
     </main>
+
+    <script src="./index.js"></script>
   </body>
 </html>

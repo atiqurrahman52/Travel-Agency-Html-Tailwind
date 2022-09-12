@@ -3,11 +3,12 @@ $(document).ready(function() {
         dots: false,
         // infinite: false,
         autoplaySpeed: 1500,
-        slidesToShow: 8,
+        slidesToShow: 7,
         slidesToScroll: 1,
-        autoplay:true,
+        autoplay:false,
         arrows:false,
         pauseOnHover: false,
+        rows: 2,
         responsive: [
         //   {
         //     breakpoint: 1024,

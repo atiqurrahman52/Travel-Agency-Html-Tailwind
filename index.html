@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+
+    <!-- phosphor-icons -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
     <!-- font poppins  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,7 +55,7 @@
       <!-- Navbar started  -->
       <nav class="sticky top-0 z-50">
         <ul
-          class="lg:flex hidden list-none justify-center items-center lg:gap-20 gap-2 font-['nunito'] font-[600] bg-[#ce03391a] text-[14px] uppercase"
+          class="flex  list-none justify-center items-center lg:gap-20 gap-2 font-['nunito'] font-[600] bg-white text-[14px] uppercase border-b-2 mt-4"
         >
           <li><a href="">Home</a></li>
           <li><a href="">Gallery</a></li>
@@ -202,10 +206,10 @@
         <div
           class="container grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 gap-5 mb-20 mt-10"
         >
-          <div class="relative">
+          <div class="relative group overflow-hidden rounded-[20px]">
             <div class="">
               <img
-                class="w-full"
+                class="w-full group-hover:scale-110 transition-all duration-500 ease-in-out"
                 src="./assets//images/featured/hollywood hills.png"
                 alt=""
                 srcset=""
@@ -220,22 +224,17 @@
               </p>
             </div>
             <div class="absolute bottom-7 left-[32px] flex items-center gap-2">
-              <img
-                class="w-[9px] h-[11px]"
-                src="./assets/images/featured/location.svg"
-                alt=""
-                srcset=""
-              />
+              <i class="ph-map-pin text-[#FFFFFF]"></i>
               <p class="font-nunito font-[600] text-[14px] text-[#FFFFFF]">
                 United States
               </p>
             </div>
           </div>
 
-          <div class="relative">
+          <div class="relative group overflow-hidden rounded-[20px]">
             <div class="">
-              <img
-                class="w-full"
+              <img 
+                class="w-full group-hover:scale-110 transition-all duration-500 ease-in-out"
                 src="./assets//images/featured/nordic hall.png"
                 alt=""
                 srcset=""
@@ -250,22 +249,17 @@
               </p>
             </div>
             <div class="absolute bottom-7 left-[32px] flex items-center gap-2">
-              <img
-                class="w-[9px] h-[11px]"
-                src="./assets/images/featured/location.svg"
-                alt=""
-                srcset=""
-              />
+              <i class="ph-map-pin text-[#FFFFFF]"></i>
               <p class="font-nunito font-[600] text-[14px] text-[#FFFFFF]">
                 Norway
               </p>
             </div>
           </div>
 
-          <div class="relative">
+          <div class="relative group overflow-hidden rounded-[20px]">
             <div class="">
               <img
-                class="w-full"
+                class="w-full group-hover:scale-110 transition-all duration-500 ease-in-out"
                 src="./assets//images/featured/cozy house.png"
                 alt=""
                 srcset=""
@@ -280,12 +274,7 @@
               </p>
             </div>
             <div class="absolute bottom-7 left-[32px] flex items-center gap-2">
-              <img
-                class="w-[9px] h-[11px]"
-                src="./assets/images/featured/location.svg"
-                alt=""
-                srcset=""
-              />
+              <i class="ph-map-pin text-[#FFFFFF]"></i>
               <p class="font-nunito font-[600] text-[14px] text-[#FFFFFF]">
                 Montenegro
               </p>
@@ -324,9 +313,90 @@
       </section>
       <!-- Inspiration section started -->
 
-      <!-- Asia slider section  -->
-      <section></section>
-      <!-- Asia slider section  -->
+      <!-- Asia slider started -->
+      <section id="asia">
+        <p class="text-center font-quentin font-[400] text-[80px] text-[#D4D4D4] leading-[90px] mt-[40px] mb-[38px]">Asia</p>
+        <div class="container">
+         <div class="asia">
+          <div class="w-full">
+            <img src="./assets/images/asia/colombo.png" alt="">
+            <div class="flex items-center gap-2 absolute bottom-24 left-5 text-[#FFFFFF]">
+              <i class="ph-map-pin"></i>
+              <p>Colombo</p>
+            </div>
+
+            <div class="lg:text-[#000000] text-[#393E50] text-[16px] font-nunito font-[600] leading-[20px] mt-[24px] ">
+              <p class="mb-2">Tropical Sri-lanka || 6Day-5Night</p>
+              <p>$59000.00</p>
+            </div>
+          </div>
+          <div>
+            <img src="./assets/images/asia/newDelhi.png" alt="">
+            <div class="flex items-center gap-2 absolute bottom-24 left-5 text-[#FFFFFF]">
+              <i class="ph-map-pin"></i>
+              <p>New Delhi</p>
+            </div>
+
+            <div class="lg:text-[#000000] text-[#393E50] text-[16px] font-nunito font-[600] leading-[20px] mt-[24px] ">
+              <p class="mb-2">Manali Jeep Safari | 12Day-11Night</p>
+              <p>$59000.00</p>
+            </div>
+          </div>
+          <div>
+            <img src="./assets/images/asia/coxsBazar.png" alt="">
+            <div class="flex items-center gap-2 absolute bottom-24 left-5 text-[#FFFFFF]">
+              <i class="ph-map-pin"></i>
+              <p>Cox’s Bazar</p>
+            </div>
+
+            <div class="lg:text-[#000000] text-[#393E50] text-[16px] font-nunito font-[600] leading-[20px] mt-[24px] ">
+              <p class="mb-2">Generous Cox’s Bazar | 6Day-5Night</p>
+              <p>$59000.00</p>
+            </div>
+          </div>
+          <div>
+            <img src="./assets/images/asia/madagascar.png" alt="">
+            <div class="flex items-center gap-2 absolute bottom-24 left-5 text-[#FFFFFF]">
+              <i class="ph-map-pin"></i>
+              <p>Madagascar </p>
+            </div>
+
+            <div class="lg:text-[#000000] text-[#393E50] text-[16px] font-nunito font-[600] leading-[20px] mt-[24px] ">
+              <p class="mb-2">Dreaming Madagascar | 6Day-5Night</p>
+              <p>$59000.00</p>
+            </div>
+          </div>
+          <div>
+            <img src="./assets/images/asia/colombo.png" alt="">
+            <div class="flex items-center gap-2 absolute bottom-24 left-5 text-[#FFFFFF]">
+              <i class="ph-map-pin"></i>
+              <p>Colombo</p>
+            </div>
+
+            <div class="lg:text-[#000000] text-[#393E50] text-[16px] font-nunito font-[600] leading-[20px] mt-[24px] ">
+              <p class="mb-2">Tropical Sri-lanka || 6Day-5Night</p>
+              <p>$59000.00</p>
+            </div>
+          </div>
+          <div>
+            <img src="./assets/images/asia/colombo.png" alt="">
+            <div class="flex items-center gap-2 absolute bottom-24 left-5 text-[#FFFFFF]">
+              <i class="ph-map-pin"></i>
+              <p>Colombo</p>
+            </div>
+
+            <div class="lg:text-[#000000] text-[#393E50] text-[16px] font-nunito font-[600] leading-[20px] mt-[24px] ">
+              <p class="mb-2">Tropical Sri-lanka || 6Day-5Night</p>
+              <p>$59000.00</p>
+            </div>
+          </div>
+          
+         </div>
+
+        </div>
+
+      </section>
+      <!-- Asia slider started  -->
 
       <!-- Gift card section started -->
       <section id="giftCard">
@@ -659,6 +729,8 @@
       <hr />
       <!-- Footer section ended -->
     </main>
+
+    
     <!-- jquery cdn  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!--  slick carousel   -->

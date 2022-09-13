@@ -10,7 +10,57 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* inspiration  */
+
+/* Hero section started  */
+/* .nav{
+    width: 100%;
+    background: rgba(208, 3, 56, 0.1);
+} */
+.curb{
+    height: 82vh;
+    clip-path: ellipse(100% 55% at 48% 44%);
+    background: #ce03391a;
+    padding-bottom: 700px;
+}
+
+@media only screen and (max-width: 400px) {
+    .curb{
+        height: 82vh;
+        clip-path: none;
+        padding-bottom: 850px;
+       
+    }
+
+}
+
+/* Hero section ended  */
+
+/* Featured section started */
+.card {
+    /* width: 416px; */
+    /* height: 312px; */
+    position: relative;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.card img {
+    /* border-radius: 20px; */
+    transition: all 0.5s ease;
+    object-fit: cover;
+    overflow: hidden;
+}
+.card:hover img {
+    transition: all 0.5s ease;
+    scale: 1.1;
+    object-fit: cover;
+    /* width: 100%; */
+    overflow: hidden;
+}
+
+/* Featured section ended */
+
+/* inspiration started */
 .image-container{
     columns: 3 250px;
     gap: 15px;
@@ -21,8 +71,18 @@
   width: 100%;
 }
 
+/* inspiration ended */
 
+
+
+/* partners started */
 .customer-logos .slick-track{
     display: flex;
     align-items: center;
 }
+.asia .slick-track{
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+/* partners ended */

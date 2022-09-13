@@ -47,12 +47,13 @@ $(document).ready(function() {
         dots: false,
         infinite: true,
         autoplaySpeed: 1500,
-        slidesToShow: 7,
-        // slidesToScroll: 1,
+        slidesToShow: 8,
         autoplay:true,
         arrows:false,
-        pauseOnHover: false,
         rows: 2,
+        speed: 8000,
+        pauseOnHover: true,
+        cssEase: 'linear',
         responsive: [
         
           {

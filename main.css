@@ -86,3 +86,24 @@
 }
 
 /* partners ended */
+
+
+.combo .slick-list {
+    padding-left: 0px!important;
+}
+
+#footer .footer_item{
+    position: relative;
+}
+#footer .footer_item::after{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #000;
+    height: 1px;
+    width: 24%;
+}
+#footer .footer_item{}
+#footer .footer_item{}
+#footer .footer_item{}

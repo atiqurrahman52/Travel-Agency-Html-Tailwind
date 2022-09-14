@@ -17,15 +17,18 @@
     background: rgba(208, 3, 56, 0.1);
 } */
 .curb{
-    height: 82vh;
-    clip-path: ellipse(100% 55% at 48% 44%);
+    clip-path: ellipse(100% 55% at 50% 33%);
     background: #ce03391a;
-    padding-bottom: 700px;
+    padding-bottom: 1px;
+}
+
+.sticky{
+    background-color: #fff;
+    transition: .5s;
 }
 
 @media only screen and (max-width: 400px) {
     .curb{
-        height: 82vh;
         clip-path: none;
         padding-bottom: 850px;
        

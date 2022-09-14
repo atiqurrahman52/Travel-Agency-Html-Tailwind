@@ -33,6 +33,7 @@ module.exports = {
       },
       backgroundImage: {
         'experinece': "url('./assets/images/event_banner/desert1.png')",
+        'description': "url('./assets/images/description/description.png')",
     },
     },
   },

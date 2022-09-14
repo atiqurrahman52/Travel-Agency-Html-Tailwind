@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  
+    <!-- phosphor-icons -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
     <!-- font teko -->
     <link
       href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap"
@@ -32,12 +33,16 @@
       rel="stylesheet"
     />
     <!-- font nunito sans -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
     <!-- font square peg -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap"
       rel="stylesheet"
@@ -50,14 +55,14 @@
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./assets//css/common.css" />
 
-    <title>Travel Agency</title>
+    <title>Gallery</title>
   </head>
   <body>
     <main id="main">
       <!-- Navbar started  -->
-      <nav class="absolute top-0 w-full z-50 nav">
+      <nav class="sticky top-0 z-50">
         <ul
-          class="flex list-none justify-center items-center lg:gap-20 gap-2 font-['nunito'] font-[600] text-[14px] uppercase py-2"
+          class="lg:flex hidden list-none justify-center items-center lg:gap-20 gap-2 font-['nunito'] font-[600] bg-white text-[14px] uppercase border-b-2 mt-4"
         >
           <li><a href="index.html">Home</a></li>
           <li><a href="gallery.html">Gallery</a></li>
@@ -77,32 +82,32 @@
 
       <!-- Hero section started  -->
       <section id="hero_section" class="curb">
-        <div class="container">
-          <div class="grid justify-items-center items-center grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 pt-20">
-            <div>
-              <p
-                class="font-squarepeg font-[400] lg:text-[42px] text-[32px] lg:text-left text-center text-[#FFC921] leading-[48px]"
-              >
-                Explore the world
-              </p>
-              <p
-                class="font-nunito font-[800] lg:text-[48px] text-[24px] text-[#D00338] lg:leading-[56px] leading-[36px] lg:text-left text-center lg:mb-[40px] mb-[40px]"
-              >
-                We Take Care of all your Dream Tours
-              </p>
-              <p
-                class="font-nunitoSans font-[400] text-[24px] text-[#393E50] lg:leading-[38px] leading-[36px] lg:pr-40 pr-16 lg:text-left text-center lg:mb-0 mb-[40px] lg:pl-0 pl-5"
-              >
-                Let’s start your journey with us, your dream will come true...
-              </p>
-            </div>
-            <div>
-              <img
-                src="./assets/images/header/Hero Section.png"
-                alt=""
-                srcset=""
-              />
-            </div>
+        <div
+          class="container grid justify-items-center items-center grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2"
+        >
+          <div>
+            <p
+              class="font-squarepeg font-[400] lg:text-[42px] text-[32px] lg:text-left text-center text-[#FFC921] leading-[48px]"
+            >
+              Explore the world
+            </p>
+            <p
+              class="font-nunito font-[800] lg:text-[48px] text-[24px] text-[#D00338] lg:leading-[56px] leading-[36px] lg:text-left text-center lg:mb-[40px] mb-[40px]"
+            >
+              We Take Care of all your Dream Tours
+            </p>
+            <p
+              class="font-nunitoSans font-[400] text-[24px] text-[#393E50] lg:leading-[38px] leading-[36px] lg:pr-40 pr-16 lg:text-left text-center lg:mb-0 mb-[40px] lg:pl-0 pl-5"
+            >
+              Let’s start your journey with us, your dream will come true...
+            </p>
+          </div>
+          <div>
+            <img
+              src="./assets/images/header/Hero Section.png"
+              alt=""
+              srcset=""
+            />
           </div>
         </div>
 
@@ -1099,8 +1104,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!--  slick carousel   -->
     <script src="./assets/plugins/slick/slick.1.8.1.js"></script>
-      <!-- phosphor-icons -->
-      <script src="https://unpkg.com/phosphor-icons"></script>
     <script src="./index.js"></script>
   </body>
 </html>

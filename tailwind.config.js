@@ -28,9 +28,12 @@ module.exports = {
         squarepeg:["Square Peg", "cursive"],
         nunitoSans:["Nunito Sans", "sans-serif"],
         poppins:["Poppins", "sans-serif"],
-       
-        
+        pridi:["Pridi", "serif"],
+        teko:["Teko", "sans-serif"],
       },
+      backgroundImage: {
+        'experinece': "url('./assets/images/event_banner/desert1.png')",
+    },
     },
   },
   plugins: [],

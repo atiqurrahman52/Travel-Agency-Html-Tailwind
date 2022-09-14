@@ -87,7 +87,7 @@
 
 /* partners ended */
 
-
+/* footer started */
 .combo .slick-list {
     padding-left: 0px!important;
 }
@@ -104,6 +104,25 @@
     height: 1px;
     width: 24%;
 }
+
+@media only screen and (max-width: 400px) {
+    #footer .footer_item{
+        position: relative;
+    }
+    #footer .footer_item::after:nth-child(2){
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        background-color: #000;
+        height: 1px;
+        width: 24%;
+    }
+
+}
+/* footer ended */
+
+
 #footer .footer_item{}
 #footer .footer_item{}
 #footer .footer_item{}

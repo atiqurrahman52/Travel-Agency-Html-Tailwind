@@ -23,6 +23,8 @@
 }
 
 .sticky{
+    position: fixed;
+    top: 0;
     background-color: #fff;
     transition: .5s;
 }

@@ -1,7 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+// /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*"],
-  // content: [],
+  content: ["*", "./pages/*html"],
   theme: {
     screens: {
       sm: "640px",
@@ -33,7 +32,8 @@ module.exports = {
       },
       backgroundImage: {
         'experinece': "url('./assets/images/event_banner/desert1.png')",
-        'description': "url('./assets/images/description/description.png')",
+        'destination': "url('./assets/images/destination/destination.png')",
+        
     },
     },
   },

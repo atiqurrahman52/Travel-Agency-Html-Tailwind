@@ -50,45 +50,50 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="./assets/plugins/slick/slick.1.8.1.css"
+      href="../assets/plugins/slick/slick.1.8.1.css"
     />
-    <link rel="stylesheet" href="./main.css" />
-    <link rel="stylesheet" href="./assets//css/common.css" />
+
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../assets//css/common.css" />
 
     <title>Description</title>
     <style>
-      .sticky a{
-    color: black;
-}
+      .sticky a {
+        color: black;
+      }
     </style>
   </head>
   <body>
     <main id="main">
       <!-- Navbar started  -->
-      <nav class="absolute top-0 w-full z-50 nav">
+      <!-- <nav class="absolute top-0 w-full z-50 nav">
         <ul
           class="flex list-none justify-center items-center lg:gap-20 gap-2 font-['nunito'] font-[600] text-[14px] uppercase py-2"
         >
-          <li><a class="text-white" href="index.html">Home</a></li>
-          <li><a class="text-white" href="gallery.html">Gallery</a></li>
+          <li><a class="text-white" href="../index.html">Home</a></li>
+          <li><a class="text-white" href="./gallery.html">Gallery</a></li>
           <li>
             <img
               class="mb-2"
-              src="./assets//images//header/Logo.svg"
+              src="../assets//images//header/Logo.svg"
               alt=""
               srcset=""
             />
           </li>
-          <li><a class="text-white" href="description.html">Destination</a></li>
-          <li><a class="text-white" href="about.html">About</a></li>
+          <li>
+            <a class="text-white" href="./destination.html">Destination</a>
+          </li>
+          <li><a class="text-white" href="./about.html">About</a></li>
         </ul>
-      </nav>
+
+      </nav> -->
+       <!-- Navbar ended  -->
       <div class="col-span-12">
         <div
-          class="relative bg-description bg-cover bg-no-repeat bg-center w-full lg:h-[622px] h-[212px]"
+          class="bg-black bg-cover bg-no-repeat bg-center  w-full lg:h-[622px] h-[212px]"
         >
           <h1
-            class="absolute font-nunito font-extrabold lg:text-[64px] text-[24px] text-[#FFFFFF] text-center lg:mt-[238px] mt-[46px] lg:ml-[642px] ml-[90px] lg:leading-[62px] leading-[34px]"
+            class=" font-nunito font-extrabold lg:text-[64px] text-[24px] text-[#FFFFFF] text-center lg:mt-[238px] mt-[46px] lg:ml-[642px] ml-[90px] lg:leading-[62px] leading-[34px]"
           >
             Inspiration for your <br />
             Next Tour
@@ -100,7 +105,7 @@
           </p>
         </div>
       </div>
-      <!-- Description started -->
+      <!-- Destination started -->
       <section id="description">
         <div
           class="container lg:-mt-20 grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 gap-5 mb-20 mt-10"
@@ -108,7 +113,7 @@
           <div class="relative group overflow-hidden rounded-[20px]">
             <img
               class="w-full lg:h-max-[350px] h-max-[192px] group-hover:scale-110 transition-all duration-500 ease-in-out"
-              src="./assets//images/description/ladhak.png"
+              src="../assets//images/destination/ladhak.png"
               alt=""
               srcset=""
             />
@@ -152,7 +157,7 @@
           <div class="relative group overflow-hidden rounded-[20px]">
             <img
               class="w-full lg:h-max-[350px] h-max-[192px] group-hover:scale-110 transition-all duration-500 ease-in-out"
-              src="./assets//images/description/dubai.png"
+              src="../assets//images/destination/dubai.png"
               alt=""
               srcset=""
             />
@@ -196,7 +201,7 @@
           <div class="relative group overflow-hidden rounded-[20px]">
             <img
               class="w-full lg:h-max-[350px] h-max-[192px] group-hover:scale-110 transition-all duration-500 ease-in-out"
-              src="./assets//images/description/sydney.png"
+              src="../assets//images/destination/sydney.png"
               alt=""
               srcset=""
             />
@@ -239,7 +244,7 @@
           <div class="relative group overflow-hidden rounded-[20px]">
             <img
               class="w-full lg:h-max-[350px] h-max-[192px] group-hover:scale-110 transition-all duration-500 ease-in-out"
-              src="./assets//images/description/edinburgh.png"
+              src="../assets//images/destination/edinburgh.png"
               alt=""
               srcset=""
             />
@@ -282,7 +287,7 @@
           <div class="relative group overflow-hidden rounded-[20px]">
             <img
               class="w-full lg:h-max-[350px] h-max-[192px] group-hover:scale-110 transition-all duration-500 ease-in-out"
-              src="./assets//images/description/kilimanjaro.png"
+              src="../assets//images/destination/kilimanjaro.png"
               alt=""
               srcset=""
             />
@@ -325,7 +330,7 @@
           <div class="relative group overflow-hidden rounded-[20px]">
             <img
               class="w-full lg:h-max-[350px] h-max-[192px] group-hover:scale-110 transition-all duration-500 ease-in-out"
-              src="./assets//images/description/fuji.png"
+              src="../assets//images/destination/fuji.png"
               alt=""
               srcset=""
             />
@@ -373,36 +378,60 @@
       <section id="pagination">
         <div>
           <div class="container mx-auto px-4">
-            <div class="flex flex-row flex-nowrap justify-between md:justify-center items-center" aria-label="Pagination">
-              <a class="flex w-10 h-10 mr-1 bg-[#F1B4C433] justify-center items-center rounded-lg border  bg-white text-black " href="#" title="Previous Page">
-                <i class="ph-caret-left  "></i>
+            <div
+              class="flex flex-row flex-nowrap justify-between md:justify-center items-center"
+              aria-label="Pagination"
+            >
+              <a
+                class="flex w-10 h-10 mx-2  bg-[#F1B4C433] justify-center items-center rounded-lg border bg-white text-black"
+                href="#"
+                title="Previous Page"
+              >
+                <i class="ph-caret-left"></i>
               </a>
-              <a class=" flex w-10 h-10 mx-1 justify-center items-center rounded-lg border border-gray-200 bg-[#F1B4C4] font-bold text-[16px] leading-[20px] text-[#D00338E5] hover:border-gray-300" href="#" title="Page 1">
-                  1
+              <a
+                class="flex w-10 h-10 mx-2 justify-center items-center rounded-lg border border-gray-200 bg-[#F1B4C4] font-bold text-[16px] leading-[20px] text-[#D00338E5]"
+                href="#"
+                title="Page 1"
+              >
+                1
               </a>
-              <a class=" flex w-10 h-10 mx-1 justify-center items-center rounded-lg border border-gray-200 bg-white text-black hover:border-gray-300" href="#" title="Page 2">
-                  2
+              <a
+                class="flex w-10 h-10 mx-2 justify-center items-center rounded-lg border text-[#D00338E5] bg-white font-bold"
+                href="#"
+                title="Page 2"
+              >
+                2
               </a>
-             
-              <a class=" flex w-10 h-10 mx-1 justify-center items-center rounded-lg border border-gray-200 bg-white text-black hover:border-gray-300" href="#" title="Page 4">
-                  3
+
+              <a
+                class="flex w-10 h-10 mx-2 justify-center items-center rounded-lg border  bg-white font-bold text-[#D00338E5] "
+                href="#"
+                title="Page 3"
+              >
+                3
               </a>
-              <a class=" flex w-10 h-10 mx-1 justify-center items-center rounded-lg border border-gray-200 bg-white text-black hover:border-gray-300" href="#" title="Page 4">
-                  4
+              <a
+                class="flex w-10 h-10 mx-2  justify-center items-center rounded-lg border  bg-white font-bold text-[#D00338E5]"
+                href="#"
+                title="Page 4"
+              >
+                4
               </a>
-              
-              <a class="flex w-10 h-10 ml-1 justify-center items-center rounded-full border border-gray-200 bg-white text-black hover:border-gray-300" href="#" title="Next Page">
+
+              <a
+                class="flex w-10 h-10 ml-1 justify-center items-center rounded-full border  bg-[#D00338E5] text-white text-[#D00338E5] "
+                href="#"
+                title="Next Page"
+              >
                 <i class="ph-caret-right"></i>
               </a>
             </div>
           </div>
         </div>
-
       </section>
 
       <!-- Pagination ended -->
-
-
 
       <!-- event banner -->
       <div class="container">
@@ -422,7 +451,7 @@
                 The Anicent Egypt
               </h3>
               <img
-                src="./assets/images/event_banner/Logo.png"
+                src="../assets/images/event_banner/Logo.png"
                 alt=""
                 srcset=""
               />
@@ -430,34 +459,7 @@
           </div>
         </div>
       </div>
-      <!-- event banner -->
-
-      <!-- Event Banner started -->
-      <!-- <section id="eventBanner">
-         <div class="container grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 max-h-[324px] lg:max-h-[324px]"> 
-        <div
-          class="container"
-        >
-            <img
-              class="w-full h-[324px]"
-              src="./assets/images/event banner/desert 1.png"
-              alt=""
-              srcset=""
-            />
-         <div class="absolute  lg:bottom-[143px] bottom-[120px] lg:left-[300px] left-[130px]"> 
-          <div class="absolute]"> 
-           
-            </div>
-
-            <img
-              class="absolute lg:bottom-[30px] bottom-3 lg:left-[30px] left-[120px]"
-              src="./assets//images/event banner/Logo.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </section> -->
-      <!-- Event Banner ended -->
+    
 
       <!-- Footer section started -->
       <section id="footer">
@@ -475,7 +477,7 @@
               <div>
                 <img
                   class="lg:mx-0 w-max mx-auto"
-                  src="./assets/images/footer/Logo.png"
+                  src="../assets/images/footer/Logo.png"
                   alt=""
                   srcset=""
                 />
@@ -490,12 +492,16 @@
               <div class="flex gap-3 mt-5 lg:mx-0 w-max mx-auto">
                 <img src="./assets/images/footer/VISA.png" alt="" srcset="" />
                 <img
-                  src="./assets/images/footer/Mastercard.png"
+                  src="../assets/images/footer/Mastercard.png"
                   alt=""
                   srcset=""
                 />
-                <img src="./assets/images/footer/amex.png" alt="" srcset="" />
-                <img src="./assets/images/footer/Paypal.png" alt="" srcset="" />
+                <img src="../assets/images/footer/amex.png" alt="" srcset="" />
+                <img
+                  src="../assets/images/footer/Paypal.png"
+                  alt=""
+                  srcset=""
+                />
               </div>
             </div>
 
@@ -579,28 +585,28 @@
             <div class="flex gap-3">
               <a href="">
                 <img
-                  src="./assets/images/footer/linkedin.png"
+                  src="../assets/images/footer/linkedin.png"
                   alt=""
                   srcset=""
                 />
               </a>
               <a href="">
                 <img
-                  src="./assets/images/footer/Facebook.png"
+                  src="../assets/images/footer/Facebook.png"
                   alt=""
                   srcset=""
                 />
               </a>
               <a href="">
                 <img
-                  src="./assets/images/footer/Instagram.png"
+                  src="../assets/images/footer/Instagram.png"
                   alt=""
                   srcset=""
                 />
               </a>
               <a href="">
                 <img
-                  src="./assets/images/footer/Youtube.png"
+                  src="../assets/images/footer/Youtube.png"
                   alt=""
                   srcset=""
                 />
@@ -616,7 +622,7 @@
     <!-- jquery cdn  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!--  slick carousel   -->
-    <script src="./assets/plugins/slick/slick.1.8.1.js"></script>
-    <script src="./index.js"></script>
+    <script src="../assets/plugins/slick/slick.1.8.1.js"></script>
+    <script src="../index.js"></script>
   </body>
 </html>

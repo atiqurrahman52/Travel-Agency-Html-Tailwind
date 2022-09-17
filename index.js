@@ -127,11 +127,19 @@ $(document).ready(function () {
   $('.gallery_slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    infinite:true,
+    speed: 1000,
+    autoplaySpeed: 0,
     arrows: false,
+    cssEase:"linear"
   });
 
+  $('.gallery_slider').mouseover(function() {
+    $(this).slick('play')
+  });
+  $('.gallery_slider').mouseout(function() {
+    $(this).slick('pause')
+  });
 });
 
 

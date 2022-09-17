@@ -55,12 +55,27 @@
     <main id="main">
       <!-- Navbar started  -->
       <nav class="absolute top-0 w-full z-50 nav">
+        <div class="flex justify-between items-center ">
+          <span class="text-2xl  cursor-pointer md:hidden block">
+            <img class="h-10 inline"
+              src="../assets//images/header/Logo.svg">
+           
+          </span>
+    
+          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+           
+            <img onclick="Menu(this)" src="./images/header/cross.svg" alt="">
+          </span>
+          </div>
+
+
         <ul
-          class="flex list-none justify-center items-center lg:gap-20 gap-2 font-['nunito'] font-[600] text-[14px] uppercase py-2"
+          class="md:flex list-none justify-center items-center lg:gap-20 gap-2 font-['nunito'] font-[600] text-[14px] uppercase py-2"
         >
+       
           <li><a href="index.html">Home</a></li>
           <li><a href="./pages/gallery.html">Gallery</a></li>
-          <li>
+          <li class="md:flex hidden">
             <img
               class="mb-2"
               src="./assets//images//header/Logo.svg"
@@ -73,6 +88,9 @@
         </ul>
       </nav>
       <!-- Navbar ended  -->
+
+    
+
 
       <!-- Hero section started  -->
       <section id="hero_section" class="curb">
@@ -313,34 +331,9 @@
           </div>
         </div>
       </div>
-      <!-- event banner -->
+      <!-- event banner end -->
 
-      <!-- Event Banner started -->
-      <!-- <section id="eventBanner">
-         <div class="container grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 max-h-[324px] lg:max-h-[324px]"> 
-        <div
-          class="container"
-        >
-            <img
-              class="w-full h-[324px]"
-              src="./assets/images/event banner/desert 1.png"
-              alt=""
-              srcset=""
-            />
-         <div class="absolute  lg:bottom-[143px] bottom-[120px] lg:left-[300px] left-[130px]"> 
-          <div class="absolute]"> 
-           
-            </div>
-
-            <img
-              class="absolute lg:bottom-[30px] bottom-3 lg:left-[30px] left-[120px]"
-              src="./assets//images/event banner/Logo.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </section> -->
-      <!-- Event Banner ended -->
+     
 
       <!-- Inspiration section started -->
       <section id="inspiration" class="container mt-36">

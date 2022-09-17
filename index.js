@@ -1,6 +1,6 @@
 
 
-// partners slider
+// 
 $(document).ready(function () {
   $(window).scroll(function(){
     if($(this).scrollTop() > 0){
@@ -86,7 +86,7 @@ $(document).ready(function () {
   });
 
 
-// gallery
+// combo
   $(".combo").slick({
     slidesToScroll: 1,
     autoplaySpeed: 2000,
@@ -123,4 +123,26 @@ $(document).ready(function () {
     ]
   });
 
+  // gallery
+  $('.gallery_slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+  });
+
 });
+
+
+// menubar 
+function Menu(e) {
+  let list = document.querySelector("ul");
+  e.name === "menu"
+    ? ((e.name = "close"),
+      list.classList.add("top-[80px]"),
+      list.classList.add("opacity-100"))
+    : ((e.name = "menu"),
+      list.classList.remove("top-[80px]"),
+      list.classList.remove("opacity-100"));
+}

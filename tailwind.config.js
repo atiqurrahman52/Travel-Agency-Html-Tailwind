@@ -34,6 +34,7 @@ module.exports = {
         'experinece': "url('./assets/images/event_banner/desert1.png')",
         'destination': "url('./assets/images/destination/destination.png')",
         'single-destination':"url('./assets/images/single-destination/single-destination.svg')",
+        'minali':"url('./assets/images/single-destination/Manali 1.png')",
         
     },
     },

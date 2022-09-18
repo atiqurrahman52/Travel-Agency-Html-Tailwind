@@ -67,6 +67,7 @@ $(document).ready(function () {
     arrows: false,
     rows: 2,
     speed: 8000,
+    autoplaySpeed:0,
     pauseOnHover: true,
     cssEase: "linear",
     responsive: [

@@ -141,7 +141,21 @@ $(document).ready(function () {
   $('.gallery_slider').mouseout(function() {
     $(this).slick('pause')
   });
+
+  // count up 
+$('.count').each(function () {
+  var $this = $(this);
+  jQuery({ Counter: 0 }).animate({ Counter: $this.attr('data-stop') }, {
+    duration: 2000,
+    easing: 'swing',
+    step: function (now) {
+      $this.text(Math.ceil(now));
+    }
+  });
 });
+});
+
+
 
 
 // menubar 
@@ -155,3 +169,15 @@ function Menu(e) {
       list.classList.remove("top-[80px]"),
       list.classList.remove("opacity-100"));
 }
+
+
+// Accordion started
+let accordions = document.querySelectorAll('.accordion');
+accordions[0].click();
+      accordions.forEach(acco =>{
+        accordions[0].click();
+        acco.onclick =() => {
+          accordions.forEach(subAcco =>{ subAcco.classList.remove('active')})
+          acco.classList.add('active');
+        }
+      })

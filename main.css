@@ -137,12 +137,11 @@
 .accordion-container .accordion{
     margin-bottom: 20px;
     cursor: pointer;  
-    width: 856px;  
     border-radius: 45%;
 }
 .accordion-container .accordion.active .accordion-heading{
     background: rgba(208, 3, 56, 0.9);
-    border-radius: 15px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 .accordion-container .accordion.active .accordion-heading h3{
    color: #fff;
@@ -162,11 +161,7 @@
     justify-content: space-between;
     gap: 10px;
     background: #fff;
-    /* background: rgba(224, 227, 231, 0.783); */
-    /* border: 2px solid #000; */
-    
     padding: 10px 20px;
-    /* border-radius: 15px 10px 0px 0px; */
     border-radius: 15px;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(213, 29, 76, 0.05);
@@ -198,18 +193,11 @@
     background: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
     border-radius: 0px 0px 10px 10px;
-    font-family: 'Nunito';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-/* or 125% */
-
-
-
-/* Text Color/Text-Secondary */
-
-color: #5C5C5C;
+    color: #5C5C5C;
 }
 @keyframes animate{
     0%{

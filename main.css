@@ -5,7 +5,7 @@
 
 
 *{
-    /* font-family: 'Square Peg', cursive; */
+  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,6 +16,9 @@
     width: 100%;
     background: rgba(208, 3, 56, 0.1);
 } */
+nav .active{
+    color: red;
+}
 .curb{
     clip-path: ellipse(100% 55% at 50% 33%);
     background: #ce03391a;
@@ -42,25 +45,25 @@
 
 /* Featured section started */
 .card {
-    /* width: 416px; */
-    /* height: 312px; */
+    /* width: 416px;
+    height: 312px;
     position: relative;
     border-radius: 20px;
     cursor: pointer;
-    overflow: hidden;
+    overflow: hidden; */
 }
 .card img {
-    /* border-radius: 20px; */
+    /* border-radius: 20px;
     transition: all 0.5s ease;
     object-fit: cover;
-    overflow: hidden;
+    overflow: hidden; */
 }
 .card:hover img {
-    transition: all 0.5s ease;
+    /* transition: all 0.5s ease;
     scale: 1.1;
     object-fit: cover;
-    /* width: 100%; */
-    overflow: hidden;
+    width: 100%;
+    overflow: hidden; */
 }
 
 /* Featured section ended */
@@ -204,3 +207,25 @@
         transform: scaleY(0);
     }
 }
+
+
+/* all destination started  */
+
+.country .itemBox.hide{
+    display: none;
+}
+section ul li.active{
+    background: #F1B4C4;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    gap: 10px;
+    border: 1px solid rgba(208, 3, 56, 0.4);
+    cursor: pointer;
+}
+
+
+
+
+
+

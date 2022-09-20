@@ -1,4 +1,39 @@
+//  navbar 
+const button = document.querySelector('#menu-button');
+const menu = document.querySelector('#menu');
 
+
+button.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+
+
+// all destination filter started 
+let list = document.querySelectorAll(".list");
+let itemBox = document.querySelectorAll(".itemBox");
+
+for (let i = 0; i < list.length; i++) {
+  list[i].addEventListener("click", function () {
+    for (let j = 0; j < list.length; j++) {
+      list[j].classList.remove("active");
+    }
+    this.classList.add("active");
+
+    let dataFilter = this.getAttribute("data-filter");
+    for (let k = 0; k < itemBox.length; k++) {
+      itemBox[k].classList.remove("active");
+      itemBox[k].classList.add("hide");
+
+      if (
+        itemBox[k].getAttribute("data-item") == dataFilter ||
+        dataFilter == "all"
+      ) {
+        itemBox[k].classList.remove("hide");
+        itemBox[k].classList.add("active");
+      }
+    }
+  });
+}
 
 // 
 $(document).ready(function () {
@@ -19,8 +54,7 @@ $(document).ready(function () {
     autoplay: true,
     centerMode: true,
     centerPadding: "200px",
-    prevArrow: false,
-    nextArrow: false,
+    arrows: false,
   
     responsive: [
       {
@@ -103,8 +137,14 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          infinite: true,
-          dots: true
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: false,
         }
       },
       {
@@ -181,3 +221,8 @@ accordions[0].click();
           acco.classList.add('active');
         }
       })
+
+
+      
+
+    

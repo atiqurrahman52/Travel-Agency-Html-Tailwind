@@ -35,7 +35,7 @@ nav .active{
 @media only screen and (max-width: 400px) {
     .curb{
         clip-path: none;
-        padding-bottom: 850px;
+        padding-bottom: 450px;
        
     }
 

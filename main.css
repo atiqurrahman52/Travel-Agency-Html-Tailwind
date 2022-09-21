@@ -2,20 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-*{
-  
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Hero section started  */
-/* .nav{
-    width: 100%;
-    background: rgba(208, 3, 56, 0.1);
-} */
 nav .active{
     color: red;
 }
@@ -214,14 +201,18 @@ nav .active{
 .country .itemBox.hide{
     display: none;
 }
-section ul li.active{
-    background: #F1B4C4;
+section ul li{
     border-radius: 5px;
     color: #fff;
     padding: 10px;
-    gap: 10px;
-    border: 1px solid rgba(208, 3, 56, 0.4);
+    border: 1px solid rgba(208, 3, 56, 0);
     cursor: pointer;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+section ul li.active{
+    background: #F1B4C4;
+    border: 1px solid rgba(208, 3, 56, 0.4);
 }
 
 

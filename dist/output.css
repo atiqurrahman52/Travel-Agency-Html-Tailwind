@@ -1821,6 +1821,11 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.text-\[red\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity));
+}
+
 .opacity-100 {
   opacity: 1;
 }
@@ -2603,6 +2608,26 @@ section ul li.active{
 
   .lg\:gap-\[50px\] {
     gap: 50px;
+  }
+
+  .lg\:gap-\[15px\] {
+    gap: 15px;
+  }
+
+  .lg\:gap-\[5px\] {
+    gap: 5px;
+  }
+
+  .lg\:gap-\[95px\] {
+    gap: 95px;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
+  }
+
+  .lg\:gap-6 {
+    gap: 1.5rem;
   }
 
   .lg\:p-11 {

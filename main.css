@@ -9,7 +9,7 @@ nav .active{
 .curb{
     clip-path: ellipse(100% 55% at 50% 33%);
     background: #ce03391a;
-    padding-bottom: 1px;
+   
 }
 
 .sticky{
@@ -21,8 +21,9 @@ nav .active{
 
 @media only screen and (max-width: 400px) {
     .curb{
-        clip-path: none;
-        padding-bottom: 450px;
+        /* clip-path: none; */
+        /* clip-path: ellipse(100% 55% at 50% 33%); */
+        /* clip-path: path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z'); */
        
     }
 

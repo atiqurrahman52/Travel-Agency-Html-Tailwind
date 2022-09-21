@@ -213,8 +213,9 @@ function Menu(e) {
 
 // Accordion started
 let accordions = document.querySelectorAll('.accordion');
-accordions[0].click();
+// accordions[0].click();
       accordions.forEach(acco =>{
+        accordions[0].click();
         accordions[0].click();
         acco.onclick =() => {
           accordions.forEach(subAcco =>{ subAcco.classList.remove('active')})

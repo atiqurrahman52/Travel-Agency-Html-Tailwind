@@ -53,11 +53,8 @@
   </head>
   <body>
     <main id="main">
-      <!-- Navbar started  -->
-     
-      <!-- Navbar ended  -->
-
-      <!-- nex navbar started -->
+   
+      <!--  navbar started -->
       <header>
         <nav
           class="absolute top-0 z-50 nav flex flex-wrap items-center justify-between md:justify-center w-full py-4 md:py-2 px-4"
@@ -157,7 +154,7 @@
                 <a class="block" href="./pages/gallery.html">Gallery</a>
               </li>
               <li class="hidden md:block">
-                <a class="max-w-[156px] w-full h-full max-h-[62px] m" href="#">
+                <a class="max-w-[156px] w-full h-full max-h-[62px] m" href="./index.html">
                   <img src="./assets/images/header/Logo.svg" alt=""
                 /></a>
               </li>
@@ -181,9 +178,9 @@
       <section id="hero_section" class="curb">
         <div class="container">
           <div
-            class="grid justify-items-center items-center grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 pt-20"
+            class="grid grid-cols-12 py-24 gap-4"
           >
-            <div>
+            <div class="col-span-12 lg:col-span-6">
               <p
                 class="font-squarepeg font-[400] lg:text-[42px] text-[32px] lg:text-left text-center text-[#FFC921] leading-[48px]"
               >
@@ -200,27 +197,22 @@
                 Let’s start your journey with us, your dream will come true...
               </p>
             </div>
-            <div>
+            <div class="col-span-12 lg:col-span-6 md:mb-5">
               <img
                 src="./assets/images/header/Hero Section.png"
                 alt=""
                 srcset=""
               />
             </div>
-          </div>
-        </div>
 
-        <!-- Count down section started -->
-        <div class="container">
-          <div
-            class="grid grid-cols-12 gap-6 my-[45px] lg:mt-[100px] mt-[70px] lg:mb[100px] mb-[190px]"
-          >
-            <div class="lg:col-span-3 col-span-6">
-              <div
+            <!-- counter -->
+              
+              <div class="lg:col-span-3 col-span-6">
+                <div
                 class="flex md:gap-5 gap-2 p-1 flex-col md:flex-row items-center md:items-center justify-center md:justify-center"
               >
                 <i
-                  class="ph-globe-hemisphere-west text-[#D00338E5]/90 md:text-[35px] text-[28px]"
+                  class="ph-globe-hemisphere-west text-[#D00338]/90 md:text-[35px] text-[28px]"
                 ></i>
                 <div class="text-center md:text-left space-y-2">
                   <span
@@ -238,10 +230,10 @@
                   </h3>
                 </div>
               </div>
-            </div>
-
-            <div class="lg:col-span-3 col-span-6">
-              <div
+              </div>
+  
+              <div class="lg:col-span-3 col-span-6">
+                <div
                 class="flex md:gap-5 gap-2 p-1 flex-col md:flex-row items-center md:items-center justify-center md:justify-center"
               >
                 <!-- <i class="ph-globe-hemisphere-west text-[#D00338E5] md:text-[35px] text-[28px]"></i> -->
@@ -276,7 +268,6 @@
                     />
                   </g>
                 </svg>
-
                 <div class="text-center md:text-left space-y-2">
                   <span
                     class="count text-[#D00338E5]/90 font-nunito font-extrabold lg:text-[20px] text-[16px] leading-[28px]"
@@ -293,10 +284,10 @@
                   </h3>
                 </div>
               </div>
-            </div>
-
-            <div class="lg:col-span-3 col-span-6">
-              <div
+              </div>
+  
+              <div class="lg:col-span-3 col-span-6">
+                <div
                 class="flex md:gap-5 gap-2 p-1 flex-col md:flex-row items-center md:items-center justify-center md:justify-center"
               >
                 <i
@@ -308,7 +299,6 @@
                   >
                     Best Price</span
                   >
-
                   <h3
                     class="text-[#393E50] font-nunito font-normal lg:text-[16px] text-[14px] leading-[20px]"
                   >
@@ -316,35 +306,45 @@
                   </h3>
                 </div>
               </div>
-            </div>
-
-            <div class="lg:col-span-3 col-span-6">
-              <div
-                class="flex md:gap-5 gap-2 p-1 flex-col md:flex-row items-center md:items-center justify-center md:justify-center"
-              >
-                <i
-                  class="ph-user text-[#D00338E5]/90 md:text-[35px] text-[28px]"
-                ></i>
-                <div class="text-center md:text-left space-y-2">
-                  <span
-                    class="count text-[#D00338E5]/90 font-nunito font-extrabold lg:text-[20px] text-[16px] leading-[28px]"
-                    data-stop="54"
-                  ></span>
-                  <span
-                    class="text-[#D00338E5]/90 font-nunito font-extrabold lg:text-[20px] text-[16px] leading-[28px]"
-                  >
-                    Million+</span
-                  >
-                  <h3
-                    class="text-[#393E50] font-nunito font-normal lg:text-[16px] text-[14px] leading-[20px]"
-                  >
-                    User Connected
-                  </h3>
+              </div>
+  
+              <div class="lg:col-span-3 col-span-6">
+                <div
+                  class="flex md:gap-5 gap-2 p-1 flex-col md:flex-row items-center md:items-center justify-center md:justify-center"
+                >
+                  <i
+                    class="ph-user text-[#D00338E5]/90 md:text-[35px] text-[28px]"
+                  ></i>
+                  <div class="text-center md:text-left space-y-2">
+                    <span
+                      class="count text-[#D00338E5]/90 font-nunito font-extrabold lg:text-[20px] text-[16px] leading-[28px]"
+                      data-stop="54"
+                    ></span>
+                    <span
+                      class="text-[#D00338E5]/90 font-nunito font-extrabold lg:text-[20px] text-[16px] leading-[28px]"
+                    >
+                      Million+</span
+                    >
+                    <h3
+                      class="text-[#393E50] font-nunito font-normal lg:text-[16px] text-[14px] leading-[20px]"
+                    >
+                      User Connected
+                    </h3>
+                  </div>
                 </div>
               </div>
-            </div>
+            <!-- counter -->
           </div>
         </div>
+
+        <!-- Count down section started -->
+        <!-- <div class="container">
+          <div
+            class="grid grid-cols-12 gap-6 my-[45px] lg:mt-[100px] mt-[70px] lg:mb[100px] mb-[190px]"
+          >
+            
+          </div>
+        </div> -->
 
         <!-- Count down section ended -->
       </section>

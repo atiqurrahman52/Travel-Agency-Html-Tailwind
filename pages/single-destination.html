@@ -59,27 +59,7 @@
   <body>
     <main id="main">
       <!-- Navbar started  -->
-      <!-- <nav class="w-full z-50 nav">
-        <ul
-          class="flex list-none justify-center items-center lg:gap-20 gap-2 font-['nunito'] font-[600] text-[14px] uppercase py-2"
-        >
-          <li><a class="text-[#5C5C5C]" href="../index.html">Home</a></li>
-          <li><a class="text-[#5C5C5C]" href="./gallery.html">Gallery</a></li>
-          <li>
-            <img
-              class="mb-2"
-              src="../assets/images/about/Logo.png"
-              alt=""
-              srcset=""
-            />
-          </li>
-          <li>
-            <a class="text-[#5C5C5C]" href="./destination.html">Destination</a>
-          </li>
-          <li><a class="text-[#5C5C5C]" href="./about.html">About</a></li>
-        </ul>
-      </nav> -->
-
+   /
       <!-- Navbar ended  -->
 
       <header>
@@ -181,7 +161,7 @@
                 <a class="block" href="../pages/gallery.html">Gallery</a>
               </li>
               <li class="hidden md:block">
-                <a class="max-w-[156px] w-full h-full max-h-[62px] m" href="#">
+                <a class="max-w-[156px] w-full h-full max-h-[62px] m" href="../index.html">
                   <img src="../assets/images/header/Logo.svg" alt=""
                 /></a>
               </li>
@@ -217,7 +197,7 @@
       <!-- incredible-turkey started -->
       <section id="incredible-turkey">
         <div class="container">
-          <div class="grid md:grid-cols-12 grid-cols-1 gap-4">
+          <div class="grid lg:grid-cols-12 grid-cols-1 gap-4">
             <div class=" col-span-1 md:col-span-8">
               <div class="mb-10">
                 <h3
@@ -510,52 +490,53 @@
                 >
                   Gallery
                 </h3>
-                <div class="grid lg:grid-flow-col lg:grid-rows-2  grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2">
+                <div class="grid lg:grid-flow-col lg:grid-rows-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2">
               
                   <!-- zero  -->
                  <div class="group rounded-[10px] overflow-hidden cursor-pointer lg:row-span-2">
                      <img
                        src="../assets/images/single-destination/image-1.png"
-                       class=""
+                       class="w-full h-full"
                
                        alt=""
                      />
                  </div>
                   <!-- one  -->
-                 <div class="md:block hidden group rounded-[10px] overflow-hidden cursor-pointer w-full h-[130px]" >
+                 <div class="group rounded-[10px] overflow-hidden cursor-pointer " >
                      <img
                      src="../assets/images/single-destination/image-2.png"
-                       class=" "
+                     class="w-full h-full"
                        alt=""
                      />
                  </div>
                   <!-- two  -->
-                 <div class="md:block hidden  group rounded-[10px] overflow-hidden cursor-pointer w-full h-[130px] ">
+                 <div class="group rounded-[10px] overflow-hidden cursor-pointer">
                      <img
                      src="../assets/images/single-destination/image-3.png"
-                       class=" "
+                     class="w-full h-full"
                        alt=""
                      />
                  </div>
                   <!-- three  -->
-                 <div class="md:block hidden  group rounded-[10px] overflow-hidden cursor-pointer w-full h-[130px]">
+                 <div class="group rounded-[10px] overflow-hidden cursor-pointer">
                      <img
                      src="../assets/images/single-destination/image-4.png"
-                       class=" "
+                     class="w-full h-full"
                        alt=""
                      />
                  </div>
                   <!-- four  -->
-                 <div class="md:flex hidden justify-center items-center  group rounded-[10px] overflow-hidden cursor-pointer w-full h-[130px]  ">
-                    <div class="">
+                 <div class="group rounded-[10px] overflow-hidden cursor-pointer">
+                    <div class="relative">
                       <img
                       src="../assets/images/single-destination/image-5.png"
-                        class=" "
+                        class="w-full h-full"
                         alt=""
                       />
-                    </div>
-                    <div class="absolute text-[#FFFFFF] font-nunito font-extrabold text-[24px] leading-[30px]">
-                      <p>25+</p>
+                      <div class="overlay absolute top-0 left-0 text-black font-nunito font-extrabold text-[24px] leading-[30px] w-full h-full bg-black/50">
+                        
+                        <p class="z-10 absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-white">25+</p>
+                      </div>
                     </div>
                  </div>
                 
@@ -601,25 +582,31 @@
                   action=""
                   class="p-[33px] rounded-[20px] bg-[#FFFFFF] shadow-[0px_0px_40px_rgba(0,0,0,0.05)]"
                 >
-                  <input
-                    class="appearance-none  block w-full text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px]"
+                  <div>
+                    <input
+                    class="appearance-none  block w-full text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px] border-0 focus:border-0"
                     id=""
                     type="text"
                     placeholder="Your Name"
                   />
+                  </div>
+                 <div>
                   <input
-                    class="appearance-none block w-full text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px]"
-                    id=""
-                    type="email"
-                    placeholder="Your Email"
-                  />
+                  class="appearance-none block w-full text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px] border-0 focus:border-0"
+                  id=""
+                  type="email"
+                  placeholder="Your Email"
+                />
+                 </div>
 
-                  <input
-                    class="appearance-none block w-full text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px]"
+                  <div>
+                    <input
+                    class="appearance-none block w-full text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px] border-0 focus:border-0"
                     id=""
                     type="tel"
                     placeholder="Phone"
                   />
+                  </div>
 
                   <!-- <input
                     class="appearance-none block lg:w-[350px] w-[288px] h-[48px] text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px]"
@@ -646,30 +633,36 @@
                         ></path>
                       </svg>
                     </div> -->
+                   <div>
                     <input
-                      datepicker=""
-                      type="text"
-                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg mb-[16px] focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 datepicker-input"
-                      placeholder="Choose Date of Travel"
-                    />
+                    datepicker=""
+                    type="text"
+                    class="bg-gray-50  text-gray-900 sm:text-sm rounded-lg mb-[16px]  w-full p-[16px]  dark:text-white datepicker-input  border-0 focus:border-0"
+                    placeholder="Choose Date of Travel"
+                  />
+                   </div>
                   </div>
 
+                 <div>
                   <input
-                    class="appearance-none block w-full text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px]"
-                    id=""
-                    type="text"
-                    placeholder="No of People"
-                  />
+                  class="appearance-none block w-full text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px] border-0 focus:border-0"
+                  id=""
+                  type="text"
+                  placeholder="No of People"
+                />
+                 </div>
 
+                <div>
                   <textarea
-                    class="appearance-none block text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px] w-full"
-                    id=""
-                    placeholder="Message"
-                    name=""
-                    id=""
-                    cols="30"
-                    rows="5"
-                  ></textarea>
+                  class="appearance-none block text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px] w-full border-0 focus:border-0"
+                  id=""
+                  placeholder="Message"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="5"
+                ></textarea>
+                </div>
 
                   <button
                     class="text-[#FFFFFF] text-[16px] font-nunito font-semibold leading-[16px] p-3 w-full bg-[#D00338E5] rounded-[8px]"
@@ -735,17 +728,17 @@
                 <div class="">
                   <div class="flex flex-wrap gap-4">
                     <a
-                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] mr-4"
+                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] "
                       href="#"
                       >Turkey</a
                     >
                     <a
-                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] mr-4"
+                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] "
                       href="#"
                       >Mountain</a
                     >
                     <a
-                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] mr-4"
+                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] "
                       href="#"
                       >City</a
                     >
@@ -757,17 +750,17 @@
                  
                 
                     <a
-                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] mr-4"
+                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] "
                       href="#"
                       >Mosque</a
                     >
                     <a
-                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] mr-4"
+                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] "
                       href="#"
                       >Hot air ballon</a
                     >
                     <a
-                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] mr-4"
+                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] "
                       href="#"
                       >Sunset</a
                     >
@@ -775,17 +768,17 @@
 
             
                     <a
-                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] mr-4"
+                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] "
                       href="#"
                       >Cox’s Bazar</a
                     >
                     <a
-                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] mr-4"
+                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] "
                       href="#"
                       >Istanbul
                     </a>
                     <a
-                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] mr-4"
+                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] "
                       href="#"
                       >Sky Dinning</a
                     >
@@ -793,17 +786,17 @@
 
              
                     <a
-                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] mr-4"
+                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] "
                       href="#"
                       >Camping</a
                     >
                     <a
-                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] mr-4"
+                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] "
                       href="#"
                       >Blue Voyage
                     </a>
                     <a
-                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] mr-4"
+                      class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px] "
                       href="#"
                       >City</a
                     >

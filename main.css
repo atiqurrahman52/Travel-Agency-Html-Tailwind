@@ -2,16 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+ input:focus{
+  box-shadow: none !important;
+}
+textarea:focus{
+  box-shadow: none !important;
+}
 
 
-/* Hero section started  */
 nav ul li.active {
-  /* color: #393E50; */
+
   position: relative;
 }
-/* nav .destination ul li.active {
-  color: #ffffff;
-} */
+
 
 nav ul li.active::after{
   content: '';
@@ -22,10 +25,7 @@ nav ul li.active::after{
   border-bottom: 2px solid #D00338E5;
   width: 20px;
 }
-/* nav ul li a.active{
-    color: #393E50;
-    background-color: blue;
-} */ 
+ 
 
 .curb {
   clip-path: ellipse(100% 100% at 50% 0%);
@@ -48,30 +48,7 @@ nav ul li.active::after{
 
 /* Hero section ended  */
 
-/* Featured section started */
-.card {
-  /* width: 416px;
-    height: 312px;
-    position: relative;
-    border-radius: 20px;
-    cursor: pointer;
-    overflow: hidden; */
-}
-.card img {
-  /* border-radius: 20px;
-    transition: all 0.5s ease;
-    object-fit: cover;
-    overflow: hidden; */
-}
-.card:hover img {
-  /* transition: all 0.5s ease;
-    scale: 1.1;
-    object-fit: cover;
-    width: 100%;
-    overflow: hidden; */
-}
 
-/* Featured section ended */
 
 /* inspiration started */
 .image-container {
@@ -91,49 +68,12 @@ nav ul li.active::after{
   display: flex;
   align-items: center;
 }
-.asia .slick-track {
-  /* display: flex; */
-  /* align-items: center; */
-}
 
 /* partners ended */
 
-/* footer started */
-.combo .slick-list {
-  padding-left: 0px !important;
-}
 
-#footer .footer_item {
-  position: relative;
-}
-#footer .footer_item::after {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: 0;
-  background-color: #000;
-  height: 1px;
-  width: 24%;
-}
 
-@media only screen and (max-width: 400px) {
-  #footer .footer_item {
-    position: relative;
-  }
-  #footer .footer_item::after:nth-child(2) {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 40px;
-    background-color: #000;
-    height: 1px;
-    width: 24%;
-  }
-}
-/* footer ended */
 
-#footer .footer_item {
-}
 
 
 /* accordion */
@@ -218,6 +158,7 @@ section ul li {
   color: #fff;
   padding: 10px;
   border: 1px solid rgba(208, 3, 56, 0);
+  /* border: red; */
   cursor: pointer;
   white-space: nowrap;
   margin-bottom: 10px;
@@ -226,3 +167,40 @@ section ul li.active {
   background: #f1b4c4;
   border: 1px solid rgba(208, 3, 56, 0.4);
 }
+
+/* all destination ended */
+
+
+
+.combo .slick-list {
+  padding-left: 0px !important;
+}
+/* footer started */
+/* #footer .footer_item {
+  position: relative;
+}
+#footer .footer_item::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #000;
+  height: 1px;
+  width: 24%;
+}
+
+@media only screen and (max-width: 600px) {
+  #footer .footer_item {
+    position: relative;
+  }
+  #footer .footer_item::after:nth-child(2) {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 40px;
+  
+    height: 1px;
+    width: 24%;
+  }
+} */
+/* footer ended */

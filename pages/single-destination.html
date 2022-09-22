@@ -201,8 +201,8 @@
       <!-- incredible-turkey started -->
       <section id="incredible-turkey">
         <div class="container">
-          <div class="grid lg:grid-cols-12 grid-cols-1 gap-4">
-            <div class="col-span-1 md:col-span-8">
+          <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-12 lg:col-span-8">
               <div class="mb-10">
                 <h3
                   class="text-[#393E50] font-nunito font-extrabold lg:text-[40px] text-[20px] lg:leading-[48px] leading-[28px] mb-4"
@@ -568,7 +568,7 @@
 
             <!-- Gallery turkey ended -->
             <!-- right side start-->
-            <div class="col-span-1 md:col-span-4">
+            <div class="col-span-12 lg:col-span-4">
               <!-- form started -->
               <div class="">
                 <form
@@ -577,7 +577,7 @@
                 >
                   <div>
                     <input
-                      class="appearance-none block w-full text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px] border-0 focus:border-0"
+                      class="appearance-none block w-full text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px] border-0 "
                       id=""
                       type="text"
                       placeholder="Your Name"
@@ -601,36 +601,14 @@
                     />
                   </div>
   
-                  <!-- <input
-                      class="appearance-none block lg:w-[350px] w-[288px] h-[48px] text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px]"
-                      id=""
-                      type="date"
-                      placeholder="Choose Date of Travel"
-                    /> -->
-  
+                
                   <div class="relative">
-                    <!-- <div
-                        class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="w-5 h-5 text-gray-500 dark:text-gray-400"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                            clip-rule="evenodd"
-                          ></path>
-                        </svg>
-                      </div> -->
+                    
                     <div>
                       <input
                         datepicker=""
                         type="text"
-                        class="bg-gray-50 text-gray-900 sm:text-sm rounded-lg mb-[16px] w-full p-[16px] dark:text-white datepicker-input border-0 focus:border-0"
+                        class="appearance-none bg-[#F8F8F8]  text-[14px] rounded-lg mb-[16px] w-full p-[16px] datepicker-input border-0 focus:border-0"
                         placeholder="Choose Date of Travel"
                       />
                     </div>
@@ -638,7 +616,7 @@
   
                   <div>
                     <input
-                      class="appearance-none block w-full text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px] border-0 focus:border-0"
+                      class="appearance-none block w-full  leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px] border-0 focus:border-0"
                       id=""
                       type="text"
                       placeholder="No of People"
@@ -888,7 +866,7 @@
 
       <!-- Footer section started -->
       <section id="footer">
-        <div class="container">
+        <div class="container mb-20">
           <div>
             <p
               class="text-center text-[#D00338E5] lg:text-[64px] text-[42px] font-quentin lg:leading-[86px] leading-[48px] lg:mb-[64px] mb-[40px]"
@@ -922,62 +900,67 @@
                   srcset=""
                 />
                 <img src="../assets/images/footer/amex.png" alt="" srcset="" />
-                <img
-                  src="../assets/images/footer/Paypal.png"
-                  alt=""
-                  srcset=""
-                />
+                <img src="../assets/images/footer/Paypal.png" alt="" srcset="" />
               </div>
             </div>
 
-            <div class="lg:col-span-3 col-span-6 lg:mb-[40px] mb-[24px]">
+            <div class="lg:col-span-3 md:col-span-4 col-span-6 lg:mb-[40px] mb-[24px]">
               <div>
                 <p
-                  class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] mb-[34px] footer_item"
+                  class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] pb-[10px] footer_item"
                 >
                   Inspiration For Tourcode
                 </p>
+                <span class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C]  md:inline-block mb-[32px] hidden "></span>
               </div>
-              <div
-                class="flex flex-col gap-[14px] text-[16px] text-[#747474] font-[400] font-poppins leading-[22px]"
-              >
-                <a href="#"> Ladhak </a>
+             
+            
+                <ul  class="flex flex-col gap-[14px] text-[16px] text-[#747474] font-[400] font-poppins leading-[22px]">
+                  <a href="#"> Ladhak </a>
                 <a href="#"> Dubai </a>
                 <a href="#"> Edinburgh </a>
                 <a href="#"> Kilimanjaro </a>
                 <a href="#"> Beijing </a>
                 <a href="#"> Miyajima </a>
                 <a href="#"> Sydney </a>
-              </div>
+                </ul>
+             
+
+
             </div>
 
-            <div class="lg:col-span-2 col-span-6">
+            <div class="lg:col-span-2 md:col-span-4 col-span-6">
               <div>
                 <p
-                  class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] lg:text-left text-right mb-[34px] footer_item"
+                  class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] md:text-left text-right pb-[10px] footer_item"
                 >
                   Quick Links
                 </p>
+                <span class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C] md:inline-block mb-[32px] hidden  "></span>
               </div>
-              <div
-                class="flex flex-col gap-[14px] lg:text-left text-right text-[16px] text-[#747474] font-[400] font-poppins leading-[22px]"
-              >
-                <a href="../index.html"> Home </a>
-                <a href="./about.html"> About Us </a>
-                <a href="./destination.html"> Destinations </a>
-                <a href="./gallery.html"> GALLERY </a>
+
+             
+                <ul  class="flex flex-col gap-[14px] md:text-left text-right text-[16px] text-[#747474] font-[400] font-poppins leading-[22px]">
+                  <a href="../index.html"> Home </a>
+                <a href="../pages/about.html"> About Us </a>
+                <a href="../pages/destination.html"> Destinations </a>
+                <a href="../pages/gallery.html"> GALLERY </a>
                 <a href="#"> Terms & Conditions </a>
                 <a href="#"> License </a>
-              </div>
+                </ul>
+           
+
+
             </div>
 
-            <div class="lg:col-span-3 col-span-12">
+            <div class="lg:col-span-3 md:col-span-4 col-span-12">
               <div>
                 <p
-                  class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] lg:mb-[34px] mb-[20px] footer_item"
+                  class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] pb-[10px] footer_item"
                 >
                   Get in touch
                 </p>
+                <span class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C] md:inline-block mb-[32px] hidden "></span>
               </div>
 
               <div
@@ -999,7 +982,7 @@
           <hr />
 
           <div
-            class="flex flex-col lg:flex-row items-center gap-5 justify-between mt-[30px] mb-8"
+            class="flex flex-col lg:flex-row items-center gap-5 justify-between mt-[30px]"
           >
             <p
               class="text-[#747474] font-nunito font-[600] text-[14px] leading-[16px]"
@@ -1008,28 +991,28 @@
             </p>
 
             <div class="flex gap-3">
-              <a href="">
+              <a href="#">
                 <img
                   src="../assets/images/footer/linkedin.png"
                   alt=""
                   srcset=""
                 />
               </a>
-              <a href="">
+              <a href="#">
                 <img
                   src="../assets/images/footer/Facebook.png"
                   alt=""
                   srcset=""
                 />
               </a>
-              <a href="">
+              <a href="#">
                 <img
                   src="../assets/images/footer/Instagram.png"
                   alt=""
                   srcset=""
                 />
               </a>
-              <a href="">
+              <a href="#">
                 <img
                   src="../assets/images/footer/Youtube.png"
                   alt=""
@@ -1040,7 +1023,7 @@
           </div>
         </div>
       </section>
-
+      <hr />
       <!-- Footer section ended -->
     </main>
 

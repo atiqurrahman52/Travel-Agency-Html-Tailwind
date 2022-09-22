@@ -59,7 +59,7 @@
     <title>Destination</title>
     <style>
       .sticky a {
-        color: black;
+        color: #393E50;
       }
     </style>
   </head>
@@ -176,7 +176,7 @@
                 >
               </li>
               <li
-                class="text-[#FFFFFF]  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                class="text-[#FFFFFF]  uppercase font-nunito font-semibold text-[14px] leading-[20px]"
               >
                 <a class="block" href="../pages/about.html">About</a>
               </li>
@@ -580,25 +580,29 @@ class="relative group overflow-hidden rounded-[20px] itemBox"
 
       <!-- Pagination ended -->
 
-      <!-- event banner started -->
+     
+
+      <!-- event banner -->
       <div class="container">
         <div class="grid grid-cols-12 mt-[90px]">
           <div class="col-span-12">
             <div
-              class="banner bg-experinece bg-cover bg-no-repeat bg-center rounded-[20px] p-[30px]"
+              class="banner bg-experinece bg-cover bg-no-repeat lg:bg-center bg-right rounded-[20px] p-5 "
             >
-              <p
-                class="font-pridi font-extralight text-[52px] leading-[50px] mb-[22px] text-[#4F4F4C] pl-[20%]"
-              >
-                Experience
-              </p>
-              <h3
-                class="font-teko font-medium text-[52px] leading-[50px] tracking-[13px] text-[#4F4F4C] mb-[63px] pl-[20%]"
-              >
-                The Anicent Egypt
-              </h3>
-              <img
-                src="../assets/images/event_banner/Logo.png"
+              <div class="pl-0 md:pl-[20%] ">
+                <p
+                  class="font-nunite font-[200] md:text-left text-center md:text-[52px] text-[24px] leading-[50px]  text-[#4F4F4C] "
+                >
+                  Experience
+                </p>
+                <h3
+                  class="font-nunito font-medium md:text-[52px] text-[16px]  lg:leading-[50px] leading-[32px] md:tracking-[13px] tracking-[10px] md:text-left text-center text-[#4F4F4C]"
+                >
+                  The Anicent Egypt
+                </h3>
+              </div>
+              <img class="mx-auto  md:ml-0"
+                src="./assets/images/event_banner/Logo.png"
                 alt=""
                 srcset=""
               />
@@ -606,7 +610,7 @@ class="relative group overflow-hidden rounded-[20px] itemBox"
           </div>
         </div>
       </div>
-      <!-- event banner ended  -->
+      <!-- event banner end -->
 
       <!--All Destination section started  -->
       <section id="all-destination">
@@ -1037,69 +1041,74 @@ class="relative group overflow-hidden rounded-[20px] itemBox"
                 </p>
               </div>
               <div class="flex gap-3 mt-5 lg:mx-0 w-max mx-auto">
-                <img src="./assets/images/footer/VISA.png" alt="" srcset="" />
+                <img src="../assets/images/footer/VISA.png" alt="" srcset="" />
                 <img
                   src="../assets/images/footer/Mastercard.png"
                   alt=""
                   srcset=""
                 />
                 <img src="../assets/images/footer/amex.png" alt="" srcset="" />
-                <img
-                  src="../assets/images/footer/Paypal.png"
-                  alt=""
-                  srcset=""
-                />
+                <img src="../assets/images/footer/Paypal.png" alt="" srcset="" />
               </div>
             </div>
 
-            <div class="lg:col-span-3 col-span-6 lg:mb-[40px] mb-[24px]">
+            <div class="lg:col-span-3 md:col-span-4 col-span-6 lg:mb-[40px] mb-[24px]">
               <div>
                 <p
-                  class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] mb-[34px] footer_item"
+                  class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] pb-[10px] footer_item"
                 >
                   Inspiration For Tourcode
                 </p>
+                <span class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C]  md:inline-block mb-[32px] hidden "></span>
               </div>
-              <div
-                class="flex flex-col gap-[14px] text-[16px] text-[#747474] font-[400] font-poppins leading-[22px]"
-              >
-                <a href="#"> Ladhak </a>
+             
+            
+                <ul  class="flex flex-col gap-[14px] text-[16px] text-[#747474] font-[400] font-poppins leading-[22px]">
+                  <a href="#"> Ladhak </a>
                 <a href="#"> Dubai </a>
                 <a href="#"> Edinburgh </a>
                 <a href="#"> Kilimanjaro </a>
                 <a href="#"> Beijing </a>
                 <a href="#"> Miyajima </a>
                 <a href="#"> Sydney </a>
-              </div>
+                </ul>
+             
+
+
             </div>
 
-            <div class="lg:col-span-2 col-span-6">
+            <div class="lg:col-span-2 md:col-span-4 col-span-6">
               <div>
                 <p
-                  class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] lg:text-left text-right mb-[34px] footer_item"
+                  class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] md:text-left text-right pb-[10px] footer_item"
                 >
                   Quick Links
                 </p>
+                <span class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C] md:inline-block mb-[32px] hidden  "></span>
               </div>
-              <div
-                class="flex flex-col gap-[14px] lg:text-left text-right text-[16px] text-[#747474] font-[400] font-poppins leading-[22px]"
-              >
-                <a href="../index.html"> Home </a>
-                <a href="./about.html"> About Us </a>
-                <a href="./destination.html"> Destinations </a>
-                <a href="./gallery.html"> GALLERY </a>
+
+             
+                <ul  class="flex flex-col gap-[14px] md:text-left text-right text-[16px] text-[#747474] font-[400] font-poppins leading-[22px]">
+                  <a href="../index.html"> Home </a>
+                <a href="../pages/about.html"> About Us </a>
+                <a href="../pages/destination.html"> Destinations </a>
+                <a href="../pages/gallery.html"> GALLERY </a>
                 <a href="#"> Terms & Conditions </a>
                 <a href="#"> License </a>
-              </div>
+                </ul>
+           
+
+
             </div>
 
-            <div class="lg:col-span-3 col-span-12">
+            <div class="lg:col-span-3 md:col-span-4 col-span-12">
               <div>
                 <p
-                  class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] lg:mb-[34px] mb-[20px] footer_item"
+                  class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] pb-[10px] footer_item"
                 >
                   Get in touch
                 </p>
+                <span class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C] md:inline-block mb-[32px] hidden "></span>
               </div>
 
               <div

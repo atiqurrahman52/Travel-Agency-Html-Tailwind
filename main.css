@@ -5,9 +5,28 @@
 
 
 /* Hero section started  */
-nav .active {
-  color: red;
+nav ul li.active {
+  /* color: #393E50; */
+  position: relative;
 }
+/* nav .destination ul li.active {
+  color: #ffffff;
+} */
+
+nav ul li.active::after{
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 2px solid #D00338E5;
+  width: 20px;
+}
+/* nav ul li a.active{
+    color: #393E50;
+    background-color: blue;
+} */ 
+
 .curb {
   clip-path: ellipse(100% 100% at 50% 0%);
   background: #ce03391a;
@@ -115,10 +134,7 @@ nav .active {
 
 #footer .footer_item {
 }
-#footer .footer_item {
-}
-#footer .footer_item {
-}
+
 
 /* accordion */
 .accordion-container .accordion {

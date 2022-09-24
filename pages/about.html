@@ -57,30 +57,10 @@
   </head>
   <body>
     <main id="main">
-      <!-- Navbar started  -->
-      <!-- <nav class="w-full z-50 nav">
-        <ul
-          class="flex list-none justify-center items-center lg:gap-20 gap-2 font-['nunito'] font-[600] text-[14px] uppercase py-2"
-        >
-          <li><a class="text-[#5C5C5C]" href="../index.html">Home</a></li>
-          <li><a class="text-[#5C5C5C]" href="./gallery.html">Gallery</a></li>
-          <li>
-            <img
-              class="mb-2"
-              src="../assets/images/about/Logo.png"
-              alt=""
-              srcset=""
-            />
-          </li>
-          <li>
-            <a class="text-[#5C5C5C]" href="./destination.html">Destination</a>
-          </li>
-          <li><a class="text-[#5C5C5C]" href="./about.html">About</a></li>
-        </ul>
-      </nav> -->
-
       <header>
-        <nav
+        <!-- <nav
+
+
           class="top-0 z-50 nav flex flex-wrap items-center justify-between md:justify-center w-full py-4 md:py-2 px-4 shadow-[0px_2px_20px_rgba(0,0,0,0.1)]"
         >
           <div>
@@ -199,12 +179,137 @@
               </li>
             </ul>
           </div>
+        </nav> -->
+
+        <nav
+          x-data="{ open: false }"
+          @keydown.window.escape="open = false"
+          class="nav w-full z-10 absolute top-0"
+        >
+          <div class="container">
+            <div class="flex items-center justify-between h-16">
+              <div class="flex items-center justify-between flex-grow">
+                <div class="flex-shrink-0">
+                  <h1
+                    class="text-lg font-semibold tracking-widest text-white uppercase"
+                  >
+                    <a href="#" class="logo block md:hidden">
+                      <img src="../assets/images/header/Logo.svg" alt="" />
+                    </a>
+                  </h1>
+                </div>
+                <div class="hidden lg:block mx-auto nav_item">
+                  <div class="flex items-center">
+                    <a
+                      href="../index.html"
+                      class="flex flex-row text-[#5C5C5C] active items-center px-3 py-2 uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                    >
+                      <span class="ml-2">Home</span>
+                    </a>
+                    <a
+                      href="../pages/gallery.html"
+                      class="flex flex-row items-center px-3 py-2 text-[#393E50] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                    >
+                      <span class="ml-2">Gallery</span>
+                    </a>
+                    <a
+                      href="./index.html"
+                      class="flex flex-row items-center px-3 py-2 text-sm font-medium text-[#393E50] rounded-md focus:outline-none relative link"
+                    >
+                      <span class="ml-2">
+                        <img src="../assets/images/header/Logo.svg" alt="" />
+                      </span>
+                    </a>
+                    <a
+                      href="../pages/destination.html"
+                      class="flex flex-row items-center px-3 py-2 text-[#393E50] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                    >
+                      <span class="ml-2">Destination</span>
+                    </a>
+                    <a
+                      href="../pages/about.html"
+                      class="flex flex-row items-center px-3 py-2 text-[#393E50] activePage uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                    >
+                      <span class="ml-2">About</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex lg:hidden">
+                <button
+                  @click="open = !open"
+                  class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white focus:outline-none focus:text-white"
+                  x-bind:aria-label="open ? 'Close main menu' : 'Main menu'"
+                  x-bind:aria-expanded="open"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    stroke="#d00338"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      :class="{'hidden': open, 'inline-flex': !open }"
+                      class="inline-flex"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                    <path
+                      :class="{'hidden': !open, 'inline-flex': open }"
+                      class="hidden"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            :class="{'block': open, 'hidden': !open}"
+            class="drop-shadow-2xl hidden lg:hidden bg-white/[.9] absolute mob_nav rounded-bl-[10px] z-20 w-full"
+          >
+            <div class="container mx-auto">
+              <div class="pt-2 pb-3">
+                <a
+                  href="../index.html"
+                  class="flex flex-row text-[#5C5C5C] active items-center px-3 py-2 uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                >
+                  <span class="ml-2">Home</span>
+                </a>
+                <a
+                  href="../pages/gallery.html"
+                  class="flex flex-row items-center px-3 py-2 text-[#393E50] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                >
+                  <span class="ml-2">Gallery</span>
+                </a>
+
+                <a
+                  href="../pages/destination.html"
+                  class="flex flex-row items-center px-3 py-2 text-[#393E50] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                >
+                  <span class="ml-2">Destination</span>
+                </a>
+                <a
+                  href="../pages/about.html"
+                  class="flex flex-row items-center px-3 py-2 text-[#393E50] active uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                >
+                  <span class="ml-2">About</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </nav>
       </header>
 
-      <section id="about">
+      <section id="about" class="lg:mt-[216px] mt-[160px]">
         <div class="container">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:mt-[96px] mt-[30px]">
+          <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="">
               <img src="../assets/images/about/about.png" alt="" />
             </div>
@@ -217,7 +322,7 @@
                   Tourelish is your only Trusted Tourmate
                 </h3>
                 <p
-                  class="text-[#747474] font-nunito font-semibold text-[16px] leading-[20px] mt-[20px] mb-[40px]"
+                  class="text-[#747474] font-nunito font-semibold text-[16px] leading-[20px] lg:mb-[40px] mb-[40px]"
                 >
                   The world's top travel counselors, the brands you knows, and
                   the advantages and genuine serenity you won't find elsewhere
@@ -227,66 +332,75 @@
               </div>
 
               <div class="lg:mb-[31px] mb-[16px]">
-                <div class="flex items-center gap-[16px] mb-[10px]">
+                <div class="flex gap-[16px] mb-[10px]">
                   <img
-                    class="w-[30px] h-[30px]"
+                    class="w-5 md:w-10 h-5 md:h-10"
                     src="../assets/images/about/tourguid.png"
                     alt=""
                   />
-                  <h3
-                    class="text-[#393E50] font-nunito font-extrabold lg:text-[28px] text-[16px] lg:leading-[30px] leading-[22px]"
-                  >
-                    Tour Guide
-                  </h3>
+                  <div class="flex flex-col gap-[10px]">
+                    <h3
+                      class="text-[#393E50] font-nunito font-extrabold lg:text-[28px] text-[16px] lg:leading-[30px] leading-[22px]"
+                    >
+                      Tour Guide hhh
+                    </h3>
+                    <p
+                      class="text-[#747474] font-nunito font-semibold lg:text-[16px] text-[14px] leading-[20px]"
+                    >
+                      The world's top travel counselors, the brands you knows,
+                      and the advantages and genuine serenity you won't find
+                      elsewhere.
+                    </p>
+                  </div>
                 </div>
-                <p
-                  class="ml-[50px] text-[#747474] font-nunito font-semibold lg:text-[16px] text-[14px] leading-[20px]"
-                >
-                  The world's top travel counselors, the brands you knows, and
-                  the advantages and genuine serenity you won't find elsewhere.
-                </p>
               </div>
 
               <div class="lg:mb-[31px] mb-[16px]">
-                <div class="flex items-center gap-[16px] mb-[10px]">
+                <div class="flex gap-[16px] mb-[10px]">
                   <img
-                    class="w-[30px] h-[30px]"
+                    class="w-5 md:w-10 h-5 md:h-10"
                     src="../assets/images/about/friendlyprice.png"
                     alt=""
                   />
-                  <h3
-                    class="text-[#393E50] font-nunito font-extrabold lg:text-[28px] text-[16px] lg:leading-[30px] leading-[22px]"
-                  >
-                    Friendly price
-                  </h3>
+                  <div class="flex flex-col gap-[10px]">
+                    <h3
+                      class="text-[#393E50] font-nunito font-extrabold lg:text-[28px] text-[16px] lg:leading-[30px] leading-[22px]"
+                    >
+                      Friendly price
+                    </h3>
+                    <p
+                      class="text-[#747474] font-nunito font-semibold lg:text-[16px] text-[14px] leading-[20px]"
+                    >
+                      The world's top travel counselors, the brands you knows,
+                      and the advantages and genuine serenity you won't find
+                      elsewhere.
+                    </p>
+                  </div>
                 </div>
-                <p
-                  class="ml-[50px] text-[#747474] font-nunito font-semibold lg:text-[16px] text-[14px] leading-[20px]"
-                >
-                  The world's top travel counselors, the brands you knows, and
-                  the advantages and genuine serenity you won't find elsewhere.
-                </p>
               </div>
 
               <div class="lg:mb-[31px] mb-[16px]">
-                <div class="flex items-center gap-[16px] mb-[10px]">
+                <div class="flex gap-[16px] mb-[10px]">
                   <img
-                    class="w-[30px] h-[30px]"
+                    class="w-5 md:w-10 h-5 md:h-10"
                     src="../assets/images/about/reliabletour.png"
                     alt=""
                   />
-                  <h3
-                    class="text-[#393E50] font-nunito font-extrabold lg:text-[28px] text-[16px] lg:leading-[30px] leading-[22px]"
-                  >
-                    Reliable Tour
-                  </h3>
+                  <div class="flex flex-col gap-[10px]">
+                    <h3
+                      class="text-[#393E50] font-nunito font-extrabold lg:text-[28px] text-[16px] lg:leading-[30px] leading-[22px]"
+                    >
+                      Reliable Tour
+                    </h3>
+                    <p
+                      class="text-[#747474] font-nunito font-semibold lg:text-[16px] text-[14px] leading-[20px]"
+                    >
+                      The world's top travel counselors, the brands you knows,
+                      and the advantages and genuine serenity you won't find
+                      elsewhere.
+                    </p>
+                  </div>
                 </div>
-                <p
-                  class="ml-[50px] text-[#747474] font-nunito font-semibold lg:text-[16px] text-[14px] leading-[20px]"
-                >
-                  The world's top travel counselors, the brands you knows, and
-                  the advantages and genuine serenity you won't find elsewhere.
-                </p>
               </div>
             </div>
           </div>
@@ -294,12 +408,15 @@
       </section>
 
       <!-- service section started -->
-      <section id="service" class="bg-[#F8F8F8] pt-[104px] pb-[88px] lg:my-[67px] my-[45px]">
+      <section
+        id="service"
+        class="md:bg-[#F8F8F8] bg-transparent pt-[104px] pb-[48px] lg:mt-[77px] mt-[50px]"
+      >
         <div class="container">
           <div class="grid grid-cols-1 md:grid-cols-12">
-            <div class="col-span-6">
+            <div class="col-span-6 md:order-1 order-2">
               <h3
-                class="text-[#393E50] lg:text-[40px] text-[20px] font-nunito font-extrabold lg:leading-[48px] leading-[28px] lg:mb-[20px] mb-[16px]"
+                class="text-[#393E50] lg:text-[40px] text-[20px] font-nunito font-extrabold lg:leading-[48px] leading-[28px] lg:mb-[20px] mb-[26px]"
               >
                 Why should Your Use Our Services?
               </h3>
@@ -317,24 +434,36 @@
                 class="flex items-center justify-center lg:justify-start gap-10 flex-wrap"
               >
                 <div class="flex flex-col justify-center items-center">
-                  <h3
-                    class="text-[#D00338E5]/90 font-nunito font-extrabold lg:text-[48px] text-[28px] lg:leading-[56px] leading-[36px] mb-[10px]"
-                    data-stop="35000"
-                  >
-                    55+
-                  </h3>
+                  <div>
+                    <span
+                      class="count text-[#D00338E5]/90 font-nunito font-extrabold lg:text-[48px] text-[28px] lg:leading-[56px] leading-[36px] mb-[10px]"
+                      data-stop="55"
+                    ></span>
+                    <span
+                      class="text-[#D00338E5]/90 font-nunito font-extrabold lg:text-[48px] text-[28px] lg:leading-[56px] leading-[36px] mb-[10px]"
+                      >+</span
+                    >
+                  </div>
+
                   <p
                     class="text-[ #393E50] font-nunito font-semibold text-[16px] leading-[20px] opacity-[.4]"
                   >
                     Country Touched
                   </p>
                 </div>
+
                 <div class="flex flex-col justify-center items-center">
-                  <h3
-                    class="text-[#D00338E5]/90 font-nunito font-extrabold lg:text-[48px] text-[28px] lg:leading-[56px] leading-[36px] mb-[10px]"
-                  >
-                    35,000+
-                  </h3>
+                  <div>
+                    <span
+                      class="count text-[#D00338E5]/90 font-nunito font-extrabold lg:text-[48px] text-[28px] lg:leading-[56px] leading-[36px] mb-[10px]"
+                      data-stop="35000"
+                    ></span>
+                    <span
+                      class="text-[#D00338E5]/90 font-nunito font-extrabold lg:text-[48px] text-[28px] lg:leading-[56px] leading-[36px] mb-[10px]"
+                      >+</span
+                    >
+                  </div>
+
                   <p
                     class="text-[ #393E50] font-nunito font-semibold text-[16px] leading-[20px] opacity-[.4]"
                   >
@@ -342,11 +471,17 @@
                   </p>
                 </div>
                 <div class="flex flex-col justify-center items-center">
-                  <h3
-                    class="text-[#D00338E5]/90 font-nunito font-extrabold lg:text-[48px] text-[28px] lg:leading-[56px] leading-[36px] mb-[10px]"
-                  >
-                    54 M+
-                  </h3>
+                  <div>
+                    <span
+                      class="count text-[#D00338E5]/90 font-nunito font-extrabold lg:text-[48px] text-[28px] lg:leading-[56px] leading-[36px] mb-[10px]"
+                      data-stop="54"
+                    ></span>
+                    <span
+                      class="text-[#D00338E5]/90 font-nunito font-extrabold lg:text-[48px] text-[28px] lg:leading-[56px] leading-[36px] mb-[10px]"
+                      >M+</span
+                    >
+                  </div>
+
                   <p
                     class="text-[ #393E50] font-nunito font-semibold text-[16px] leading-[20px] opacity-[.4]"
                   >
@@ -356,7 +491,7 @@
               </div>
             </div>
 
-            <div class="col-span-6">
+            <div class="col-span-6 order-1 md:mt-0 mt-[-119px]">
               <img src="../assets/images/about/travel.png" alt="" />
             </div>
           </div>
@@ -365,7 +500,7 @@
       <!-- service section started -->
       <!-- Partners section started -->
       <section id="partners">
-        <div class="container lg:mb-[100px] mb-[60px]">
+        <div class="container lg:mt-[64px] mt-[15px]">
           <div class="text-center lg:mb-[70px] mb-[40px]">
             <p
               class="font-nunito font-[800] text-center lg:text-[48px] text-[24px] text-[#393E50] lg:leading-[56px] leading-[40px] lg:mb-[20px] mb-[24px]"
@@ -373,7 +508,7 @@
               Our Partners
             </p>
             <p
-              class="font-nunito text-center font-[600] text-[#747474] text-[16px] leading-[20px] mb-[70px]"
+              class="font-nunito text-center font-[600] text-[#747474] text-[16px] leading-[20px] md:mb-[90px] mb-[40px]"
             >
               We team up with the best to give you an unmatchable experience
             </p>
@@ -513,7 +648,7 @@
       <!-- Partners section ended -->
 
       <!-- Country package started -->
-      <section id="country-package">
+      <section id="country-package" class="md:mt-[131px] mt-[44px]">
         <div class="container">
           <div
             class="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-5 mb-[128px]"
@@ -623,11 +758,11 @@
       <!-- Country package ended -->
 
       <!-- Footer section started -->
-      <section id="footer">
-        <div class="container mb-20">
+      <section id="footer" class="md:mt-[124px] mt-[-62px] mb-3">
+        <div class="container">
           <div>
             <p
-              class="text-center text-[#D00338E5] lg:text-[64px] text-[42px] font-quentin lg:leading-[86px] leading-[48px] lg:mb-[64px] mb-[40px]"
+              class="text-center text-[#D00338E5] lg:text-[64px] text-[42px] font-quentin lg:leading-[86px] leading-[48px] lg:mb-[64px] mb-[10px]"
             >
               Make memories with us
             </p>
@@ -658,33 +793,39 @@
                   srcset=""
                 />
                 <img src="../assets/images/footer/amex.png" alt="" srcset="" />
-                <img src="../assets/images/footer/Paypal.png" alt="" srcset="" />
+                <img
+                  src="../assets/images/footer/Paypal.png"
+                  alt=""
+                  srcset=""
+                />
               </div>
             </div>
 
-            <div class="lg:col-span-3 md:col-span-4 col-span-6 lg:mb-[40px] mb-[24px]">
+            <div
+              class="lg:col-span-3 md:col-span-4 col-span-6 lg:mb-[40px] mb-[24px]"
+            >
               <div>
                 <p
                   class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] pb-[10px] footer_item"
                 >
                   Inspiration For Tourcode
                 </p>
-                <span class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C]  md:inline-block mb-[32px] hidden "></span>
+                <span
+                  class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C] md:inline-block mb-[32px] hidden"
+                ></span>
               </div>
-             
-            
-                <ul  class="flex flex-col gap-[14px] text-[16px] text-[#747474] font-[400] font-poppins leading-[22px]">
-                  <a href="#"> Ladhak </a>
+
+              <ul
+                class="flex flex-col gap-[14px] text-[16px] text-[#747474] font-[400] font-poppins leading-[22px]"
+              >
+                <a href="#"> Ladhak </a>
                 <a href="#"> Dubai </a>
                 <a href="#"> Edinburgh </a>
                 <a href="#"> Kilimanjaro </a>
                 <a href="#"> Beijing </a>
                 <a href="#"> Miyajima </a>
                 <a href="#"> Sydney </a>
-                </ul>
-             
-
-
+              </ul>
             </div>
 
             <div class="lg:col-span-2 md:col-span-4 col-span-6">
@@ -694,21 +835,21 @@
                 >
                   Quick Links
                 </p>
-                <span class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C] md:inline-block mb-[32px] hidden  "></span>
+                <span
+                  class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C] md:inline-block mb-[32px] hidden"
+                ></span>
               </div>
 
-             
-                <ul  class="flex flex-col gap-[14px] md:text-left text-right text-[16px] text-[#747474] font-[400] font-poppins leading-[22px]">
-                  <a href="../index.html"> Home </a>
+              <ul
+                class="flex flex-col gap-[14px] md:text-left text-right text-[16px] text-[#747474] font-[400] font-poppins leading-[22px]"
+              >
+                <a href="../index.html"> Home </a>
                 <a href="../pages/about.html"> About Us </a>
                 <a href="../pages/destination.html"> Destinations </a>
                 <a href="../pages/gallery.html"> GALLERY </a>
                 <a href="#"> Terms & Conditions </a>
                 <a href="#"> License </a>
-                </ul>
-           
-
-
+              </ul>
             </div>
 
             <div class="lg:col-span-3 md:col-span-4 col-span-12">
@@ -718,7 +859,9 @@
                 >
                   Get in touch
                 </p>
-                <span class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C] md:inline-block mb-[32px] hidden "></span>
+                <span
+                  class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C] md:inline-block mb-[32px] hidden"
+                ></span>
               </div>
 
               <div
@@ -790,6 +933,7 @@
     <!--  slick carousel   -->
 
     <script src="../assets/plugins/slick/slick.1.8.1.js"></script>
+    <script src="../assets/plugins/AlpineJs/alpine.js"></script>
     <script src="./../index.js"></script>
   </body>
 </html>

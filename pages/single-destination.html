@@ -63,7 +63,7 @@
     <main id="main">
       <!-- Navbar started  -->
             <header>
-              <nav
+              <!-- <nav
                 class="top-0 z-50 nav flex flex-wrap items-center justify-between md:justify-center w-full py-4 md:py-2 px-4"
               >
                 <div>
@@ -169,20 +169,148 @@
                       /></a>
                     </li>
                     <li
-                      class="text-[#5C5C5C] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                      class="text-[#5C5C5C] uppercase font-nunito font-semibold text-[16px] leading-[20px] active"
                     >
                       <a class="block" href="../pages/destination.html"
                         >Destination</a
                       >
                     </li>
                     <li
-                      class="text-[#5C5C5C] uppercase font-nunito font-semibold text-[16px] leading-[20px] active"
+                      class="text-[#5C5C5C] uppercase font-nunito font-semibold text-[16px] leading-[20px] "
                     >
                       <a class="block" href="../pages/about.html">About</a>
                     </li>
                   </ul>
                 </div>
-              </nav>
+              </nav> -->
+           
+
+
+              <nav
+              x-data="{ open: false }"
+              @keydown.window.escape="open = false"
+              class="nav w-full z-10 absolute top-0"
+            >
+              <div class="container">
+                <div class="flex items-center justify-between h-16">
+                  <div class="flex items-center justify-between flex-grow">
+                    <div class="flex-shrink-0">
+                      <h1
+                        class="text-lg font-semibold tracking-widest text-white uppercase"
+                      >
+                        <a href="#" class="logo block md:hidden">
+                          <img src="../assets/images/header/Logo.svg" alt=""/>
+                        </a>
+                  
+                      </h1>
+                    </div>
+                    <div class="hidden lg:block mx-auto nav_item">
+                      <div class="flex items-center">
+                        <a
+                          href="../index.html"
+                          class="flex flex-row text-[#5C5C5C] active items-center px-3 py-2   uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                        >
+                          <span class="ml-2">Home</span>
+                        </a>
+                        <a
+                          href="../pages/gallery.html"
+                          class="flex flex-row items-center px-3 py-2 text-[#393E50]  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                        >
+                          <span class="ml-2">Gallery</span>
+                        </a>
+                        <a
+                          href="./index.html"
+                          class="flex flex-row items-center px-3 py-2 text-sm font-medium text-[#393E50] rounded-md focus:outline-none relative link"
+                        >
+                          <span class="ml-2">
+                            <img src="../assets/images/header/Logo.svg" alt=""/>
+                          </span>
+                        </a>
+                        <a
+                          href="../pages/destination.html"
+                          class="flex flex-row items-center px-3 py-2 text-[#393E50] activePage  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                        >
+                          <span class="ml-2">Destination</span>
+                        </a>
+                        <a
+                          href="../pages/about.html"
+                          class="flex flex-row items-center px-3 py-2 text-[#393E50] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                        >
+                          <span class="ml-2">About</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="flex lg:hidden">
+                    <button
+                      @click="open = !open"
+                      class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white  focus:outline-none focus:text-white"
+                      x-bind:aria-label="open ? 'Close main menu' : 'Main menu'"
+                      x-bind:aria-expanded="open"
+                    >
+                      <svg
+                        class="w-6 h-6"
+                        stroke="#d00338"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          :class="{'hidden': open, 'inline-flex': !open }"
+                          class="inline-flex"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"
+                        />
+                        <path
+                          :class="{'hidden': !open, 'inline-flex': open }"
+                          class="hidden"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                :class="{'block': open, 'hidden': !open}"
+                class="drop-shadow-2xl hidden lg:hidden bg-white/[.9] absolute mob_nav rounded-bl-[10px] z-20  w-full"
+              >
+                <div class="container mx-auto">
+                  <div class="pt-2 pb-3">
+                    <a
+                      href="../index.html"
+                      class="flex flex-row text-[#5C5C5C] active items-center px-3 py-2   uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                    >
+                      <span class="ml-2">Home</span>
+                    </a>
+                    <a
+                      href="../pages/gallery.html"
+                      class="flex flex-row items-center px-3 py-2 text-[#393E50]  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                    >
+                      <span class="ml-2">Gallery</span>
+                    </a>
+      
+                    <a
+                      href="../pages/destination.html"
+                      class="flex flex-row items-center px-3 py-2 text-[#393E50] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                    >
+                      <span class="ml-2">Destination</span>
+                    </a>
+                    <a
+                      href="../pages/about.html"
+                      class="flex flex-row items-center px-3 py-2 text-[#393E50]  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                    >
+                      <span class="ml-2">About</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </nav> 
             </header>
       <!-- Navbar ended  -->
 
@@ -1033,6 +1161,7 @@
 
     <script src="../assets/plugins/slick/slick.1.8.1.js"></script>
     <script src="./../assets/plugins/datepicker/datepicker.js"></script>
+    <script src="../assets/plugins/AlpineJs/alpine.js"></script>
     <script src="./../index.js"></script>
   </body>
 </html>

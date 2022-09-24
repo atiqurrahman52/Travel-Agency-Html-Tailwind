@@ -1,14 +1,4 @@
 
-//  navbar 
-const button = document.querySelector('#menu-button');
-const menu = document.querySelector('#menu');
-
-
-button.addEventListener('click', () => {
-  menu.classList.toggle('hidden');
-});
-
-
 // all destination filter started 
 let list = document.querySelectorAll(".list");
 let itemBox = document.querySelectorAll(".itemBox");
@@ -35,6 +25,14 @@ for (let i = 0; i < list.length; i++) {
     }
   });
 }
+// navbar 
+// const button = document.querySelector('#menu-button');
+// const menu = document.querySelector('#menu');
+
+
+// button.addEventListener('click', () => {
+//   menu.classList.toggle('hidden');
+// });
 
 // 
 $(document).ready(function () {
@@ -45,6 +43,7 @@ $(document).ready(function () {
         $('.nav').removeClass('sticky')
     }
 });
+
 
 
   $(".asia").slick({
@@ -151,13 +150,7 @@ $(document).ready(function () {
           centerMode: false,
         }
       },
-      // {
-      //   breakpoint: 480,
-      //   settings: {
-      //     slidesToShow: 1,
-      //     slidesToScroll: 1
-      //   }
-      // }
+    
     ]
   });
 

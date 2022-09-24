@@ -11,20 +11,22 @@ textarea:focus{
 
 
 nav ul li.active {
-
   position: relative;
 }
 
 
-nav ul li.active::after{
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-bottom: 2px solid #D00338E5;
-  width: 20px;
+/* nav div li.active::after{ */
+  .activePage::after{
+    content: '';
+    position: absolute;
+    bottom: 16px;
+    /* left: 50%; */
+    left: 686px;
+    transform: translateX(-50%);
+    border-bottom: 2px solid #D00338E5;
+    width: 20px;
 }
+
  
 
 .curb {
@@ -33,7 +35,7 @@ nav ul li.active::after{
 }
 
 .sticky {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   background-color: #fff;
   transition: 0.5s;

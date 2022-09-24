@@ -67,7 +67,7 @@
     <main id="main">
       <header>
         <nav
-          class="absolute top-0 z-50 nav flex flex-wrap items-center justify-between md:justify-center w-full py-4 md:py-2 px-4"
+          class="absolute top-0 z-50 nav  flex flex-wrap items-center justify-between md:justify-center w-full py-4 md:py-2 px-4"
         >
           <div>
             <a href="#">
@@ -151,15 +151,15 @@
             id="menu"
           >
             <ul
-              class="flex items-center justify-center flex-col md:flex-row gap-4 md:gap-20"
+              class="flex items-center  justify-center flex-col md:flex-row gap-4 md:gap-20"
             >
               <li
-                class="text-[#FFFFFF] uppercase font-nunito font-semibold text-[14px] leading-[20px]"
+                class="md:text-[#FFFFFF] text-[#5C5C5C] uppercase font-nunito font-semibold text-[14px] leading-[20px]"
               >
                 <a class="block" href="../index.html">Home</a>
               </li>
               <li
-                class="text-[#FFFFFF]  uppercase font-nunito font-semibold text-[14px] leading-[20px]"
+                class="md:text-[#FFFFFF] text-[#5C5C5C] uppercase font-nunito font-semibold text-[14px] leading-[20px]"
               >
                 <a class="block" href="../pages/gallery.html">Gallery</a>
               </li>
@@ -169,14 +169,14 @@
                 /></a>
               </li>
               <li
-                class="text-[#FFFFFF]  uppercase font-nunito font-semibold text-[14px] leading-[20px] active"
+                class="md:text-[#FFFFFF] text-[#5C5C5C]  uppercase font-nunito font-semibold text-[14px] leading-[20px] active"
               >
                 <a class="block" href="../pages/destination.html"
                   >Destination</a
                 >
               </li>
               <li
-                class="text-[#FFFFFF]  uppercase font-nunito font-semibold text-[14px] leading-[20px]"
+                class="md:text-[#FFFFFF] text-[#5C5C5C] uppercase font-nunito font-semibold text-[14px] leading-[20px]"
               >
                 <a class="block" href="../pages/about.html">About</a>
               </li>
@@ -190,7 +190,7 @@
           class="bg-destination bg-cover bg-no-repeat bg-center w-full lg:h-[622px] h-[212px] flex flex-col items-center justify-center lg:gap-[50px] gap-[20px]"
         >
           <p
-            class="font-nunito font-extrabold lg:text-[64px] text-[24px] text-[#FFFFFF] text-center lg:leading-[62px] leading-[34px]"
+            class="font-nunito font-extrabold lg:text-[64px] text-[24px] md:mt-0 mt-2 text-[#FFFFFF] text-center lg:leading-[62px] leading-[34px]"
           >
             Inspiration for your <br />
             Next Tour
@@ -583,34 +583,39 @@ class="relative group overflow-hidden rounded-[20px] itemBox"
      
 
       <!-- event banner -->
-      <div class="container">
-        <div class="grid grid-cols-12 mt-[90px]">
-          <div class="col-span-12">
-            <div
-              class="banner bg-experinece bg-cover bg-no-repeat lg:bg-center bg-right rounded-[20px] p-5 "
-            >
-              <div class="pl-0 md:pl-[20%] ">
-                <p
-                  class="font-nunite font-[200] md:text-left text-center md:text-[52px] text-[24px] leading-[50px]  text-[#4F4F4C] "
-                >
-                  Experience
-                </p>
-                <h3
-                  class="font-nunito font-medium md:text-[52px] text-[16px]  lg:leading-[50px] leading-[32px] md:tracking-[13px] tracking-[10px] md:text-left text-center text-[#4F4F4C]"
-                >
-                  The Anicent Egypt
-                </h3>
+      <section id="event" class="md:mt-[168px] mt-[80px]">
+        <div class="container">
+          <div class="grid grid-cols-12">
+            <div class="col-span-12">
+              <div
+                class="banner bg-experinece bg-cover bg-no-repeat lg:bg-center bg-right rounded-[20px] p-5"
+              >
+                <div class="pl-0 md:pl-[20%]">
+                  <p
+                    class="font-nunite font-[200] md:text-left text-center md:text-[52px] text-[24px] leading-[50px] md:mb-[22px] mb-[31px] text-[#4F4F4C]"
+                  >
+                    Experience
+                  </p>
+                  <h3
+                    class="font-nunito font-medium md:text-[52px] text-[16px] lg:leading-[50px] leading-[32px] md:tracking-[13px] tracking-[10px] md:text-left text-center text-[#4F4F4C]"
+                  >
+                    The Anicent Egypt
+                  </h3>
+                </div>
+                <img
+                  class="mx-auto md:ml-0"
+                  src="../assets/images/event_banner/Logo.png"
+                  alt=""
+                  srcset=""
+                />
               </div>
-              <img class="mx-auto  md:ml-0"
-                src="./assets/images/event_banner/Logo.png"
-                alt=""
-                srcset=""
-              />
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- event banner end -->
+
+    
 
       <!--All Destination section started  -->
       <section id="all-destination">

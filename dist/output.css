@@ -871,6 +871,10 @@ video {
   margin-top: 5rem;
 }
 
+.mb-\[60px\] {
+  margin-bottom: 60px;
+}
+
 .mr-\[334px\] {
   margin-right: 334px;
 }
@@ -933,10 +937,6 @@ video {
 
 .mb-\[127px\] {
   margin-bottom: 127px;
-}
-
-.mb-\[60px\] {
-  margin-bottom: 60px;
 }
 
 .mb-\[70px\] {
@@ -1940,7 +1940,11 @@ textarea:focus{
   box-shadow: none !important;
 }
 
-nav ul li.active {
+/* nav ul li.active {
+  position: relative;
+} */
+
+.activePage{
   position: relative;
 }
 
@@ -1949,9 +1953,9 @@ nav ul li.active {
 .activePage::after{
   content: '';
   position: absolute;
-  bottom: 16px;
-  /* left: 50%; */
-  left: 686px;
+  bottom: 2px;
+  left: 50%;
+  /* left: 686px; */
   transform: translateX(-50%);
   border-bottom: 2px solid #D00338E5;
   width: 20px;
@@ -2282,6 +2286,10 @@ section ul li.active {
 
   .md\:mt-\[168px\] {
     margin-top: 168px;
+  }
+
+  .md\:mb-\[128px\] {
+    margin-bottom: 128px;
   }
 
   .md\:mt-20 {

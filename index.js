@@ -25,14 +25,7 @@ for (let i = 0; i < list.length; i++) {
     }
   });
 }
-// navbar 
-// const button = document.querySelector('#menu-button');
-// const menu = document.querySelector('#menu');
 
-
-// button.addEventListener('click', () => {
-//   menu.classList.toggle('hidden');
-// });
 
 // 
 $(document).ready(function () {

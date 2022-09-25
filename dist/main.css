@@ -1379,10 +1379,6 @@ video {
   background-color: rgb(208 3 56 / 0.1);
 }
 
-.bg-experinece {
-  background-image: url('/assets/images/event_banner/desert2.png');
-}
-
 .bg-destination {
   background-image: url('/assets/images/destination/destination.png');
 }
@@ -1391,48 +1387,12 @@ video {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
-.bg-single-destination {
-  background-image: url('/assets/images/single-destination/single-destination.svg');
-}
-
-.bg-\[url\(\)\] {
-  background-image: url();
-}
-
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
-
-.bg-\[url\(\'\/assets\/images\/event_banner\/desert2\.png\'\)\] {
+.bg-experinece {
   background-image: url('/assets/images/event_banner/desert2.png');
 }
 
-.bg-\[url\(\'\.\/\'\)\] {
-  background-image: url('./');
-}
-
-.bg-\[url\(\'\.\/assets\'\)\] {
-  background-image: url('./assets');
-}
-
-.bg-\[url\(\'\.\/assets\/\'\)\] {
-  background-image: url('./assets/');
-}
-
-.bg-\[url\(\'\.\/assets\/images\/\'\)\] {
-  background-image: url('./assets/images/');
-}
-
-.bg-\[url\(\'\.\/assets\/images\/event_banner\'\)\] {
-  background-image: url('./assets/images/event_banner');
-}
-
-.bg-\[url\(\'\.\/assets\/images\/event_banner\/\'\)\] {
-  background-image: url('./assets/images/event_banner/');
-}
-
-.bg-\[url\(\'\.\/assets\/images\/event_banner\/desert2\.png\'\)\] {
-  background-image: url('./assets/images/event_banner/desert2.png');
+.bg-single-destination {
+  background-image: url('/assets/images/single-destination/single-destination.svg');
 }
 
 .from-\[\#00000000\]\/0 {

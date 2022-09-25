@@ -36,7 +36,7 @@
         <nav
           x-data="{ open: false }"
           @keydown.window.escape="open = false"
-          class="nav w-full z-10 absolute top-0"
+          class="nav w-full z-10 absolute top-0 shadow-[0px_2px_20px_rgba(0,0,0,0.1)]"
         >
           <div class="container">
             <div class="flex items-center justify-between h-16">
@@ -351,8 +351,8 @@
       </section>
       <!-- service section started -->
       <!-- Partners section started -->
-      <section id="partners">
-        <div class="container lg:mt-[64px] mt-[15px]">
+      <section id="partners" class="lg:mt-[64px] mt-[15px]">
+        <div class="container ">
           <div class="text-center lg:mb-[70px] mb-[40px]">
             <p
               class="font-nunito font-[800] text-center lg:text-[48px] text-[24px] text-[#393E50] lg:leading-[56px] leading-[40px] lg:mb-[20px] mb-[24px]"

@@ -30,9 +30,6 @@
     <main id="main">
       <!--  navbar started -->
       <header>
-        
-     
-
         <nav
           x-data="{ open: false }"
           @keydown.window.escape="open = false"
@@ -190,8 +187,7 @@
               />
             </div>
 
-            <!-- counter start-->
-
+            <!-- counter-->
             <div class="lg:col-span-3 col-span-6">
               <div
                 class="flex md:gap-5 gap-2 p-1 flex-col md:flex-row items-center md:items-center justify-center md:justify-center"
@@ -322,15 +318,17 @@
           </div>
         </div>
       </section>
-
+      <!-- Hero section ended -->
+       <!-- Featured section started  -->
       <section id="featured">
         <h1
           class="text-center lg:text-[32px] text-[24px] text-[#393E50] font-nunito font-[800] mt-9"
         >
           Featured Trips for You
         </h1>
-        <div
-          class="container grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 gap-5 mb-20 mt-10"
+        <div class="container">
+          <div
+          class="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 gap-5 mb-20 mt-10"
         >
           <div class="relative group overflow-hidden rounded-[20px]">
             <div class="">
@@ -343,7 +341,7 @@
             </div>
             <div class="absolute top-[33px] left-[32px] space-y-[15px]">
               <p class="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
-                Hollywood Hills Upscale
+                Hollywood Hills Upscale ju
               </p>
               <p class="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
                 $1100
@@ -407,6 +405,7 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
       <!-- Featured section ended -->
 
@@ -442,122 +441,124 @@
       <!-- event banner end -->
 
       <!-- Inspiration section started -->
-      <section id="" class="container mt-16">
+      <section id="" class="mt-16">
+       <div class="container">
         <h3
-          class="text-center font-quentin font-[400] md:text-[80px] text-[32px] text-[#D4D4D4] lg:leading-[90px] leading-[48px] mb-[48px]"
-        >
-          Inspiration
-        </h3>
+        class="text-center font-quentin font-[400] md:text-[80px] text-[32px] text-[#D4D4D4] lg:leading-[90px] leading-[48px] mb-[48px]"
+      >
+        Inspiration
+      </h3>
 
+      <div
+        class="grid lg:grid-flow-col lg:grid-rows-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 xl:gap-6"
+      >
+        <!-- zero  -->
         <div
-          class="grid lg:grid-flow-col lg:grid-rows-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 xl:gap-6"
+          class="relative group rounded-[16px] overflow-hidden cursor-pointer lg:row-span-3 lg:col-span-3 h-[216px] lg:h-[477px]"
         >
-          <!-- zero  -->
-          <div
-            class="relative group rounded-[16px] overflow-hidden cursor-pointer lg:row-span-3 lg:col-span-3 h-[216px] lg:h-[477px]"
+          <img
+            src="./assets//images/inspiration/ladhak.png"
+            class="group-hover:scale-110 transition duration-1000 w-full h-full"
+            alt=""
+          />
+          <p
+            class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[#FFFFFF] font-nunito font-extrabold text-[24px] leading-[30px]"
           >
-            <img
-              src="./assets//images/inspiration/ladhak.png"
-              class="group-hover:scale-110 transition duration-1000 w-full h-full"
-              alt=""
-            />
-            <p
-              class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[#FFFFFF] font-nunito font-extrabold text-[24px] leading-[30px]"
-            >
-              Ladhak
-            </p>
-          </div>
-          <!-- one  -->
-          <div
-            class="relative group rounded-[16px] overflow-hidden cursor-pointer h-[216px] lg:h-[310px] lg:row-span-2"
-          >
-            <img
-              src="./assets//images/inspiration/dubai.png"
-              class="group-hover:scale-110 transition duration-1000 w-full h-full"
-              alt=""
-            />
-            <p
-              class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[#FFFFFF] font-nunito font-extrabold text-[24px] leading-[30px]"
-            >
-              Dubai
-            </p>
-          </div>
-          <!-- two  -->
-          <div
-            class="relative group rounded-[16px] overflow-hidden cursor-pointer h-[216px] lg:h-[143px]"
-          >
-            <img
-              src="./assets//images/inspiration/sydney.png"
-              class="group-hover:scale-110 transition duration-1000 w-full h-full"
-              alt=""
-            />
-            <p
-              class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[#FFFFFF] font-nunito font-extrabold text-[24px] leading-[30px]"
-            >
-              Sydney
-            </p>
-          </div>
-          <!-- three  -->
-          <div
-            class="relative group rounded-[16px] overflow-hidden cursor-pointer h-[216px] lg:h-[143px]"
-          >
-            <img
-              src="./assets//images/inspiration/edinburgh.png"
-              class="group-hover:scale-110 transition duration-1000 w-full h-full"
-              alt=""
-            />
-            <p
-              class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[#FFFFFF] font-nunito font-extrabold text-[24px] leading-[30px]"
-            >
-              Edinburgh
-            </p>
-          </div>
-          <!-- four  -->
-          <div
-            class="relative group rounded-[16px] overflow-hidden cursor-pointer h-[216px] lg:h-[310px] lg:row-span-2"
-          >
-            <img
-              src="./assets//images/inspiration/kilimanjaro.png"
-              class="group-hover:scale-110 transition duration-1000 w-full h-full"
-              alt=""
-            />
-            <p
-              class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[#FFFFFF] font-nunito font-extrabold text-[24px] leading-[30px]"
-            >
-              Kilimanjaro
-            </p>
-          </div>
-          <!-- five  -->
-          <div
-            class="relative group rounded-[16px] overflow-hidden cursor-pointer h-[216px] lg:h-[310px] lg:row-span-2"
-          >
-            <img
-              src="./assets//images/inspiration/miyajima.png"
-              class="group-hover:scale-110 transition duration-1000 w-full h-full"
-              alt=""
-            />
-            <p
-              class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[#FFFFFF] font-nunito font-extrabold text-[24px] leading-[30px]"
-            >
-              Miyajima
-            </p>
-          </div>
-          <!-- six  -->
-          <div
-            class="relative group rounded-[16px] overflow-hidden cursor-pointer lg:col-span-1 h-[216px] lg:h-[143px]"
-          >
-            <img
-              src="./assets//images/inspiration/beijing.png"
-              class="group-hover:scale-110 transition duration-1000 w-full h-full"
-              alt=""
-            />
-            <p
-              class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[#FFFFFF] font-nunito font-extrabold text-[24px] leading-[30px]"
-            >
-              Beijing
-            </p>
-          </div>
+            Ladhak
+          </p>
         </div>
+        <!-- one  -->
+        <div
+          class="relative group rounded-[16px] overflow-hidden cursor-pointer h-[216px] lg:h-[310px] lg:row-span-2"
+        >
+          <img
+            src="./assets//images/inspiration/dubai.png"
+            class="group-hover:scale-110 transition duration-1000 w-full h-full"
+            alt=""
+          />
+          <p
+            class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[#FFFFFF] font-nunito font-extrabold text-[24px] leading-[30px]"
+          >
+            Dubai
+          </p>
+        </div>
+        <!-- two  -->
+        <div
+          class="relative group rounded-[16px] overflow-hidden cursor-pointer h-[216px] lg:h-[143px]"
+        >
+          <img
+            src="./assets//images/inspiration/sydney.png"
+            class="group-hover:scale-110 transition duration-1000 w-full h-full"
+            alt=""
+          />
+          <p
+            class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[#FFFFFF] font-nunito font-extrabold text-[24px] leading-[30px]"
+          >
+            Sydney
+          </p>
+        </div>
+        <!-- three  -->
+        <div
+          class="relative group rounded-[16px] overflow-hidden cursor-pointer h-[216px] lg:h-[143px]"
+        >
+          <img
+            src="./assets//images/inspiration/edinburgh.png"
+            class="group-hover:scale-110 transition duration-1000 w-full h-full"
+            alt=""
+          />
+          <p
+            class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[#FFFFFF] font-nunito font-extrabold text-[24px] leading-[30px]"
+          >
+            Edinburgh
+          </p>
+        </div>
+        <!-- four  -->
+        <div
+          class="relative group rounded-[16px] overflow-hidden cursor-pointer h-[216px] lg:h-[310px] lg:row-span-2"
+        >
+          <img
+            src="./assets//images/inspiration/kilimanjaro.png"
+            class="group-hover:scale-110 transition duration-1000 w-full h-full"
+            alt=""
+          />
+          <p
+            class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[#FFFFFF] font-nunito font-extrabold text-[24px] leading-[30px]"
+          >
+            Kilimanjaro
+          </p>
+        </div>
+        <!-- five  -->
+        <div
+          class="relative group rounded-[16px] overflow-hidden cursor-pointer h-[216px] lg:h-[310px] lg:row-span-2"
+        >
+          <img
+            src="./assets//images/inspiration/miyajima.png"
+            class="group-hover:scale-110 transition duration-1000 w-full h-full"
+            alt=""
+          />
+          <p
+            class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[#FFFFFF] font-nunito font-extrabold text-[24px] leading-[30px]"
+          >
+            Miyajima
+          </p>
+        </div>
+        <!-- six  -->
+        <div
+          class="relative group rounded-[16px] overflow-hidden cursor-pointer lg:col-span-1 h-[216px] lg:h-[143px]"
+        >
+          <img
+            src="./assets//images/inspiration/beijing.png"
+            class="group-hover:scale-110 transition duration-1000 w-full h-full"
+            alt=""
+          />
+          <p
+            class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[#FFFFFF] font-nunito font-extrabold text-[24px] leading-[30px]"
+          >
+            Beijing
+          </p>
+        </div>
+      </div>
+       </div>
       </section>
       <!-- Inspiration section end -->
 
@@ -696,7 +697,8 @@
 
       <!-- Combo section started  -->
       <section id="combo" class="md:mt-[127px] mt-[40px]">
-        <div class="container grid grid-cols-12 gap-4">
+       <div class="container">
+        <div class=" grid grid-cols-12 gap-4">
           <div class="col-span-12 lg:col-span-4">
             <p
               class="text-[#393E50] lg:text-[48px] text-[24px] font-nunito font-extrabold lg:leading-[56px] leading-[40px] lg:text-left text-center mb-[20px]"
@@ -767,6 +769,7 @@
           </div>
           <!-- </div> -->
         </div>
+       </div>
       </section>
       <!-- Combo section ended -->
 
@@ -1080,8 +1083,8 @@
       <!-- Africa slider section ended -->
 
       <!-- Partners section started -->
-      <section id="partners">
-        <div class="container md:mt-[100px] mt-[30px]">
+      <section id="partners" class="md:mt-[100px] mt-[30px]">
+        <div class="container ">
           <div class="text-center lg:mb-[70px] mb-[40px]">
             <p
               class="font-nunito font-[800] text-center lg:text-[48px] text-[24px] text-[#393E50] lg:leading-[56px] leading-[40px] md:mb-[20px] mb-[14px]"
@@ -1229,8 +1232,8 @@
       <!-- Partners section ended -->
 
       <!-- Footer section started -->
-      <section id="footer" class="md:mt-[100px] mt-[40px]">
-        <div class="container mb-10">
+      <section id="footer" class="md:mt-[100px] mt-[40px] mb-10">
+        <div class="container ">
           <div>
             <p
               class="text-center text-[#D00338E5] font-normal lg:text-[64px] text-[32px] font-quentin lg:leading-[86px] leading-[48px] lg:mb-[64px] mb-[30px]"

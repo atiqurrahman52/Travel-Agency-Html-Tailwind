@@ -1407,6 +1407,34 @@ video {
   background-image: url('/assets/images/event_banner/desert2.png');
 }
 
+.bg-\[url\(\'\.\/\'\)\] {
+  background-image: url('./');
+}
+
+.bg-\[url\(\'\.\/assets\'\)\] {
+  background-image: url('./assets');
+}
+
+.bg-\[url\(\'\.\/assets\/\'\)\] {
+  background-image: url('./assets/');
+}
+
+.bg-\[url\(\'\.\/assets\/images\/\'\)\] {
+  background-image: url('./assets/images/');
+}
+
+.bg-\[url\(\'\.\/assets\/images\/event_banner\'\)\] {
+  background-image: url('./assets/images/event_banner');
+}
+
+.bg-\[url\(\'\.\/assets\/images\/event_banner\/\'\)\] {
+  background-image: url('./assets/images/event_banner/');
+}
+
+.bg-\[url\(\'\.\/assets\/images\/event_banner\/desert2\.png\'\)\] {
+  background-image: url('./assets/images/event_banner/desert2.png');
+}
+
 .from-\[\#00000000\]\/0 {
   --tw-gradient-from: rgb(0 0 0 / 0);
   --tw-gradient-to: rgb(0 0 0 / 0);

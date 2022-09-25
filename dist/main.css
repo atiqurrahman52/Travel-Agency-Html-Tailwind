@@ -1395,6 +1395,18 @@ video {
   background-image: url('/assets/images/single-destination/single-destination.svg');
 }
 
+.bg-\[url\(\)\] {
+  background-image: url();
+}
+
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+
+.bg-\[url\(\'\/assets\/images\/event_banner\/desert2\.png\'\)\] {
+  background-image: url('/assets/images/event_banner/desert2.png');
+}
+
 .from-\[\#00000000\]\/0 {
   --tw-gradient-from: rgb(0 0 0 / 0);
   --tw-gradient-to: rgb(0 0 0 / 0);

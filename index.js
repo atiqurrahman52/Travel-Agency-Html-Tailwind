@@ -41,7 +41,7 @@ $(document).ready(function () {
 
   $(".asia").slick({
     infinite: true,
-    speed: 300,
+    speed: 2000,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
@@ -90,7 +90,7 @@ $(document).ready(function () {
     arrows: false,
     rows: 2,
     speed: 8000,
-    autoplaySpeed:0,
+    
     pauseOnHover: true,
     cssEase: "linear",
     responsive: [
@@ -113,7 +113,7 @@ $(document).ready(function () {
 // combo
   $(".combo").slick({
     slidesToScroll: 1,
-    autoplaySpeed: 2000,
+    speed: 2000,
     autoplay: true,
     infinite: true,
     arrows: false,

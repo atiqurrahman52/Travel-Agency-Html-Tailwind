@@ -1954,7 +1954,7 @@ textarea:focus{
   position: absolute;
   bottom: 2px;
   left: 50%;
-  /* left: 686px; */
+ 
   transform: translateX(-50%);
   border-bottom: 2px solid #D00338E5;
   width: 20px;
@@ -2106,7 +2106,7 @@ section ul li {
   color: #fff;
   padding: 10px;
   border: 1px solid rgba(208, 3, 56, 0);
-  /* border: red; */
+
   cursor: pointer;
   white-space: nowrap;
   margin-bottom: 10px;
@@ -2123,37 +2123,6 @@ section ul li.active {
   padding-left: 0px !important;
 }
 
-/* footer started */
-
-/* #footer .footer_item {
-  position: relative;
-}
-#footer .footer_item::after {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: 0;
-  background-color: #000;
-  height: 1px;
-  width: 24%;
-}
-
-@media only screen and (max-width: 600px) {
-  #footer .footer_item {
-    position: relative;
-  }
-  #footer .footer_item::after:nth-child(2) {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 40px;
-  
-    height: 1px;
-    width: 24%;
-  }
-} */
-
-/* footer ended */
 
 .hover\:border:hover {
   border-width: 1px;

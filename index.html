@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
 
     <!-- font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -321,24 +322,29 @@
       <!-- Hero section ended -->
        <!-- Featured section started  -->
       <section id="featured">
-        <h1
-          class="text-center lg:text-[32px] text-[24px] text-[#393E50] font-nunito font-[800] mt-9"
+       <div class="container">
+         <div class="mt-5 md:mt-12">
+          <h1
+          class="text-center lg:text-[32px] text-[24px] text-[#393E50] font-nunito font-extrabold mb-8 md:mb-14"
         >
           Featured Trips for You
         </h1>
-        <div class="container">
+        
+          <!-- <div
+          class="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 gap-6 mb-20 mt-10"
+        > -->
           <div
-          class="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 gap-5 mb-20 mt-10"
+          class="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 gap-6"
         >
           <div class="relative group overflow-hidden rounded-[20px]">
-            <div class="">
+         
               <img
                 class="w-full group-hover:scale-125 transition-all duration-[2000ms]"
                 src="./assets//images/featured/hollywood hills.png"
                 alt=""
                 srcset=""
               />
-            </div>
+       
             <div class="absolute top-[33px] left-[32px] space-y-[15px]">
               <p class="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
                 Hollywood Hills Upscale 
@@ -354,16 +360,16 @@
               </p>
             </div>
           </div>
-
+  
           <div class="relative group overflow-hidden rounded-[20px]">
-            <div class="">
+      
               <img
                 class="w-full group-hover:scale-125 transition-all duration-[2000ms]"
                 src="./assets//images/featured/nordic hall.png"
                 alt=""
                 srcset=""
               />
-            </div>
+           
             <div class="absolute top-[33px] left-[32px] space-y-[15px]">
               <p class="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
                 Nordic Arctic Hall
@@ -379,16 +385,16 @@
               </p>
             </div>
           </div>
-
+  
           <div class="relative group overflow-hidden rounded-[20px]">
-            <div class="">
+          
               <img
                 class="w-full group-hover:scale-125 transition-all duration-[2000ms]"
                 src="./assets//images/featured/cozy house.png"
                 alt=""
                 srcset=""
               />
-            </div>
+       
             <div class="absolute top-[33px] left-[32px] space-y-[15px]">
               <p class="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
                 Cozy House in Krimona
@@ -405,46 +411,50 @@
             </div>
           </div>
         </div>
-        </div>
+         </div>
+      </div>
+       </div>
       </section>
       <!-- Featured section ended -->
 
-      <!-- event banner -->
-      <div class="container">
-        <div class="grid grid-cols-12">
-          <div class="col-span-12">
-            <div style="background-image: url('./assets/images/event_banner/desert2.png');"
-              class="banner bg-cover bg-no-repeat lg:bg-center bg-right rounded-[20px] p-5"
-            >
-              <div class="pl-0 md:pl-[20%]">
-                <p
-                  class="font-nunite font-[200] md:text-left text-center md:text-[52px] text-[24px] leading-[50px] md:mb-[22px] mb-[31px] text-[#4F4F4C]"
+      <!-- event banner started -->
+        <section id="event">
+          <div class="container">
+            <div class="grid grid-cols-12 mt-9 md:mt-20">
+              <div class="col-span-12">
+                <div style="background-image: url('./assets/images/event_banner/desert2.png');"
+                  class="banner bg-cover bg-no-repeat md:bg-center bg-right rounded-[20px] p-5"
                 >
-                  Experience
-                </p>
-                <h3
-                  class="font-nunito font-medium md:text-[52px] text-[16px] lg:leading-[50px] leading-[32px] md:tracking-[13px] tracking-[10px] md:text-left text-center text-[#4F4F4C]"
-                >
-                  The Anicent Egypt
-                </h3>
+                  <div class="pl-0 md:pl-[20%]">
+                    <p
+                      class="font-nunite font-[200] md:text-left text-center md:text-[52px] text-[24px] leading-[50px] md:mb-[22px] mb-[31px] text-[#4F4F4C]"
+                    >
+                      Experience
+                    </p>
+                    <h3
+                      class="font-nunito font-medium md:text-[52px] text-[16px] lg:leading-[50px] leading-[32px] md:tracking-[13px] tracking-[10px] md:text-left text-center text-[#4F4F4C]"
+                    >
+                      The Anicent Egypt
+                    </h3>
+                  </div>
+                  <img
+                    class="mx-auto md:ml-0"
+                    src="./assets/images/event_banner/Logo.png"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
               </div>
-              <img
-                class="mx-auto md:ml-0"
-                src="./assets/images/event_banner/Logo.png"
-                alt=""
-                srcset=""
-              />
             </div>
           </div>
-        </div>
-      </div>
+        </section>
       <!-- event banner end -->
 
       <!-- Inspiration section started -->
-      <section id="" class="mt-5 md:mt-16  bg-none py-4 md:bg-[#FBF9FA]">
+      <section id="inspiration" class="mt-[20px] md:mt-[104px]   py-4 bg-none md:bg-[#FBF9FA]">
        <div class="container">
         <h3
-        class="text-center font-quentin font-[400] md:text-[80px] text-[32px] text-[#D4D4D4] lg:leading-[90px] leading-[48px] mb-[48px]"
+        class="text-center font-quentin font-normal md:text-[80px] text-[32px] text-[#D4D4D4] lg:leading-[90px] leading-[48px] mb-[20px] md:mb-[40px]"
       >
         Inspiration
       </h3>

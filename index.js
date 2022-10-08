@@ -196,7 +196,7 @@ function Menu(e) {
 
 // Accordion started
 let accordions = document.querySelectorAll('.accordion');
-// accordions[0].click();
+
       accordions.forEach(acco =>{
         accordions[0].click();
         accordions[0].click();
@@ -205,6 +205,11 @@ let accordions = document.querySelectorAll('.accordion');
           acco.classList.add('active');
         }
       })
+// Accordion ended
+
+
+
+
 
 
       

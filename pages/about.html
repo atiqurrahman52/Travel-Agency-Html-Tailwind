@@ -23,21 +23,29 @@
       type="text/css"
       href="../assets/plugins/slick/slick.1.8.1.css"
     />
-   
+     <link rel="stylesheet" href="../assets/plugins/aos/aos-2.3.1.css">
     <link rel="stylesheet" href="./../dist/main.css" />
 
     <title>About</title>
   </head>
   <body>
+     
+    <!-- preloader -->
+    <div id="preloader"> 
+      <div id="loader-img">
+      <div id="loader"></div> 
+      </div>
+      <div id="panel_left" class='loader-section section-left'></div>
+      <div id="panel_right" class='loader-section section-right'></div>
+      </div>
+      <!-- preloader -->
     <main id="main">
       <header>
-       
-
         <nav
-          x-data="{ open: false }"
-          @keydown.window.escape="open = false"
-          class="nav w-full z-10 absolute top-0 shadow-[0px_2px_20px_rgba(0,0,0,0.1)]"
-        >
+        x-data="{ open: false }"
+        @keydown.window.escape="open = false"
+        class="nav w-full absolute top-0   md:pb-5 md:pt-6  z-50 transition-all duration-500 shadow-[0px_2px_20px_rgba(0,0,0,0.1)]"
+      >
           <div class="container">
             <div class="flex items-center justify-between h-16">
               <div class="flex items-center justify-between flex-grow">
@@ -45,7 +53,7 @@
                   <h1
                     class="text-lg font-semibold tracking-widest text-white uppercase"
                   >
-                    <a href="../index.html" class="logo block md:hidden">
+                    <a href="../index.html" class="logo block md:hidden w-[84px]">
                       <img src="../assets/images/header/Logo.svg" alt="" />
                     </a>
                   </h1>
@@ -90,11 +98,11 @@
 
               <div class="flex lg:hidden">
                 <button
-                  @click="open = !open"
-                  class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white focus:outline-none focus:text-white"
-                  x-bind:aria-label="open ? 'Close main menu' : 'Main menu'"
-                  x-bind:aria-expanded="open"
-                >
+                @click="open = !open"
+                class="inline-flex items-center justify-center p-2 rounded-md hover:text-white  focus:outline-none focus:text-white"
+                x-bind:aria-label="open ? 'Close main menu' : 'Main menu'"
+                x-bind:aria-expanded="open"
+              >
                   <svg
                     class="w-6 h-6"
                     stroke="#d00338"
@@ -123,8 +131,9 @@
             </div>
           </div>
           <div
-            :class="{'block': open, 'hidden': !open}"
-            class="drop-shadow-2xl hidden lg:hidden bg-white/[.9] absolute mob_nav rounded-bl-[10px] z-20 w-full"
+          :class="{'block': open, 'hidden': !open}"
+          class="hidden lg:hidden  absolute mob_nav z-20  w-full shadow-lg md:shadow-none
+          bg-white md:bg-transparent"
           >
             <div class="container mx-auto">
               <div class="pt-2 pb-3">
@@ -159,7 +168,13 @@
         </nav>
       </header>
 
-      <section id="about" class="lg:mt-[216px] mt-[160px]">
+      <section id="about" class="lg:mt-[216px] mt-[160px]"
+      id="hero"
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+      >
         <div class="container">
           <div class="grid grid-cols-1 md:grid-cols-2">
             <div class="">
@@ -266,10 +281,18 @@
       <!-- service section started -->
       <section
         id="service"
-        class="md:bg-[#F8F8F8] bg-transparent pt-[104px] pb-[40px] lg:mt-[77px] mt-[50px]"
+        class="md:bg-[#F8F8F8] bg-transparent pt-[104px] pb-[40px] lg:mt-[77px] mt-[50px]
+        "
+       
       >
         <div class="container">
-          <div class="grid grid-cols-1 md:grid-cols-12 p-9">
+          <div class="grid grid-cols-1 md:grid-cols-12 p-9"
+          id="hero"
+          data-aos="fade-up"
+          data-aos-delay="20"
+          data-aos-easing="ease-in-out"
+          data-aos-once="false"
+          >
             <div class="col-span-6 md:order-1 order-2">
               <h3
                 class="text-[#393E50] lg:text-[40px] text-[20px] font-nunito font-extrabold lg:leading-[48px] leading-[28px] lg:mb-[20px]  mb-[26px]"
@@ -355,7 +378,9 @@
       </section>
       <!-- service section started -->
       <!-- Partners section started -->
-      <section id="partners" class="lg:mt-[64px] mt-[15px]">
+      <section id="partners" class="lg:mt-[64px] mt-[15px]"
+      
+      >
         <div class="container ">
           <div class="text-center lg:mb-[70px] mb-[40px]">
             <p
@@ -504,7 +529,8 @@
       <!-- Partners section ended -->
 
       <!-- Country package started -->
-      <section id="country-package" class="md:mt-[131px] mt-[44px]">
+      <section id="country-package" class="md:mt-[131px] mt-[44px]"  
+      >
         <div class="container">
           <div
             class="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-5 mb-[128px]"
@@ -614,7 +640,9 @@
       <!-- Country package ended -->
 
       <!-- Footer section started -->
-      <section id="footer" class="md:mt-[124px] mt-[-62px] mb-3">
+      <section id="footer" class="md:mt-[124px] mt-[-62px] mb-3"
+     
+      >
         <div class="container">
           <div>
             <p
@@ -790,6 +818,12 @@
 
     <script src="../assets/plugins/slick/slick.1.8.1.js"></script>
     <script src="../assets/plugins/AlpineJs/alpine.js"></script>
+    <script src="../assets/plugins/aos/aos-2.3.1.js"></script>
     <script src="./../index.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
   </body>
 </html>

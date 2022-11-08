@@ -24,18 +24,31 @@
   
    
     <link rel="stylesheet" href="./dist/main.css">
+    <link rel="stylesheet" href="./assets/plugins/aos/aos-2.3.1.css">
 
     <title>Travel Agency</title>
   </head>
   <body>
+    
+    <!-- preloader -->
+    <div id="preloader"> 
+      <div id="loader-img">
+      <div id="loader"></div> 
+      </div>
+      <div id="panel_left" class='loader-section section-left'></div>
+      <div id="panel_right" class='loader-section section-right'></div>
+      </div>
+      <!-- preloader -->
+
     <main id="main">
       <!--  navbar started -->
       <header>
+       
         <nav
-          x-data="{ open: false }"
-          @keydown.window.escape="open = false"
-          class="nav w-full z-10 absolute top-0"
-        >
+        x-data="{ open: false }"
+        @keydown.window.escape="open = false"
+        class="nav w-full absolute top-0  md:pb-5 md:pt-6  z-50 transition-all duration-500"
+      >
           <div class="container">
             <div class="flex items-center justify-between h-16">
               <div class="flex items-center justify-between flex-grow">
@@ -53,7 +66,7 @@
                   <div class="flex items-center">
                     <a
                       href="./index.html"
-                      class="flex flex-row text-[#393E50] activePage items-center px-3 py-2   uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                      class="flex flex-row text-[#393E50] activePage items-center px-3 py-2  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
                     >
                       <span class="ml-2">Home</span>
                     </a>
@@ -90,7 +103,7 @@
               <div class="flex lg:hidden">
                 <button
                   @click="open = !open"
-                  class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white  focus:outline-none focus:text-white"
+                  class="inline-flex items-center justify-center p-2 rounded-md hover:text-white  focus:outline-none focus:text-white"
                   x-bind:aria-label="open ? 'Close main menu' : 'Main menu'"
                   x-bind:aria-expanded="open"
                 >
@@ -122,33 +135,34 @@
             </div>
           </div>
           <div
-            :class="{'block': open, 'hidden': !open}"
-            class="drop-shadow-2xl hidden lg:hidden bg-white/[.9] absolute mob_nav rounded-bl-[10px] z-20  w-full"
+          :class="{'block': open, 'hidden': !open}"
+          class="hidden lg:hidden  absolute mob_nav z-20  w-full shadow-lg md:shadow-none
+          bg-white md:bg-transparent"
           >
             <div class="container mx-auto">
               <div class="pt-2 pb-3">
                 <a
                   href="./index.html"
-                  class="flex flex-row text-[#5C5C5C] active items-center px-3 py-2  opacity-[0.4] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                  class="flex flex-row text-[#5C5C5C] active items-center px-3 py-2   uppercase font-nunito font-semibold text-[16px] leading-[20px]"
                 >
                   <span class="ml-2">Home</span>
                 </a>
                 <a
                   href="./pages/gallery.html"
-                  class="flex flex-row items-center px-3 py-2 text-[#393E50] opacity-[0.4] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                  class="flex flex-row items-center px-3 py-2 text-[#393E50]  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
                 >
                   <span class="ml-2">Gallery</span>
                 </a>
 
                 <a
                   href="./pages/destination.html"
-                  class="flex flex-row items-center px-3 py-2 text-[#393E50] opacity-[0.4] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                  class="flex flex-row items-center px-3 py-2 text-[#393E50]  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
                 >
                   <span class="ml-2">Destination</span>
                 </a>
                 <a
                   href="./pages/about.html"
-                  class="flex flex-row items-center px-3 py-2 text-[#393E50] opacity-[0.4] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                  class="flex flex-row items-center px-3 py-2 text-[#393E50]  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
                 >
                   <span class="ml-2">About</span>
                 </a>
@@ -160,7 +174,13 @@
       <!--  navbar ended -->
 
       <!-- Hero section started  -->
-      <section id="hero_section" class="curb">
+      <section id="hero_section" class="curb"
+        id="hero"
+        data-aos="fade-up"
+        data-aos-delay="20"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
+      >
         <div class="container">
           <div class="grid grid-cols-12 py-24 gap-4">
             <div class="col-span-12 lg:col-span-6">
@@ -194,9 +214,7 @@
               <div
                 class="flex md:gap-5 gap-2 p-1 flex-col md:flex-row items-center md:items-center justify-center md:justify-center"
               >
-                <!-- <i
-                  class="ph-globe-hemisphere-west text-[#D00338]/90 md:text-[35px] text-[28px]"
-                ></i> -->
+               
                 <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.8" d="M23 38C31.8366 38 39 30.8366 39 22C39 13.1634 31.8366 6 23 6C14.1634 6 7 13.1634 7 22C7 30.8366 14.1634 38 23 38Z" stroke="#D00338" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   <path opacity="0.8" d="M37 29.1919L28.0385 23.7032C27.8843 23.6044 27.7092 23.5426 27.5269 23.5224L23.7476 23.013C23.4656 22.9727 23.1782 23.0266 22.9303 23.1664C22.6824 23.3062 22.4881 23.5239 22.3778 23.7854L20.1168 28.8303C20.0105 29.065 19.9757 29.3256 20.0168 29.5797C20.0578 29.8339 20.1729 30.0704 20.3478 30.26L23.4505 33.5959C23.5907 33.7494 23.6935 33.9331 23.7508 34.1326C23.808 34.3321 23.8182 34.5421 23.7806 34.7462L23.1369 38" stroke="#D00338" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -347,7 +365,13 @@
       </section>
       <!-- Hero section ended -->
        <!-- Featured section started  -->
-      <section id="featured">
+      <section id="featured"
+        id="hero"
+        data-aos="fade-up"
+        data-aos-delay="20"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
+      >
        <div class="container">
          <div class="mt-5 md:mt-12">
           <h1
@@ -441,7 +465,13 @@
       <!-- Featured section ended -->
 
       <!-- event banner started -->
-        <section id="event">
+        <section id="event"
+        id="hero"
+        data-aos="fade-up"
+        data-aos-delay="20"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
+        >
           <div class="container">
             <div class="grid grid-cols-12 mt-9 md:mt-20">
               <div class="col-span-12">
@@ -474,7 +504,13 @@
       <!-- event banner end -->
 
       <!-- Inspiration section started -->
-      <section id="inspiration" class="mt-[20px] md:mt-[104px]   py-4 bg-none md:bg-[#FBF9FA]">
+      <section id="inspiration" class="mt-[20px] md:mt-[104px]   py-4 bg-none md:bg-[#FBF9FA]"
+        id="hero"
+        data-aos="fade-up"
+        data-aos-delay="20"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
+      >
        <div class="container">
         <h3
         class="text-center font-quentin font-normal md:text-[80px] text-[32px] text-[#D4D4D4] lg:leading-[90px] leading-[48px] mb-[20px] md:mb-[40px]"
@@ -596,7 +632,11 @@
       <!-- Inspiration section end -->
 
       <!-- Asia slider started -->
-      <section id="asia" class="md:mt-[104px] mt-[40px]">
+      <section id="asia" class="md:mt-[104px] mt-[40px]" id="hero"
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false">
         <div class="container">
           <h3
             class="text-center font-quentin font-[400] md:text-[80px] text-[32px] text-[#D4D4D4] md:leading-[90px] leading-[48px] md:mb-[40px] mb-[30px]"
@@ -729,7 +769,8 @@
       <!-- Asia slider ended -->
 
       <!-- Combo section started  -->
-      <section id="combo" class="md:mt-[127px] mt-[40px]">
+      <section id="combo" class="md:mt-[127px] mt-[40px]"
+      >
        <div class="container">
         <div class=" grid grid-cols-12 gap-4">
           <div class="col-span-12 lg:col-span-4">
@@ -940,8 +981,12 @@
       <!-- Europe slider ended -->
 
       <!-- Gift card section started -->
-      <section id="giftCard" class="md:mt-[167px] mt-[40px]">
-        <div class="container">
+      <section id="giftCard" class="md:mt-[167px] mt-[40px]"
+      
+      >
+        <div class="container"
+        
+        >
           <div class="grid grid-cols-12 gap-4 md:mt-[60px] mt-[20px]">
             <div class="col-span-12 lg:col-span-4">
               <p
@@ -1265,7 +1310,9 @@
       <!-- Partners section ended -->
 
       <!-- Footer section started -->
-      <section id="footer" class="md:mt-[100px] mt-[40px] mb-10">
+      <section id="footer" class="md:mt-[100px] mt-[40px] mb-10"
+      
+      >
         <div class="container ">
           <div>
             <p
@@ -1437,6 +1484,15 @@
     <script src="./assets/plugins/slick/slick.1.8.1.js"></script>
     <script src="./assets/plugins/AlpineJs/alpine.js"></script>
     <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="./assets/plugins/aos/aos-2.3.1.js"></script>
     <script src="./index.js"></script>
+    
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
+
+    
   </body>
 </html>

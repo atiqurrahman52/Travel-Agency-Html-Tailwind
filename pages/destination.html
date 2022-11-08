@@ -23,7 +23,7 @@
       type="text/css"
       href="../assets/plugins/slick/slick.1.8.1.css"
     />
-
+     <link rel="stylesheet" href="../assets/plugins/aos/aos-2.3.1.css">
     <link rel="stylesheet" href="./../dist/main.css" />
  
     
@@ -36,6 +36,15 @@
     </style>
   </head>
   <body>
+    <!-- preloader -->
+    <div id="preloader"> 
+      <div id="loader-img">
+      <div id="loader"></div> 
+      </div>
+      <div id="panel_left" class='loader-section section-left'></div>
+      <div id="panel_right" class='loader-section section-right'></div>
+      </div>
+      <!-- preloader -->
     <main id="main">
       <header>
        
@@ -43,7 +52,7 @@
         <nav
         x-data="{ open: false }"
         @keydown.window.escape="open = false"
-        class="nav w-full z-10 lg:absolute top-0"
+        class="nav w-full md:pb-5 md:pt-6 z-10 lg:absolute top-0 transition-all duration-500"
       >
         <div class="container">
           <div class="flex items-center justify-between h-16">
@@ -52,7 +61,7 @@
                 <h1
                   class="text-lg font-semibold tracking-widest text-white uppercase"
                 >
-                  <a href="../index.html" class="logo block lg:hidden">
+                  <a href="../index.html" class="logo block lg:hidden w-[84px]">
                     <img src="../assets/images/header/Logo.svg" alt=""/>
                   </a>
             
@@ -98,11 +107,11 @@
 
             <div class="flex lg:hidden">
               <button
-                @click="open = !open"
-                class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white  focus:outline-none focus:text-white"
-                x-bind:aria-label="open ? 'Close main menu' : 'Main menu'"
-                x-bind:aria-expanded="open"
-              >
+              @click="open = !open"
+              class="inline-flex items-center justify-center p-2 rounded-md hover:text-white  focus:outline-none focus:text-white"
+              x-bind:aria-label="open ? 'Close main menu' : 'Main menu'"
+              x-bind:aria-expanded="open"
+            >
                 <svg
                   class="w-6 h-6"
                   stroke="#d00338"
@@ -131,8 +140,9 @@
           </div>
         </div>
         <div
-          :class="{'block': open, 'hidden': !open}"
-          class="drop-shadow-2xl hidden lg:hidden bg-white/[.9] absolute mob_nav rounded-bl-[10px] z-20  w-full"
+        :class="{'block': open, 'hidden': !open}"
+        class="hidden lg:hidden  absolute mob_nav z-20  w-full shadow-lg md:shadow-none
+        bg-white md:bg-transparent"
         >
           <div class="container mx-auto">
             <div class="pt-2 pb-3">
@@ -167,7 +177,11 @@
       </nav> 
       </header>
 
-      <div class="col-span-12">
+      <div class="col-span-12" id="hero"
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false">
         <div style="background-image: url('./../assets/images/destination/destination-bg.png');"
           class="bg-cover bg-no-repeat bg-center w-full lg:h-[622px] h-[212px] flex flex-col items-center justify-center lg:gap-[50px] gap-[20px]"
         >
@@ -185,7 +199,13 @@
         </div>
       </div>
       <!-- Destination started -->
-      <section id="destination">
+      <section id="destination"
+            id="hero"
+            data-aos="fade-up"
+            data-aos-delay="20"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false"
+      >
         
         <div class="container ">
           <div
@@ -514,7 +534,11 @@
 
       <!-- Description ended  -->
       <!-- Pagination started -->
-      <section id="pagination">
+      <section id="pagination" id="hero"
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false">
         <div class="container">
         
           
@@ -573,7 +597,11 @@
      
 
       <!-- event banner -->
-      <section id="event" class="md:mt-[168px] mt-[80px]">
+      <section id="event" class="md:mt-[168px] mt-[80px]" id="hero"
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false">
         <div class="container">
           <div class="grid grid-cols-12">
             <div class="col-span-12">
@@ -608,7 +636,11 @@
     
 
       <!--All Destination section started  -->
-      <section id="all-destination">
+      <section id="all-destination" id="hero"
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false">
         <div class="container">
           <div class="">
             <h3
@@ -952,7 +984,11 @@
       <!--All Destination section ended -->
 
     <!-- Pagination started -->
-    <section id="pagination">
+    <section id="pagination" id="hero"
+    data-aos="fade-up"
+    data-aos-delay="20"
+    data-aos-easing="ease-in-out"
+    data-aos-once="false">
       <div>
         <div class="container">
       
@@ -1009,7 +1045,11 @@
     <!-- Pagination ended -->
 
       <!-- Footer section started -->
-      <section id="footer" class="mb-10">
+      <section id="footer" class="mb-10" id="hero"
+      data-aos="fade-up"
+      data-aos-delay="20"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false">
         <div class="container ">
           <div>
             <p
@@ -1178,7 +1218,12 @@
  
     <script src="../assets/plugins/AlpineJs/alpine.js"></script>
     <script src="../index.js"></script>
-
+    <script src="../assets/plugins/aos/aos-2.3.1.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
     
   </body>
 </html>

@@ -25,153 +25,169 @@
     />
    
     <link rel="stylesheet" href="./../dist/main.css" />
+    <link rel="stylesheet" href="../assets/plugins/aos/aos-2.3.1.css">
 
     <title>Gallery</title>
   </head>
   <body>
+    <!-- preloader -->
+    <div id="preloader"> 
+      <div id="loader-img">
+      <div id="loader"></div> 
+      </div>
+      <div id="panel_left" class='loader-section section-left'></div>
+      <div id="panel_right" class='loader-section section-right'></div>
+      </div>
+      <!-- preloader -->
+
     <main id="main">
     
-      <header>
       
+
+      <header>
+       
+
         <nav
         x-data="{ open: false }"
         @keydown.window.escape="open = false"
-        class="nav w-full z-10 absolute top-0 shadow-[0px_2px_20px_rgba(0,0,0,0.1)]"
+        class="nav w-full absolute top-0   md:pb-5 md:pt-6  z-50 transition-all duration-500 shadow-[0px_2px_20px_rgba(0,0,0,0.1)]"
       >
-        <div class="container">
-          <div class="flex items-center justify-between h-16">
-            <div class="flex items-center justify-between flex-grow">
-              <div class="flex-shrink-0">
-                <h1
-                  class="text-lg font-semibold tracking-widest text-white uppercase"
-                >
-                  <a href="../index.html" class="logo block md:hidden">
-                    <img src="../assets/images/header/Logo.svg" alt=""/>
-                  </a>
-            
-                </h1>
-              </div>
-              <div class="hidden lg:block mx-auto nav_item ">
-                <div class="flex items-center">
-                  <a
-                    href="../index.html"
-                    class="flex flex-row text-[#5C5C5C]  items-center px-3 py-2   uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+          <div class="container">
+            <div class="flex items-center justify-between h-16">
+              <div class="flex items-center justify-between flex-grow">
+                <div class="flex-shrink-0">
+                  <h1
+                    class="text-lg font-semibold tracking-widest text-white uppercase"
                   >
-                    <span class="ml-2">Home</span>
-                  </a>
-                  <a
-                    href="../pages/gallery.html"
-                    class="flex flex-row items-center px-3 py-2 activePage text-[#393E50] activePage  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
-                  >
-                    <span class="ml-2">Gallery</span>
-                  </a>
-                  <a
-                    href="../index.html"
-                    class="flex flex-row items-center px-3 py-2 text-sm font-medium text-[#393E50] rounded-md focus:outline-none relative link"
-                  >
-                    <span class="ml-2">
-                      <img src="../assets/images/header/Logo.svg" alt=""/>
-                    </span>
-                  </a>
-                  <a
-                    href="../pages/destination.html"
-                    class="flex flex-row items-center px-3 py-2 text-[#393E50]  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
-                  >
-                    <span class="ml-2">Destination</span>
-                  </a>
-                  <a
-                    href="../pages/about.html"
-                    class="flex flex-row items-center px-3 py-2 text-[#393E50]  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
-                  >
-                    <span class="ml-2">About</span>
-                  </a>
+                    <a href="../index.html" class="logo block md:hidden w-[84px]">
+                      <img src="../assets/images/header/Logo.svg" alt="" />
+                    </a>
+                  </h1>
+                </div>
+                <div class="hidden lg:block mx-auto nav_item">
+                  <div class="flex items-center">
+                    <a
+                      href="../index.html"
+                      class="flex flex-row text-[#5C5C5C]  items-center px-3 py-2 uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                    >
+                      <span class="ml-2">Home</span>
+                    </a>
+                    <a
+                      href="../pages/gallery.html"
+                      class="flex flex-row items-center px-3 py-2 text-[#393E50] activePage uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                    >
+                      <span class="ml-2">Gallery</span>
+                    </a>
+                    <a
+                      href="../index.html"
+                      class="flex flex-row items-center px-3 py-2 text-sm font-medium text-[#393E50] rounded-md focus:outline-none relative link"
+                    >
+                      <span class="ml-2">
+                        <img src="../assets/images/header/Logo.svg" alt="" />
+                      </span>
+                    </a>
+                    <a
+                      href="../pages/destination.html"
+                      class="flex flex-row items-center px-3 py-2 text-[#393E50] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                    >
+                      <span class="ml-2">Destination</span>
+                    </a>
+                    <a
+                      href="../pages/about.html"
+                      class="flex flex-row items-center px-3 py-2 text-[#393E50]  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                    >
+                      <span class="ml-2">About</span>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="flex lg:hidden">
-              <button
+              <div class="flex lg:hidden">
+                <button
                 @click="open = !open"
-                class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md hover:text-white  focus:outline-none focus:text-white"
+                class="inline-flex items-center justify-center p-2 rounded-md hover:text-white  focus:outline-none focus:text-white"
                 x-bind:aria-label="open ? 'Close main menu' : 'Main menu'"
                 x-bind:aria-expanded="open"
               >
-                <svg
-                  class="w-6 h-6"
-                  stroke="#d00338"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    :class="{'hidden': open, 'inline-flex': !open }"
-                    class="inline-flex"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                  <path
-                    :class="{'hidden': !open, 'inline-flex': open }"
-                    class="hidden"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
+                  <svg
+                    class="w-6 h-6"
+                    stroke="#d00338"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      :class="{'hidden': open, 'inline-flex': !open }"
+                      class="inline-flex"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                    <path
+                      :class="{'hidden': !open, 'inline-flex': open }"
+                      class="hidden"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div
+          <div
           :class="{'block': open, 'hidden': !open}"
-          class="drop-shadow-2xl hidden lg:hidden bg-white/[.9] absolute mob_nav rounded-bl-[10px] z-20  w-full"
-        >
-          <div class="container">
-            <div class="pt-2 pb-3">
-              <a
-                href="../index.html"
-                class="flex flex-row text-[#5C5C5C]  items-center px-3 py-2   uppercase font-nunito font-semibold text-[16px] leading-[20px]"
-              >
-                <span class="ml-2">Home</span>
-              </a>
-              <a
-                href="../pages/gallery.html"
-                class="flex flex-row items-center px-3 py-2 text-[#393E50]  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
-              >
-                <span class="ml-2">Gallery</span>
-              </a>
+                class="hidden lg:hidden  absolute mob_nav z-20  w-full shadow-lg md:shadow-none
+                bg-white md:bg-transparent"
+          >
+            <div class="container mx-auto">
+              <div class="pt-2 pb-3">
+                <a
+                  href="../index.html"
+                  class="flex flex-row text-[#5C5C5C]  items-center px-3 py-2 uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                >
+                  <span class="ml-2">Home</span>
+                </a>
+                <a
+                  href="../pages/gallery.html"
+                  class="flex flex-row items-center px-3 py-2 text-[#393E50] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                >
+                  <span class="ml-2">Gallery</span>
+                </a>
 
-              <a
-                href="../pages/destination.html"
-                class="flex flex-row items-center px-3 py-2 text-[#5C5C5C]  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
-              >
-                <span class="ml-2">Destination</span>
-              </a>
-              <a
-                href="../pages/about.html"
-                class="flex flex-row items-center px-3 py-2 text-[#5C5C5C]  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
-              >
-                <span class="ml-2">About</span>
-              </a>
+                <a
+                  href="../pages/destination.html"
+                  class="flex flex-row items-center px-3 py-2 text-[#393E50] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                >
+                  <span class="ml-2">Destination</span>
+                </a>
+                <a
+                  href="../pages/about.html"
+                  class="flex flex-row items-center px-3 py-2 text-[#393E50] active uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                >
+                  <span class="ml-2">About</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </nav> 
+        </nav>
       </header>
-      <section id="gallery" class="mt-20">
+
+
+      <section id="gallery" class="mt-28 md:mt-40">
         <div class="container">
           <div
-            class="flex flex-col md:flex-row items-center justify-between"
+            class="flex flex-col md:flex-row items-center justify-between "
           >
             <h3
-              class="lg:text-left text-center text-[#393E50]  font-extrabold md:text-[40px] text-[24px] leading-[48px]"
+              class="lg:text-left text-center text-[#393E50]  font-extrabold md:text-[40px] text-[24px] leading-[48px]  mb-4"
             >
               GALLERY
             </h3>
 
             <div
-              class="relative flex w-[300px] flex-wrap items-stretch md:mt-0 mt-5"
+              class="relative flex w-[300px] flex-wrap items-stretch  "
             >
               <input
                 type="text"
@@ -184,10 +200,17 @@
                 <i class="ph-magnifying-glass absolute mr-[334px]"></i>
               </span>
             </div>
-          </div>
+          </div> 
+        </div>
 
+        <div class="container">
           <div
             class="grid grid-cols-1 md:grid-cols-2 gap-4 md:mt-[80px] mt-[50px]"
+            id="hero"
+            data-aos="fade-up"
+            data-aos-delay="20"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false"
           >
             <div class="border rounded-lg p-5 col-span-1">
               <div class="flex items-center gap-2 mb-[24px]">
@@ -466,7 +489,11 @@
               </div>
             </div>
           </div>
+
         </div>
+
+
+
         <div class="flex justify-center items-center md:mb-[118px] mb-[80px]">
           <a
             class="font-nunito font-[600] text-[14px] text-[#FFFFFF] bg-[#D00338E5] px-[61px] py-[14px] rounded-[5px] md:mt-[74px] mt-[44px]"
@@ -480,8 +507,10 @@
      
 
        <!-- Footer section started -->
-       <section id="footer" class="mb-10">
-        <div class="container ">
+       <section id="footer" class="mb-10"
+       
+       >
+        <div class="container">
           <div>
             <p
               class="text-center text-[#D00338E5]/90 lg:text-[64px] text-[42px] font-quentin lg:leading-[86px] leading-[48px] lg:mb-[64px] mb-[40px]"
@@ -648,6 +677,13 @@
 
     <script src="../assets/plugins/slick/slick.1.8.1.js"></script>
     <script src="../assets/plugins/AlpineJs/alpine.js"></script>
+    <script src="../assets/plugins/aos/aos-2.3.1.js"></script>
     <script src="./../index.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
   </body>
 </html>

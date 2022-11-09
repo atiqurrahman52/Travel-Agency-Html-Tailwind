@@ -192,9 +192,6 @@ section ul li.active {
   height: 200px;
   margin: -100px 0 0 -100px;
   z-index: 1001;
-  /* background-image: url("./../assets/images/preloader/preloader.webp"); */
-  /* background-image: url("./../assets/images/preloader/preloader.webp"); */
- 
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;

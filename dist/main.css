@@ -647,10 +647,6 @@ video {
   left: 1.25rem;
 }
 
-.top-\[80px\] {
-  top: 80px;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -751,8 +747,8 @@ video {
   margin-top: 40px;
 }
 
-.mb-\[30px\] {
-  margin-bottom: 30px;
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mt-\[24px\] {
@@ -787,8 +783,8 @@ video {
   margin-bottom: 14px;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
+.mb-\[30px\] {
+  margin-bottom: 30px;
 }
 
 .mb-\[32px\] {
@@ -1279,10 +1275,20 @@ video {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
+.from-\[\#F43B47\] {
+  --tw-gradient-from: #F43B47;
+  --tw-gradient-to: rgb(244 59 71 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-\[\#00000000\]\/0 {
   --tw-gradient-from: rgb(0 0 0 / 0);
   --tw-gradient-to: rgb(0 0 0 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-\[\#453A94\] {
+  --tw-gradient-to: #453A94;
 }
 
 .to-\[\#00000000\]\/100 {
@@ -1291,6 +1297,11 @@ video {
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-clip-text {
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 .bg-right {
@@ -1649,6 +1660,10 @@ video {
   color: rgb(212 212 212 / var(--tw-text-opacity));
 }
 
+.text-transparent {
+  color: transparent;
+}
+
 .text-\[\#747474\] {
   --tw-text-opacity: 1;
   color: rgb(116 116 116 / var(--tw-text-opacity));
@@ -1689,10 +1704,6 @@ video {
   opacity: 0.4;
 }
 
-.opacity-100 {
-  opacity: 1;
-}
-
 .opacity-\[\.4\] {
   opacity: .4;
 }
@@ -1723,10 +1734,6 @@ video {
 
 .grayscale-\[100\%\] {
   --tw-grayscale: grayscale(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1982,8 +1989,6 @@ section ul li.active {
   width: 200px;
   height: 200px;
   margin: -100px 0 0 -100px;
-  /* background-image: url("./../assets/images/preloader/preloader.webp"); */
-  /* background-image: url("./../assets/images/preloader/preloader.webp"); */
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: center;
@@ -2184,6 +2189,10 @@ section ul li.active {
 
   .md\:mb-\[40px\] {
     margin-bottom: 40px;
+  }
+
+  .md\:mb-16 {
+    margin-bottom: 4rem;
   }
 
   .md\:mt-\[127px\] {

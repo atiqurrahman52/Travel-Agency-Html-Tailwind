@@ -4,186 +4,195 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../assets//images/favicon/favicon.ico">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets//images/favicon/favicon.ico"
+    />
 
- 
-     <!-- font  -->
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-     <link
-       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pridi:wght@200;300;400;500;600;700&family=Square+Peg&family=Teko:wght@300;400;500;600;700&display=swap"
-       rel="stylesheet"
-     />
-     <!-- font Quentin -->
-     <link href="http://fonts.cdnfonts.com/css/quentin" rel="stylesheet" />
-     <!-- font  -->
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pridi:wght@200;300;400;500;600;700&family=Square+Peg&family=Teko:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font Quentin -->
+    <link href="http://fonts.cdnfonts.com/css/quentin" rel="stylesheet" />
+    <!-- font  -->
     <link
       rel="stylesheet"
       type="text/css"
       href="../assets/plugins/slick/slick.1.8.1.css"
     />
-   
+
     <link
       rel="stylesheet"
       href="./../assets/plugins/datepicker/flowbite.min.css"
     />
-   
+
+    <link rel="stylesheet" href="../assets/plugins/aos/aos-2.3.1.css" />
+    <link
+      rel="stylesheet"
+      href="./../assets/plugins/SmartPhoto/smartphoto.min.css"
+    />
     <link rel="stylesheet" href="./../dist/main.css" />
-    <link rel="stylesheet" href="../assets/plugins/aos/aos-2.3.1.css">
 
     <title>Single Destination</title>
   </head>
   <body>
     <!-- preloader -->
-    <div id="preloader"> 
+    <div id="preloader">
       <div id="loader-img">
-      <div id="loader"></div> 
+        <div id="loader"></div>
       </div>
-      <div id="panel_left" class='loader-section section-left'></div>
-      <div id="panel_right" class='loader-section section-right'></div>
-      </div>
-      <!-- preloader -->
+      <div id="panel_left" class="loader-section section-left"></div>
+      <div id="panel_right" class="loader-section section-right"></div>
+    </div>
+    <!-- preloader -->
     <main id="main">
       <!-- Navbar started  -->
-            <header>
-              
-              <nav
-              x-data="{ open: false }"
-              @keydown.window.escape="open = false"
-              class="nav w-full z-10 absolute top-0 md:pb-5 md:pt-6  lg:absolute  transition-all duration-500"
-            >
-              <div class="container">
-                <div class="flex items-center justify-between h-16">
-                  <div class="flex items-center justify-between flex-grow">
-                    <div class="flex-shrink-0">
-                      <h1
-                        class="text-lg font-semibold tracking-widest text-white uppercase"
-                      >
-                        <a href="../index.html" class="logo block md:hidden w-[84px]">
-                          <img src="../assets/images/header/Logo.svg" alt=""/>
-                        </a>
-                  
-                      </h1>
-                    </div>
-                    <div class="hidden lg:block mx-auto nav_item">
-                      <div class="flex items-center">
-                        <a
-                          href="../index.html"
-                          class="flex flex-row text-[#5C5C5C]  items-center px-3 py-2   uppercase font-nunito font-semibold text-[16px] leading-[20px]"
-                        >
-                          <span class="ml-2">Home</span>
-                        </a>
-                        <a
-                          href="../pages/gallery.html"
-                          class="flex flex-row items-center px-3 py-2 text-[#393E50]  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
-                        >
-                          <span class="ml-2">Gallery</span>
-                        </a>
-                        <a
-                          href="../index.html"
-                          class="flex flex-row items-center px-3 py-2 text-sm font-medium text-[#393E50] rounded-md focus:outline-none relative link"
-                        >
-                          <span class="ml-2">
-                            <img src="../assets/images/header/Logo.svg" alt=""/>
-                          </span>
-                        </a>
-                        <a
-                          href="../pages/destination.html"
-                          class="flex flex-row items-center px-3 py-2 text-[#393E50] activePage  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
-                        >
-                          <span class="ml-2">Destination</span>
-                        </a>
-                        <a
-                          href="../pages/about.html"
-                          class="flex flex-row items-center px-3 py-2 text-[#393E50] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
-                        >
-                          <span class="ml-2">About</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-      
-                  <div class="flex lg:hidden">
-                    <button
-                      @click="open = !open"
-                      class="inline-flex items-center justify-center p-2 rounded-md hover:text-white  focus:outline-none focus:text-white"
-                      x-bind:aria-label="open ? 'Close main menu' : 'Main menu'"
-                      x-bind:aria-expanded="open"
-                    >
-                      <svg
-                        class="w-6 h-6"
-                        stroke="#d00338"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          :class="{'hidden': open, 'inline-flex': !open }"
-                          class="inline-flex"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h16M4 18h16"
-                        />
-                        <path
-                          :class="{'hidden': !open, 'inline-flex': open }"
-                          class="hidden"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M6 18L18 6M6 6l12 12"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div
-                :class="{'block': open, 'hidden': !open}"
-                class="hidden lg:hidden  absolute mob_nav z-20  w-full shadow-lg md:shadow-none
-                bg-white md:bg-transparent"
-              >
-                <div class="container mx-auto">
-                  <div class="pt-2 pb-3">
+      <header>
+        <nav
+          x-data="{ open: false }"
+          @keydown.window.escape="open = false"
+          class="nav w-full z-10 absolute top-0 md:pb-5 md:pt-6 lg:absolute transition-all duration-500"
+        >
+          <div class="container">
+            <div class="flex items-center justify-between h-16">
+              <div class="flex items-center justify-between flex-grow">
+                <div class="flex-shrink-0">
+                  <h1
+                    class="text-lg font-semibold tracking-widest text-white uppercase"
+                  >
                     <a
                       href="../index.html"
-                      class="flex flex-row text-[#5C5C5C]  items-center px-3 py-2   uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                      class="logo block md:hidden w-[84px]"
+                    >
+                      <img src="../assets/images/header/Logo.svg" alt="" />
+                    </a>
+                  </h1>
+                </div>
+                <div class="hidden lg:block mx-auto nav_item">
+                  <div class="flex items-center">
+                    <a
+                      href="../index.html"
+                      class="flex flex-row text-[#5C5C5C] items-center px-3 py-2 uppercase font-nunito font-semibold text-[16px] leading-[20px]"
                     >
                       <span class="ml-2">Home</span>
                     </a>
                     <a
                       href="../pages/gallery.html"
-                      class="flex flex-row items-center px-3 py-2 text-[#393E50]  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                      class="flex flex-row items-center px-3 py-2 text-[#393E50] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
                     >
                       <span class="ml-2">Gallery</span>
                     </a>
-      
+                    <a
+                      href="../index.html"
+                      class="flex flex-row items-center px-3 py-2 text-sm font-medium text-[#393E50] rounded-md focus:outline-none relative link"
+                    >
+                      <span class="ml-2">
+                        <img src="../assets/images/header/Logo.svg" alt="" />
+                      </span>
+                    </a>
                     <a
                       href="../pages/destination.html"
-                      class="flex flex-row items-center px-3 py-2 text-[#393E50] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                      class="flex flex-row items-center px-3 py-2 text-[#393E50] activePage uppercase font-nunito font-semibold text-[16px] leading-[20px]"
                     >
                       <span class="ml-2">Destination</span>
                     </a>
                     <a
                       href="../pages/about.html"
-                      class="flex flex-row items-center px-3 py-2 text-[#393E50]  uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                      class="flex flex-row items-center px-3 py-2 text-[#393E50] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
                     >
                       <span class="ml-2">About</span>
                     </a>
                   </div>
                 </div>
               </div>
-            </nav> 
-            </header>
+
+              <div class="flex lg:hidden">
+                <button
+                  @click="open = !open"
+                  class="inline-flex items-center justify-center p-2 rounded-md hover:text-white focus:outline-none focus:text-white"
+                  x-bind:aria-label="open ? 'Close main menu' : 'Main menu'"
+                  x-bind:aria-expanded="open"
+                >
+                  <svg
+                    class="w-6 h-6"
+                    stroke="#d00338"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      :class="{'hidden': open, 'inline-flex': !open }"
+                      class="inline-flex"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                    <path
+                      :class="{'hidden': !open, 'inline-flex': open }"
+                      class="hidden"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            :class="{'block': open, 'hidden': !open}"
+            class="hidden lg:hidden absolute mob_nav z-20 w-full shadow-lg md:shadow-none bg-white md:bg-transparent"
+          >
+            <div class="container mx-auto">
+              <div class="pt-2 pb-3">
+                <a
+                  href="../index.html"
+                  class="flex flex-row text-[#5C5C5C] items-center px-3 py-2 uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                >
+                  <span class="ml-2">Home</span>
+                </a>
+                <a
+                  href="../pages/gallery.html"
+                  class="flex flex-row items-center px-3 py-2 text-[#393E50] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                >
+                  <span class="ml-2">Gallery</span>
+                </a>
+
+                <a
+                  href="../pages/destination.html"
+                  class="flex flex-row items-center px-3 py-2 text-[#393E50] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                >
+                  <span class="ml-2">Destination</span>
+                </a>
+                <a
+                  href="../pages/about.html"
+                  class="flex flex-row items-center px-3 py-2 text-[#393E50] uppercase font-nunito font-semibold text-[16px] leading-[20px]"
+                >
+                  <span class="ml-2">About</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
       <!-- Navbar ended  -->
 
       <!-- single-destination background image started -->
-      <div  style="background-image: url('./../assets/images/single-destination/single-page-bg.webp');"
+      <div
+        style="
+          background-image: url('./../assets/images/single-destination/single-page-bg.webp');
+        "
         class="w-full md:h-[500px] h-[212px] bg-cover bg-no-repeat bg-center flex flex-col items-center justify-center lg:mb-[64px] mb-[40px]"
-        id="hero"
-            data-aos="fade-up"
-            data-aos-delay="20"
-            data-aos-easing="ease-in-out"
-            data-aos-once="false"
+        data-aos="fade-up"
+        data-aos-delay="20"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
       >
         <p
           class="text-[#FFFFFF] lg:text-[64px] text-[24px] font-extrabold font-nunito lg:leading-[48px] leading-[34px]"
@@ -194,11 +203,13 @@
       <!-- single-destination background image ended -->
 
       <!-- incredible-turkey started -->
-      <section id="incredible-turkey" id="hero"
-      data-aos="fade-up"
-      data-aos-delay="20"
-      data-aos-easing="ease-in-out"
-      data-aos-once="false">
+      <section
+        id="incredible-turkey"
+        data-aos="fade-up"
+        data-aos-delay="20"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
+      >
         <div class="container">
           <div class="grid grid-cols-12 gap-6">
             <div class="col-span-12 lg:col-span-8">
@@ -390,11 +401,13 @@
               <hr />
 
               <!-- accordion turkey started -->
-              <div class="" id="hero"
-              data-aos="fade-up"
-              data-aos-delay="20"
-              data-aos-easing="ease-in-out"
-              data-aos-once="false">
+              <div
+                class=""
+                data-aos="fade-up"
+                data-aos-delay="20"
+                data-aos-easing="ease-in-out"
+                data-aos-once="false"
+              >
                 <div class="mt-5">
                   <h3
                     class="md:text-left text-center text-[#393E50] md:text-[40px] text-[24px] font-nunito font-extrabold leading-[48px]"
@@ -421,7 +434,6 @@
                         </p>
                       </div>
 
-                      
                       <div class="accordion">
                         <div class="accordion-heading">
                           <h3>Day 2 - Turkey</h3>
@@ -497,69 +509,109 @@
               <!-- accordion turkey ended -->
 
               <!-- Gallery turkey started -->
-              <div class="mt-5" id="hero"
-              data-aos="fade-up"
-              data-aos-delay="20"
-              data-aos-easing="ease-in-out"
-              data-aos-once="false">
+              <div
+                class="mt-5"
+                data-aos="fade-up"
+                data-aos-delay="20"
+                data-aos-easing="ease-in-out"
+                data-aos-once="false"
+              >
                 <h3
                   class="md:text-left text-center text-[#393E50] md:text-[40px] text-[24px] font-nunito font-extrabold leading-[48px] md:mb-[40px] mb-[16px]"
                 >
                   Gallery
                 </h3>
-                <div
-                  class="grid lg:grid-flow-col lg:grid-rows-2 grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2"
-                >
+                <div class="grid grid-cols-12 grid-rows-2 gap-4">
                   <!-- zero  -->
                   <div
-                    class="group rounded-[10px] overflow-hidden cursor-pointer lg:row-span-2"
+                    class="group rounded-[10px] overflow-hidden cursor-pointer col-span-4 row-span-2"
                   >
-                    <img
-                      src="../assets/images/single-destination/image-1.webp"
-                      class="w-full h-full"
-                      alt=""
-                    />
+                    <a
+                      href="../assets/images/single-destination/image-1.png"
+                      class="js-img-viewer"
+                      data-caption="img-1"
+                      data-id="img-1"
+                    >
+                      <img
+                        src="../assets/images/single-destination/image-1.png"
+                        class="w-full h-full"
+                        alt=""
+                        width="600"
+                      />
+                    </a>
                   </div>
                   <!-- one  -->
                   <div
-                    class="group rounded-[10px] overflow-hidden cursor-pointer"
+                    class="group rounded-[10px] overflow-hidden cursor-pointer col-span-4 row-span-1"
                   >
-                    <img
-                      src="../assets/images/single-destination/image-2.webp"
-                      class="w-full h-full"
-                      alt=""
-                    />
+                    <a
+                      href="../assets/images/single-destination/image-2.png"
+                      class="js-img-viewer"
+                      data-caption="img-2"
+                      data-id="img-2"
+                    >
+                      <img
+                        src="../assets/images/single-destination/image-2.png"
+                        class="w-full h-full"
+                        alt=""
+                        width="600"
+                      />
+                    </a>
                   </div>
                   <!-- two  -->
                   <div
-                    class="group rounded-[10px] overflow-hidden cursor-pointer"
+                    class="group rounded-[10px] overflow-hidden cursor-pointer col-span-4 row-span-1"
                   >
-                    <img
-                      src="../assets/images/single-destination/image-3.webp"
-                      class="w-full h-full"
-                      alt=""
-                    />
+                    <a
+                      href="../assets/images/single-destination/image-3.png"
+                      class="js-img-viewer"
+                      data-caption="img-3"
+                      data-id="img-3"
+                    >
+                      <img
+                        src="../assets/images/single-destination/image-3.png"
+                        class="w-full h-full"
+                        alt=""
+                        width="600"
+                      />
+                    </a>
                   </div>
                   <!-- three  -->
                   <div
-                    class="group rounded-[10px] overflow-hidden cursor-pointer"
+                    class="group rounded-[10px] overflow-hidden cursor-pointer col-span-4 row-span-1"
                   >
-                    <img
-                      src="../assets/images/single-destination/image-4.webp"
-                      class="w-full h-full"
-                      alt=""
-                    />
+                    <a
+                      href="../assets/images/single-destination/image-4.png"
+                      class="js-img-viewer"
+                      data-caption="img-4"
+                      data-id="img-4"
+                    >
+                      <img
+                        src="../assets/images/single-destination/image-4.png"
+                        class="w-full h-full"
+                        alt=""
+                        width="600"
+                      />
+                    </a>
                   </div>
                   <!-- four  -->
                   <div
-                    class="group rounded-[10px] overflow-hidden cursor-pointer"
+                    class="group rounded-[10px] overflow-hidden cursor-pointer col-span-4 row-span-1"
                   >
                     <div class="relative">
-                      <img
-                        src="../assets/images/single-destination/image-5.webp"
-                        class="w-full h-full"
-                        alt=""
-                      />
+                      <a
+                        href="../assets/images/single-destination/image-5.png"
+                        class="js-img-viewer"
+                        data-caption="img-5"
+                        data-id="img-5"
+                      >
+                        <img
+                          src="../assets/images/single-destination/image-5.png"
+                          class="w-full h-full"
+                          alt=""
+                          width="600"
+                        />
+                      </a>
                       <div
                         class="overlay absolute top-0 left-0 text-black font-nunito font-extrabold text-[24px] leading-[30px] w-full h-full bg-black/50"
                       >
@@ -577,11 +629,13 @@
 
             <!-- Gallery turkey ended -->
             <!-- right side start-->
-            <div class="col-span-12 lg:col-span-4" id="hero"
-            data-aos="fade-up"
-            data-aos-delay="20"
-            data-aos-easing="ease-in-out"
-            data-aos-once="false">
+            <div
+              class="col-span-12 lg:col-span-4"
+              data-aos="fade-up"
+              data-aos-delay="20"
+              data-aos-easing="ease-in-out"
+              data-aos-once="false"
+            >
               <!-- form started -->
               <div class="">
                 <form
@@ -590,7 +644,7 @@
                 >
                   <div>
                     <input
-                      class="appearance-none block w-full text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px] border-0 "
+                      class="appearance-none block w-full text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px] border-0"
                       id=""
                       type="text"
                       placeholder="Your Name"
@@ -604,7 +658,7 @@
                       placeholder="Your Email"
                     />
                   </div>
-  
+
                   <div>
                     <input
                       class="appearance-none block w-full text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px] border-0 focus:border-0"
@@ -613,29 +667,27 @@
                       placeholder="Phone"
                     />
                   </div>
-  
-                
+
                   <div class="relative">
-                    
                     <div>
                       <input
                         datepicker=""
                         type="text"
-                        class="appearance-none bg-[#F8F8F8]  text-[14px] rounded-lg mb-[16px] w-full p-[16px] datepicker-input border-0 focus:border-0"
+                        class="appearance-none bg-[#F8F8F8] text-[14px] rounded-lg mb-[16px] w-full p-[16px] datepicker-input border-0 focus:border-0"
                         placeholder="Choose Date of Travel"
                       />
                     </div>
                   </div>
-  
+
                   <div>
                     <input
-                      class="appearance-none block w-full  leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px] border-0 focus:border-0"
+                      class="appearance-none block w-full leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px] border-0 focus:border-0"
                       id=""
                       type="text"
                       placeholder="No of People"
                     />
                   </div>
-  
+
                   <div>
                     <textarea
                       class="appearance-none block text-[14px] leading-[16px] bg-[#F8F8F8] rounded-[8px] p-[16px] mb-[16px] w-full border-0 focus:border-0"
@@ -647,7 +699,7 @@
                       rows="5"
                     ></textarea>
                   </div>
-  
+
                   <button
                     class="text-[#FFFFFF] text-[16px] font-nunito font-semibold leading-[16px] p-3 w-full bg-[#D00338E5] rounded-[8px]"
                   >
@@ -656,19 +708,21 @@
                 </form>
               </div>
               <!-- form  ended -->
-  
+
               <!-- Related destination started -->
-              <div class="mb-[80px]" id="hero"
-              data-aos="fade-up"
-              data-aos-delay="20"
-              data-aos-easing="ease-in-out"
-              data-aos-once="false">
+              <div
+                class="mb-[80px]"
+                data-aos="fade-up"
+                data-aos-delay="20"
+                data-aos-easing="ease-in-out"
+                data-aos-once="false"
+              >
                 <h3
                   class="text-[#393E50] font-nunito font-extrabold text-[24px] md:leading-[30px] leading-[48px] md:text-left text-center mb-8"
                 >
                   Releated Destination
                 </h3>
-  
+
                 <div
                   class="relative group overflow-hidden rounded-[20px] itemBox"
                 >
@@ -678,11 +732,13 @@
                     alt=""
                     srcset=""
                   />
-  
+
                   <div
                     class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#00000000]/0 to-[#00000000]/100 p-4 lg:p-11"
                   >
-                    <div class="flex items-start justify-between flex-col h-full">
+                    <div
+                      class="flex items-start justify-between flex-col h-full"
+                    >
                       <div
                         class="lg:flex flex-col justify-center text-white font-nunito font-extrabold text-[16px] leading-[20px] gap-3"
                       >
@@ -702,13 +758,16 @@
                 </div>
               </div>
               <!-- Related destination end -->
-  
+
               <!-- tag started -->
-              <div class="md:block hidden" id="hero"
-              data-aos="fade-up"
-              data-aos-delay="20"
-              data-aos-easing="ease-in-out"
-              data-aos-once="false">
+              <div
+                class="md:block hidden"
+              
+                data-aos="fade-up"
+                data-aos-delay="20"
+                data-aos-easing="ease-in-out"
+                data-aos-once="false"
+              >
                 <h3
                   class="text-[#393E50] text-[24px] font-nunito font-extrabold leading-[30px] mb-[48px]"
                 >
@@ -736,7 +795,7 @@
                       href="#"
                       >Asia</a
                     >
-  
+
                     <a
                       class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px]"
                       href="#"
@@ -752,7 +811,7 @@
                       href="#"
                       >Sunset</a
                     >
-  
+
                     <a
                       class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px]"
                       href="#"
@@ -768,7 +827,7 @@
                       href="#"
                       >Sky Dinning</a
                     >
-  
+
                     <a
                       class="text-[#D00338E5]/90 font-nunito font-bold text-[14px] leading-[18px] box-border bg-[#D003381A]/10 py-[8px] px-[24px] rounded-[8px]"
                       href="#"
@@ -786,7 +845,6 @@
                     >
                   </div>
                 </div>
-              
               </div>
               <!-- tag end-->
             </div>
@@ -798,106 +856,118 @@
 
       <!-- Featured section started -->
 
-      <section id="featured" class="md:mt-20 mt-12" id="hero"
-      data-aos="fade-up"
-      data-aos-delay="20"
-      data-aos-easing="ease-in-out"
-      data-aos-once="false">
+      <section
+        id="featured"
+        class="md:mt-20 mt-12"
+        data-aos="fade-up"
+        data-aos-delay="20"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
+      >
         <div class="container">
           <h1
-          class="text-center lg:text-[32px] text-[24px] text-[#393E50] font-nunito font-[800]"
-        >
-          Featured Trips for You
-        </h1>
-        <div
-          class=" grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 gap-5 mb-20 mt-10"
-        >
-          <div class="relative group overflow-hidden rounded-[20px]">
-            <div class="">
-              <img
-                class="w-full group-hover:scale-125 transition-all duration-[2000ms]"
-                src="../assets//images/featured/hollywood-hills.webp"
-                alt=""
-                srcset=""
-              />
+            class="text-center lg:text-[32px] text-[24px] text-[#393E50] font-nunito font-[800]"
+          >
+            Featured Trips for You
+          </h1>
+          <div
+            class="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 gap-5 mb-20 mt-10"
+          >
+            <div class="relative group overflow-hidden rounded-[20px]">
+              <div class="">
+                <img
+                  class="w-full group-hover:scale-125 transition-all duration-[2000ms]"
+                  src="../assets//images/featured/hollywood-hills.webp"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="absolute top-[33px] left-[32px] space-y-[15px]">
+                <p class="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
+                  Hollywood Hills Upscale
+                </p>
+                <p class="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
+                  $1100
+                </p>
+              </div>
+              <div
+                class="absolute bottom-7 left-[32px] flex items-center gap-2"
+              >
+                <i class="ph-map-pin text-[#FFFFFF]"></i>
+                <p class="font-nunito font-[600] text-[14px] text-[#FFFFFF]">
+                  United States
+                </p>
+              </div>
             </div>
-            <div class="absolute top-[33px] left-[32px] space-y-[15px]">
-              <p class="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
-                Hollywood Hills Upscale
-              </p>
-              <p class="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
-                $1100
-              </p>
-            </div>
-            <div class="absolute bottom-7 left-[32px] flex items-center gap-2">
-              <i class="ph-map-pin text-[#FFFFFF]"></i>
-              <p class="font-nunito font-[600] text-[14px] text-[#FFFFFF]">
-                United States
-              </p>
-            </div>
-          </div>
 
-          <div class="relative group overflow-hidden rounded-[20px]">
-            <div class="">
-              <img
-                class="w-full group-hover:scale-125 transition-all duration-[2000ms]"
-                src="../assets//images/featured/nordic-hall.webp"
-                alt=""
-                srcset=""
-              />
+            <div class="relative group overflow-hidden rounded-[20px]">
+              <div class="">
+                <img
+                  class="w-full group-hover:scale-125 transition-all duration-[2000ms]"
+                  src="../assets//images/featured/nordic-hall.webp"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="absolute top-[33px] left-[32px] space-y-[15px]">
+                <p class="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
+                  Nordic Arctic Hall
+                </p>
+                <p class="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
+                  $2900
+                </p>
+              </div>
+              <div
+                class="absolute bottom-7 left-[32px] flex items-center gap-2"
+              >
+                <i class="ph-map-pin text-[#FFFFFF]"></i>
+                <p class="font-nunito font-[600] text-[14px] text-[#FFFFFF]">
+                  Norway
+                </p>
+              </div>
             </div>
-            <div class="absolute top-[33px] left-[32px] space-y-[15px]">
-              <p class="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
-                Nordic Arctic Hall
-              </p>
-              <p class="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
-                $2900
-              </p>
-            </div>
-            <div class="absolute bottom-7 left-[32px] flex items-center gap-2">
-              <i class="ph-map-pin text-[#FFFFFF]"></i>
-              <p class="font-nunito font-[600] text-[14px] text-[#FFFFFF]">
-                Norway
-              </p>
-            </div>
-          </div>
 
-          <div class="relative group overflow-hidden rounded-[20px]">
-            <div class="">
-              <img
-                class="w-full group-hover:scale-125 transition-all duration-[2000ms]"
-                src="../assets//images/featured/cozy-house.webp"
-                alt=""
-                srcset=""
-              />
-            </div>
-            <div class="absolute top-[33px] left-[32px] space-y-[15px]">
-              <p class="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
-                Cozy House in Krimona
-              </p>
-              <p class="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
-                $750
-              </p>
-            </div>
-            <div class="absolute bottom-7 left-[32px] flex items-center gap-2">
-              <i class="ph-map-pin text-[#FFFFFF]"></i>
-              <p class="font-nunito font-[600] text-[14px] text-[#FFFFFF]">
-                Montenegro
-              </p>
+            <div class="relative group overflow-hidden rounded-[20px]">
+              <div class="">
+                <img
+                  class="w-full group-hover:scale-125 transition-all duration-[2000ms]"
+                  src="../assets//images/featured/cozy-house.webp"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="absolute top-[33px] left-[32px] space-y-[15px]">
+                <p class="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
+                  Cozy House in Krimona
+                </p>
+                <p class="font-nunito font-[800] text-[16px] text-[#FFFFFF]">
+                  $750
+                </p>
+              </div>
+              <div
+                class="absolute bottom-7 left-[32px] flex items-center gap-2"
+              >
+                <i class="ph-map-pin text-[#FFFFFF]"></i>
+                <p class="font-nunito font-[600] text-[14px] text-[#FFFFFF]">
+                  Montenegro
+                </p>
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </section>
       <!-- Featured section ended -->
 
       <!-- Footer section started -->
-      <section id="footer" class="mb-10" id="hero"
-      data-aos="fade-up"
-      data-aos-delay="20"
-      data-aos-easing="ease-in-out"
-      data-aos-once="false">
-        <div class="container ">
+      <section
+        id="footer"
+        class="mb-10"
+        data-aos="fade-up"
+        data-aos-delay="20"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
+      >
+        <div class="container">
           <div>
             <p
               class="text-center text-[#D00338E5] lg:text-[64px] text-[42px] font-quentin lg:leading-[86px] leading-[48px] lg:mb-[64px] mb-[40px]"
@@ -931,33 +1001,39 @@
                   srcset=""
                 />
                 <img src="../assets/images/footer/amex.webp" alt="" srcset="" />
-                <img src="../assets/images/footer/Paypal.webp" alt="" srcset="" />
+                <img
+                  src="../assets/images/footer/Paypal.webp"
+                  alt=""
+                  srcset=""
+                />
               </div>
             </div>
 
-            <div class="lg:col-span-3 md:col-span-4 col-span-6 lg:mb-[40px] mb-[24px]">
+            <div
+              class="lg:col-span-3 md:col-span-4 col-span-6 lg:mb-[40px] mb-[24px]"
+            >
               <div>
                 <p
                   class="font-nunito font-[800] text-[#393E50] lg:text-[16px] text-[12px] leading-[20px] pb-[10px] footer_item"
                 >
                   Inspiration For Tourcode
                 </p>
-                <span class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C]  md:inline-block mb-[32px] hidden "></span>
+                <span
+                  class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C] md:inline-block mb-[32px] hidden"
+                ></span>
               </div>
-             
-            
-                <ul  class="flex flex-col gap-[14px] text-[16px] text-[#747474] font-[400] font-poppins leading-[22px]">
-                  <a href="#"> Ladhak </a>
+
+              <ul
+                class="flex flex-col gap-[14px] text-[16px] text-[#747474] font-[400] font-poppins leading-[22px]"
+              >
+                <a href="#"> Ladhak </a>
                 <a href="#"> Dubai </a>
                 <a href="#"> Edinburgh </a>
                 <a href="#"> Kilimanjaro </a>
                 <a href="#"> Beijing </a>
                 <a href="#"> Miyajima </a>
                 <a href="#"> Sydney </a>
-                </ul>
-             
-
-
+              </ul>
             </div>
 
             <div class="lg:col-span-2 md:col-span-4 col-span-6">
@@ -967,21 +1043,21 @@
                 >
                   Quick Links
                 </p>
-                <span class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C] md:inline-block mb-[32px] hidden  "></span>
+                <span
+                  class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C] md:inline-block mb-[32px] hidden"
+                ></span>
               </div>
 
-             
-                <ul  class="flex flex-col gap-[14px] md:text-left text-right text-[16px] text-[#747474] font-[400] font-poppins leading-[22px]">
-                  <a href="../index.html"> Home </a>
+              <ul
+                class="flex flex-col gap-[14px] md:text-left text-right text-[16px] text-[#747474] font-[400] font-poppins leading-[22px]"
+              >
+                <a href="../index.html"> Home </a>
                 <a href="../pages/about.html"> About Us </a>
                 <a href="../pages/destination.html"> Destinations </a>
                 <a href="../pages/gallery.html"> Gallery </a>
                 <a href="#"> Terms & Conditions </a>
                 <a href="#"> License </a>
-                </ul>
-           
-
-
+              </ul>
             </div>
 
             <div class="lg:col-span-3 md:col-span-4 col-span-12">
@@ -991,13 +1067,14 @@
                 >
                   Get in touch
                 </p>
-                <span class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C] md:inline-block mb-[32px] hidden "></span>
+                <span
+                  class="w-[calc(100%-80%)] h-[1px] bg-[#5C5C5C] md:inline-block mb-[32px] hidden"
+                ></span>
               </div>
 
               <div
                 class="lg:text-[16px] text-[14px] text-[#747474] font-[400] font-poppins gap-[14px] gap-x-16 leading-[32px] mb-[40px]"
               >
-                
                 <p>
                   Email:
                   <a href="mailto:info@trouelish.com">info@trouelish.com</a>
@@ -1058,21 +1135,51 @@
       <!-- Footer section ended -->
     </main>
 
-    
     <script src="./../assets/js/core/jquery-3.6.0.js"></script>
     <!--  slick carousel   -->
-       <!-- phosphor-icons -->
-       <script src="https://unpkg.com/phosphor-icons"></script>
+    <!-- phosphor-icons -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
     <script src="../assets/plugins/slick/slick.1.8.1.js"></script>
     <script src="./../assets/plugins/datepicker/datepicker.js"></script>
     <script src="../assets/plugins/AlpineJs/alpine.js"></script>
-    <script src="../assets/js/custom/common.js"></script>
     <script src="../assets/plugins/aos/aos-2.3.1.js"></script>
+    <script src="./../assets/plugins/SmartPhoto/jquery-smartphoto.min.js"></script>
+    <script src="./../assets/plugins/SmartPhoto/smartphoto.js"></script>
+    <script src="../assets/js/custom/common.js"></script>
     <script>
       AOS.init({
         duration: 1500,
       });
     </script>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var photo = new SmartPhoto(".js-img-viewer");
+        photo.on("change", function () {
+          console.log("change");
+        });
+        photo.on("close", function () {
+          console.log("close");
+        });
+        photo.on("swipestart", function () {
+          console.log("swipestart");
+        });
+        photo.on("swipeend", function () {
+          console.log("swipeend");
+        });
+        photo.on("loadall", function () {
+          console.log("loadall");
+        });
+        photo.on("zoomin", function () {
+          console.log("zoomin");
+        });
+        photo.on("zoomout", function () {
+          console.log("zoomout");
+        });
+        photo.on("open", function () {
+          console.log("open");
+        });
+      });
+    </script>
   </body>
 </html>
